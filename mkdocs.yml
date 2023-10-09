@@ -109,6 +109,8 @@ plugins:
       handlers:
         python:
           paths: [ 'src' ]
+  # NOTE print-site must be last in the list of plugins (see its docs for why)
+  - print-site
 repo_url: 'https://github.com/CERTCC/SSVC'
 repo_name: 'CERTCC/SSVC'
 markdown_extensions:
@@ -162,3 +164,7 @@ extra_javascript:
   - javascripts/tablesort.js
 extra_css:
   - stylesheets/extra.css
+watch:
+  - docs
+  - src
+dev_addr: 127.0.0.1:8001

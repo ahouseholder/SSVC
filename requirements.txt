@@ -6,3 +6,4 @@ mkdocs-material
 mkdocs-material-extensions
 mkdocstrings
 dataclasses-json
+mkdocs-print-site-plugin
