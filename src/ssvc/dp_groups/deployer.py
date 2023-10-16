@@ -4,26 +4,23 @@ file: deployer
 author: adh
 created_at: 9/21/23 11:40 AM
 """
-from copy import deepcopy
 
 from ssvc.decision_points.automatable import AUTOMATABLE_1
 from ssvc.decision_points.exploitation import EXPLOITATION_1
+from ssvc.decision_points.human_impact import HUMAN_IMPACT_1
+from ssvc.decision_points.mission_impact import MISSION_IMPACT_1, MISSION_IMPACT_2
+from ssvc.decision_points.safety_impact import SAFETY_IMPACT_1
 from ssvc.decision_points.system_exposure import (
     SYSTEM_EXPOSURE_1,
     SYSTEM_EXPOSURE_1_0_1,
 )
-from ssvc.decision_points.human_impact import HUMAN_IMPACT_1
-from ssvc.decision_points.mission_impact import MISSION_IMPACT_1, MISSION_IMPACT_2
-from ssvc.decision_points.safety_impact import SAFETY_IMPACT_1
 from ssvc.decision_points.utility import UTILITY_1_0_1
 from ssvc.decision_points.value_density import VALUE_DENSITY_1
 from ssvc.dp_groups.base import SsvcDecisionPointGroup
 
-
 PATCH_APPLIER_1 = SsvcDecisionPointGroup(
     name="SSVC Patch Applier",
     description="The decision points used by the patch applier.",
-    key="PA",
     version="1.0.0",
     decision_points=[
         EXPLOITATION_1,
@@ -46,10 +43,10 @@ It includes decision points:
 # alias for forward compatibility
 DEPLOYER_1 = PATCH_APPLIER_1
 
+# SSVC v2
 DEPLOYER_2 = SsvcDecisionPointGroup(
     name="SSVC Deployer",
     description="The decision points used by the deployer.",
-    key="D",
     version="2.0.0",
     decision_points=[
         EXPLOITATION_1,
@@ -84,16 +81,15 @@ Changes from Patch Applier v1.0.0:
 DEPLOYER_3 = SsvcDecisionPointGroup(
     name="SSVC Deployer",
     description="The decision points used by the deployer.",
-    key="D",
     version="3.0.0",
-    decision_points=[
+    decision_points=(
         EXPLOITATION_1,
         SYSTEM_EXPOSURE_1_0_1,
         MISSION_IMPACT_2,
         SAFETY_IMPACT_1,
         AUTOMATABLE_1,
         HUMAN_IMPACT_1,
-    ],
+    ),
 )
 """
 In SSVC 2.1, Deployer 3.0.0 includes decision points:

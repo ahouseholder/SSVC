@@ -16,17 +16,5 @@ In turn, each value should have the following characteristics:
 - A name or label
 - A description
 - A key (a short, unique string) that can be used to identify the value in a shorthand way
-
-
-file: __init__.py
-author: adh
-created_at: 9/20/23 12:38 PM
 """
-
-
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    main()
+from .base import SsvcDecisionPoint, SsvcDecisionPointValue

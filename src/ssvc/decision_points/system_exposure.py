@@ -5,16 +5,16 @@ author: adh
 created_at: 9/21/23 10:16 AM
 """
 from copy import deepcopy
-from ssvc.decision_points.base import SsvcDecisionPoint, SsvcValue
+from ssvc.decision_points.base import SsvcDecisionPoint, SsvcDecisionPointValue
 
-EXP_UNAVOIDABLE = SsvcValue(
+EXP_UNAVOIDABLE = SsvcDecisionPointValue(
     name="Unavoidable",
     key="U",
     description="Internet or another widely accessible network where access cannot plausibly be restricted or "
     "controlled (e.g., DNS servers, web servers, VOIP servers, email servers)",
 )
 
-EXP_CONTROLLED = SsvcValue(
+EXP_CONTROLLED = SsvcDecisionPointValue(
     name="Controlled",
     key="C",
     description="Networked service with some access restrictions or mitigations already in place (whether locally or on the network). "
@@ -25,7 +25,7 @@ EXP_CONTROLLED = SsvcValue(
     "execute it, then exposure should be small.",
 )
 
-EXP_SMALL = SsvcValue(
+EXP_SMALL = SsvcDecisionPointValue(
     name="Small",
     key="S",
     description="Local service or program; highly controlled network",
@@ -44,13 +44,22 @@ SYSTEM_EXPOSURE_1 = SsvcDecisionPoint(
     ),
 )
 
+# EXP_OPEN is just a rename of EXP_UNAVOIDABLE
 EXP_OPEN = deepcopy(EXP_UNAVOIDABLE)
 EXP_OPEN.name = "Open"
 EXP_OPEN.key = "O"
 
-SYSTEM_EXPOSURE_1_0_1 = deepcopy(SYSTEM_EXPOSURE_1)
-SYSTEM_EXPOSURE_1_0_1.version = "1.0.1"
-SYSTEM_EXPOSURE_1_0_1.values = (EXP_SMALL, EXP_CONTROLLED, EXP_OPEN)
+SYSTEM_EXPOSURE_1_0_1 = SsvcDecisionPoint(
+    name="System Exposure",
+    description="The Accessible Attack Surface of the Affected System or Service",
+    key="EXP",
+    version="1.0.1",
+    values=(
+        EXP_SMALL,
+        EXP_CONTROLLED,
+        EXP_OPEN,
+    ),
+)
 
 
 def main():
