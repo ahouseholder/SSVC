@@ -1,0 +1,964 @@
+@prefix : <http://www.cert.org/ns/ssvc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ssvc: <http://www.cert.org/ns/ssvc/> .
+@base <http://www.cert.org/ns/ssvc/> .
+
+<http://www.cert.org/ns/ssvc> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.cert.org/ns/ssvc/hasValue
+ssvc:hasValue rdf:type owl:ObjectProperty ;
+              rdfs:domain ssvc:DecisionPoint ;
+              rdfs:range ssvc:DecisionPointValue .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.cert.org/ns/ssvc/ActiveSupplierEngagementValue
+ssvc:ActiveSupplierEngagementValue rdf:type owl:Class ;
+                                   rdfs:subClassOf ssvc:High ,
+                                                   ssvc:SupplierEngagementValue .
+
+
+###  http://www.cert.org/ns/ssvc/AmpliativePublicValueAddedValue
+ssvc:AmpliativePublicValueAddedValue rdf:type owl:Class ;
+                                     rdfs:subClassOf ssvc:High ,
+                                                     ssvc:PublicValueAddedValue .
+
+
+###  http://www.cert.org/ns/ssvc/Archetype
+ssvc:Archetype rdf:type owl:Class ;
+               rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/Automatable
+ssvc:Automatable rdf:type owl:Class ;
+                 rdfs:subClassOf ssvc:DecisionPoint ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ssvc:hasValue ;
+                                   owl:someValuesFrom ssvc:AutomatableValue
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ssvc:hasValue ;
+                                   owl:allValuesFrom ssvc:AutomatableValue
+                                 ] .
+
+
+###  http://www.cert.org/ns/ssvc/AutomatableNoValue
+ssvc:AutomatableNoValue rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:AutomatableValue ,
+                                        ssvc:No .
+
+
+###  http://www.cert.org/ns/ssvc/AutomatableValue
+ssvc:AutomatableValue rdf:type owl:Class ;
+                      rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/AutomatableYesValue
+ssvc:AutomatableYesValue rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:AutomatableValue ,
+                                         ssvc:Yes .
+
+
+###  http://www.cert.org/ns/ssvc/Binary
+ssvc:Binary rdf:type owl:Class ;
+            rdfs:subClassOf ssvc:Archetype .
+
+
+###  http://www.cert.org/ns/ssvc/CatastrophicEnvironmentSafetyImpactValue
+ssvc:CatastrophicEnvironmentSafetyImpactValue rdf:type owl:Class ;
+                                              rdfs:subClassOf ssvc:CatastrophicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/CatastrophicFinancialSafetyImpactValue
+ssvc:CatastrophicFinancialSafetyImpactValue rdf:type owl:Class ;
+                                            rdfs:subClassOf ssvc:CatastrophicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/CatastrophicOperatorResilienceSafetyImpactValue
+ssvc:CatastrophicOperatorResilienceSafetyImpactValue rdf:type owl:Class ;
+                                                     rdfs:subClassOf ssvc:CatastrophicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/CatastrophicPhysicalHarmSafetyImpactValue
+ssvc:CatastrophicPhysicalHarmSafetyImpactValue rdf:type owl:Class ;
+                                               rdfs:subClassOf ssvc:CatastrophicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/CatastrophicSafetyImpactValue
+ssvc:CatastrophicSafetyImpactValue rdf:type owl:Class ;
+                                   rdfs:subClassOf ssvc:SafetyImpactValue ,
+                                                   ssvc:SignificantPublicSafetyImpact ,
+                                                   ssvc:VeryHigh .
+
+
+###  http://www.cert.org/ns/ssvc/CatastrophicSystemResilienceSafetyImpactValue
+ssvc:CatastrophicSystemResilienceSafetyImpactValue rdf:type owl:Class ;
+                                                   rdfs:subClassOf ssvc:CatastrophicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/ConcentratedValueDensityValue
+ssvc:ConcentratedValueDensityValue rdf:type owl:Class ;
+                                   rdfs:subClassOf ssvc:High ,
+                                                   ssvc:ValueDensityValue .
+
+
+###  http://www.cert.org/ns/ssvc/ControlledSystemExposureValue
+ssvc:ControlledSystemExposureValue rdf:type owl:Class ;
+                                   rdfs:subClassOf ssvc:Medium ,
+                                                   ssvc:SystemExposureValue .
+
+
+###  http://www.cert.org/ns/ssvc/CooperativeSupplierInvolvementValue
+ssvc:CooperativeSupplierInvolvementValue rdf:type owl:Class ;
+                                         rdfs:subClassOf ssvc:Medium ,
+                                                         ssvc:SupplierInvolvementValue .
+
+
+###  http://www.cert.org/ns/ssvc/Credible
+ssvc:Credible rdf:type owl:Class ;
+              rdfs:subClassOf ssvc:ReportCredibilityValue ,
+                              ssvc:Yes .
+
+
+###  http://www.cert.org/ns/ssvc/CriticalSoftware
+ssvc:CriticalSoftware rdf:type owl:Class ;
+                      rdfs:subClassOf ssvc:DecisionPoint ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ssvc:hasValue ;
+                                        owl:someValuesFrom ssvc:CriticalSoftwareValue
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ssvc:hasValue ;
+                                        owl:allValuesFrom ssvc:CriticalSoftwareValue
+                                      ] .
+
+
+###  http://www.cert.org/ns/ssvc/CriticalSoftwareNo
+ssvc:CriticalSoftwareNo rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:CriticalSoftwareValue ,
+                                        ssvc:No .
+
+
+###  http://www.cert.org/ns/ssvc/CriticalSoftwareValue
+ssvc:CriticalSoftwareValue rdf:type owl:Class ;
+                           rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/CriticalSoftwareYes
+ssvc:CriticalSoftwareYes rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:CriticalSoftwareValue ,
+                                         ssvc:Yes .
+
+
+###  http://www.cert.org/ns/ssvc/DecisionPoint
+ssvc:DecisionPoint rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty ssvc:hasValue ;
+                                     owl:someValuesFrom ssvc:DecisionPointValue
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ssvc:hasValue ;
+                                     owl:allValuesFrom ssvc:DecisionPointValue
+                                   ] .
+
+
+###  http://www.cert.org/ns/ssvc/DecisionPointValue
+ssvc:DecisionPointValue rdf:type owl:Class .
+
+
+###  http://www.cert.org/ns/ssvc/DegradedMissionImpact
+ssvc:DegradedMissionImpact rdf:type owl:Class ;
+                           rdfs:subClassOf ssvc:Low ,
+                                           ssvc:MissionImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/DiffuseValueDensityValue
+ssvc:DiffuseValueDensityValue rdf:type owl:Class ;
+                              rdfs:subClassOf ssvc:Low ,
+                                              ssvc:ValueDensityValue .
+
+
+###  http://www.cert.org/ns/ssvc/EfficientUtilityValue
+ssvc:EfficientUtilityValue rdf:type owl:Class ;
+                           owl:equivalentClass [ rdf:type owl:Class ;
+                                                 owl:unionOf ( [ owl:intersectionOf ( ssvc:AutomatableNoValue
+                                                                                      ssvc:ConcentratedValueDensityValue
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ]
+                                                               [ owl:intersectionOf ( ssvc:AutomatableYesValue
+                                                                                      ssvc:DiffuseValueDensityValue
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ]
+                                                             )
+                                               ] ;
+                           rdfs:subClassOf ssvc:Medium ,
+                                           ssvc:UtilityValue .
+
+
+###  http://www.cert.org/ns/ssvc/Exploitation
+ssvc:Exploitation rdf:type owl:Class ;
+                  rdfs:subClassOf ssvc:DecisionPoint ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ssvc:hasValue ;
+                                    owl:someValuesFrom ssvc:ExploitationValue
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ssvc:hasValue ;
+                                    owl:allValuesFrom ssvc:ExploitationValue
+                                  ] .
+
+
+###  http://www.cert.org/ns/ssvc/ExploitationActive
+ssvc:ExploitationActive rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:ExploitationValue ,
+                                        ssvc:High .
+
+
+###  http://www.cert.org/ns/ssvc/ExploitationNone
+ssvc:ExploitationNone rdf:type owl:Class ;
+                      rdfs:subClassOf ssvc:ExploitationValue ,
+                                      ssvc:Low .
+
+
+###  http://www.cert.org/ns/ssvc/ExploitationPoC
+ssvc:ExploitationPoC rdf:type owl:Class ;
+                     rdfs:subClassOf ssvc:ExploitationValue ,
+                                     ssvc:Medium .
+
+
+###  http://www.cert.org/ns/ssvc/ExploitationValue
+ssvc:ExploitationValue rdf:type owl:Class ;
+                       rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/FixReadySupplierInvolvementValue
+ssvc:FixReadySupplierInvolvementValue rdf:type owl:Class ;
+                                      rdfs:subClassOf ssvc:High ,
+                                                      ssvc:SupplierInvolvementValue .
+
+
+###  http://www.cert.org/ns/ssvc/HazardousEnvironmentSafetyImpactValue
+ssvc:HazardousEnvironmentSafetyImpactValue rdf:type owl:Class ;
+                                           rdfs:subClassOf ssvc:HazardousSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/HazardousFinancialSafetyImpactValue
+ssvc:HazardousFinancialSafetyImpactValue rdf:type owl:Class ;
+                                         rdfs:subClassOf ssvc:HazardousSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/HazardousOperatorResilienceSafetyImpactValue
+ssvc:HazardousOperatorResilienceSafetyImpactValue rdf:type owl:Class ;
+                                                  rdfs:subClassOf ssvc:HazardousSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/HazardousPhysicalSafetyImpactValue
+ssvc:HazardousPhysicalSafetyImpactValue rdf:type owl:Class ;
+                                        rdfs:subClassOf ssvc:HazardousSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/HazardousSafetyImpactValue
+ssvc:HazardousSafetyImpactValue rdf:type owl:Class ;
+                                rdfs:subClassOf ssvc:High ,
+                                                ssvc:SafetyImpactValue ,
+                                                ssvc:SignificantPublicSafetyImpact .
+
+
+###  http://www.cert.org/ns/ssvc/HazardousSystemResilienceSafetyImpactValue
+ssvc:HazardousSystemResilienceSafetyImpactValue rdf:type owl:Class ;
+                                                rdfs:subClassOf ssvc:HazardousSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/High
+ssvc:High rdf:type owl:Class ;
+          rdfs:subClassOf ssvc:LMH ,
+                          ssvc:LMHV ,
+                          ssvc:LowHigh ,
+                          ssvc:VLMHV .
+
+
+###  http://www.cert.org/ns/ssvc/HighHumanImpactValue
+ssvc:HighHumanImpactValue rdf:type owl:Class ;
+                          rdfs:subClassOf ssvc:High ,
+                                          ssvc:HumanImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/HighValueAsset
+ssvc:HighValueAsset rdf:type owl:Class ;
+                    rdfs:subClassOf ssvc:DecisionPoint ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ssvc:hasValue ;
+                                      owl:someValuesFrom ssvc:HighValueAssetValue
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ssvc:hasValue ;
+                                      owl:allValuesFrom ssvc:HighValueAssetValue
+                                    ] .
+
+
+###  http://www.cert.org/ns/ssvc/HighValueAssetNo
+ssvc:HighValueAssetNo rdf:type owl:Class ;
+                      rdfs:subClassOf ssvc:HighValueAssetValue ,
+                                      ssvc:No .
+
+
+###  http://www.cert.org/ns/ssvc/HighValueAssetValue
+ssvc:HighValueAssetValue rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/HighValueAsssetYes
+ssvc:HighValueAsssetYes rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:HighValueAssetValue ,
+                                        ssvc:Yes .
+
+
+###  http://www.cert.org/ns/ssvc/HumanImpact
+ssvc:HumanImpact rdf:type owl:Class ;
+                 rdfs:subClassOf ssvc:DecisionPoint ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ssvc:hasValue ;
+                                   owl:someValuesFrom ssvc:HumanImpactValue
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty ssvc:hasValue ;
+                                   owl:allValuesFrom ssvc:HumanImpactValue
+                                 ] .
+
+
+###  http://www.cert.org/ns/ssvc/HumanImpactValue
+ssvc:HumanImpactValue rdf:type owl:Class ;
+                      rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/InKEV
+ssvc:InKEV rdf:type owl:Class ;
+           rdfs:subClassOf ssvc:DecisionPoint ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty ssvc:hasValue ;
+                             owl:someValuesFrom ssvc:YesNo
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty ssvc:hasValue ;
+                             owl:allValuesFrom ssvc:InKevValue
+                           ] .
+
+
+###  http://www.cert.org/ns/ssvc/InKevValue
+ssvc:InKevValue rdf:type owl:Class ;
+                rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/LMH
+ssvc:LMH rdf:type owl:Class ;
+         rdfs:subClassOf ssvc:Trinary .
+
+
+###  http://www.cert.org/ns/ssvc/LMHV
+ssvc:LMHV rdf:type owl:Class ;
+          rdfs:subClassOf ssvc:Quaternary .
+
+
+###  http://www.cert.org/ns/ssvc/LaboriousUtilityValue
+ssvc:LaboriousUtilityValue rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( ssvc:AutomatableNoValue
+                                                                      ssvc:DiffuseValueDensityValue
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf ssvc:Low ,
+                                           ssvc:UtilityValue .
+
+
+###  http://www.cert.org/ns/ssvc/LimitedPublicValueAddedValue
+ssvc:LimitedPublicValueAddedValue rdf:type owl:Class ;
+                                  rdfs:subClassOf ssvc:Low ,
+                                                  ssvc:PublicValueAddedValue .
+
+
+###  http://www.cert.org/ns/ssvc/Low
+ssvc:Low rdf:type owl:Class ;
+         rdfs:subClassOf ssvc:LMH ,
+                         ssvc:LMHV ,
+                         ssvc:LowHigh ,
+                         ssvc:VLMHV .
+
+
+###  http://www.cert.org/ns/ssvc/LowHigh
+ssvc:LowHigh rdf:type owl:Class ;
+             rdfs:subClassOf ssvc:Binary .
+
+
+###  http://www.cert.org/ns/ssvc/LowHumanImpactValue
+ssvc:LowHumanImpactValue rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:HumanImpactValue ,
+                                         ssvc:Low .
+
+
+###  http://www.cert.org/ns/ssvc/MajorEnvironmentSafetyImpactValue
+ssvc:MajorEnvironmentSafetyImpactValue rdf:type owl:Class ;
+                                       rdfs:subClassOf ssvc:MajorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MajorFinancialSafetyImpactValue
+ssvc:MajorFinancialSafetyImpactValue rdf:type owl:Class ;
+                                     rdfs:subClassOf ssvc:MajorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MajorOperatorResilienceSafetyImpactValue
+ssvc:MajorOperatorResilienceSafetyImpactValue rdf:type owl:Class ;
+                                              rdfs:subClassOf ssvc:MajorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MajorPhysicalSafetyImpactValue
+ssvc:MajorPhysicalSafetyImpactValue rdf:type owl:Class ;
+                                    rdfs:subClassOf ssvc:MajorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MajorPsychologicalSafetyImpactValue
+ssvc:MajorPsychologicalSafetyImpactValue rdf:type owl:Class ;
+                                         rdfs:subClassOf ssvc:MajorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MajorSafetyImpactValue
+ssvc:MajorSafetyImpactValue rdf:type owl:Class ;
+                            rdfs:subClassOf ssvc:Medium ,
+                                            ssvc:SafetyImpactValue ,
+                                            ssvc:SignificantPublicSafetyImpact .
+
+
+###  http://www.cert.org/ns/ssvc/MajorSystemResilienceSafetyImpactValue
+ssvc:MajorSystemResilienceSafetyImpactValue rdf:type owl:Class ;
+                                            rdfs:subClassOf ssvc:MajorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/Medium
+ssvc:Medium rdf:type owl:Class ;
+            rdfs:subClassOf ssvc:LMH ,
+                            ssvc:LMHV ,
+                            ssvc:VLMHV .
+
+
+###  http://www.cert.org/ns/ssvc/MediumHumanImpactValue
+ssvc:MediumHumanImpactValue rdf:type owl:Class ;
+                            rdfs:subClassOf ssvc:HumanImpactValue ,
+                                            ssvc:Medium .
+
+
+###  http://www.cert.org/ns/ssvc/MefCrippledMissionImpact
+ssvc:MefCrippledMissionImpact rdf:type owl:Class ;
+                              rdfs:subClassOf ssvc:Medium ,
+                                              ssvc:MissionImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MefFailureMissionImpact
+ssvc:MefFailureMissionImpact rdf:type owl:Class ;
+                             rdfs:subClassOf ssvc:High ,
+                                             ssvc:MissionImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MinimalPublicSafetyImpact
+ssvc:MinimalPublicSafetyImpact rdf:type owl:Class ;
+                               owl:equivalentClass [ rdf:type owl:Class ;
+                                                     owl:unionOf ( ssvc:MinorSafetyImpactValue
+                                                                   ssvc:NoneSafetyImpactValue
+                                                                 )
+                                                   ] ;
+                               rdfs:subClassOf ssvc:Low ,
+                                               ssvc:PublicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MinorEnvironmentSafetyImpactValue
+ssvc:MinorEnvironmentSafetyImpactValue rdf:type owl:Class ;
+                                       rdfs:subClassOf ssvc:MinorSafetyImpactValue ;
+                                       rdfs:comment "Minor externalities (property damage, environmental damage, etc.) imposed on other parties." .
+
+
+###  http://www.cert.org/ns/ssvc/MinorFinancialSafetyImpactValue
+ssvc:MinorFinancialSafetyImpactValue rdf:type owl:Class ;
+                                     rdfs:subClassOf ssvc:MinorSafetyImpactValue ;
+                                     rdfs:comment "Financial Financial losses, which are not readily absorbable, to multiple persons." .
+
+
+###  http://www.cert.org/ns/ssvc/MinorOperatorResilienceSafetyImpactValue
+ssvc:MinorOperatorResilienceSafetyImpactValue rdf:type owl:Class ;
+                                              rdfs:subClassOf ssvc:MinorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MinorPhysicalSafetyImpactValue
+ssvc:MinorPhysicalSafetyImpactValue rdf:type owl:Class ;
+                                    rdfs:subClassOf ssvc:MinorSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MinorPsychologicalSafetyImpactValue
+ssvc:MinorPsychologicalSafetyImpactValue rdf:type owl:Class ;
+                                         rdfs:subClassOf ssvc:MinorSafetyImpactValue ;
+                                         rdfs:comment "Emotional or psychological harm, sufficient to be cause for counselling or therapy, to multiple persons." .
+
+
+###  http://www.cert.org/ns/ssvc/MinorSafetyImpactValue
+ssvc:MinorSafetyImpactValue rdf:type owl:Class ;
+                            rdfs:subClassOf ssvc:Low ,
+                                            ssvc:MinimalPublicSafetyImpact ,
+                                            ssvc:MinorSafetyImpactValue ,
+                                            ssvc:SafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/MinorSystemResilienceSafetyImpactValue
+ssvc:MinorSystemResilienceSafetyImpactValue rdf:type owl:Class ;
+                                            rdfs:subClassOf ssvc:MinorSafetyImpactValue ;
+                                            rdfs:comment "Small reduction in built-in system safety margins; OR small reduction in system functional capabilities that support safe operation." .
+
+
+###  http://www.cert.org/ns/ssvc/MissionFailureMissionImpact
+ssvc:MissionFailureMissionImpact rdf:type owl:Class ;
+                                 rdfs:subClassOf ssvc:MissionImpactValue ,
+                                                 ssvc:VeryHigh .
+
+
+###  http://www.cert.org/ns/ssvc/MissionImpact
+ssvc:MissionImpact rdf:type owl:Class ;
+                   rdfs:subClassOf ssvc:DecisionPoint ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ssvc:hasValue ;
+                                     owl:someValuesFrom ssvc:MissionImpactValue
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty ssvc:hasValue ;
+                                     owl:allValuesFrom ssvc:MissionImpactValue
+                                   ] .
+
+
+###  http://www.cert.org/ns/ssvc/MissionImpactValue
+ssvc:MissionImpactValue rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/MultipleSupplierCardinalityValue
+ssvc:MultipleSupplierCardinalityValue rdf:type owl:Class ;
+                                      rdfs:subClassOf ssvc:SupplierCardinalityValue .
+
+
+###  http://www.cert.org/ns/ssvc/No
+ssvc:No rdf:type owl:Class ;
+        rdfs:subClassOf ssvc:YesNo .
+
+
+###  http://www.cert.org/ns/ssvc/NoInKevValue
+ssvc:NoInKevValue rdf:type owl:Class ;
+                  rdfs:subClassOf ssvc:InKevValue .
+
+
+###  http://www.cert.org/ns/ssvc/NoneSafetyImpactValue
+ssvc:NoneSafetyImpactValue rdf:type owl:Class ;
+                           rdfs:subClassOf ssvc:MinimalPublicSafetyImpact ,
+                                           ssvc:SafetyImpactValue ,
+                                           ssvc:VeryLow .
+
+
+###  http://www.cert.org/ns/ssvc/NotCredible
+ssvc:NotCredible rdf:type owl:Class ;
+                 rdfs:subClassOf ssvc:No ,
+                                 ssvc:ReportCredibilityValue .
+
+
+###  http://www.cert.org/ns/ssvc/OneMany
+ssvc:OneMany rdf:type owl:Class ;
+             rdfs:subClassOf ssvc:Binary .
+
+
+###  http://www.cert.org/ns/ssvc/OneSupplierCardinalityValue
+ssvc:OneSupplierCardinalityValue rdf:type owl:Class ;
+                                 rdfs:subClassOf ssvc:SupplierCardinalityValue .
+
+
+###  http://www.cert.org/ns/ssvc/PartialTechnicalImpactValue
+ssvc:PartialTechnicalImpactValue rdf:type owl:Class ;
+                                 rdfs:subClassOf ssvc:Low ,
+                                                 ssvc:TechnicalImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/PrecedencePublicValueAddedValue
+ssvc:PrecedencePublicValueAddedValue rdf:type owl:Class ;
+                                     rdfs:subClassOf ssvc:Medium ,
+                                                     ssvc:PublicValueAddedValue .
+
+
+###  http://www.cert.org/ns/ssvc/PublicSafetyImpact
+ssvc:PublicSafetyImpact rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:SafetyImpact ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty ssvc:hasValue ;
+                                          owl:someValuesFrom ssvc:PublicSafetyImpactValue
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty ssvc:hasValue ;
+                                          owl:allValuesFrom ssvc:PublicSafetyImpactValue
+                                        ] .
+
+
+###  http://www.cert.org/ns/ssvc/PublicSafetyImpactValue
+ssvc:PublicSafetyImpactValue rdf:type owl:Class ;
+                             rdfs:subClassOf ssvc:SafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/PublicValueAdded
+ssvc:PublicValueAdded rdf:type owl:Class ;
+                      rdfs:subClassOf ssvc:DecisionPoint ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ssvc:hasValue ;
+                                        owl:someValuesFrom ssvc:PublicValueAddedValue
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty ssvc:hasValue ;
+                                        owl:allValuesFrom ssvc:PublicValueAddedValue
+                                      ] .
+
+
+###  http://www.cert.org/ns/ssvc/PublicValueAddedValue
+ssvc:PublicValueAddedValue rdf:type owl:Class ;
+                           rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/Quaternary
+ssvc:Quaternary rdf:type owl:Class ;
+                rdfs:subClassOf ssvc:Archetype .
+
+
+###  http://www.cert.org/ns/ssvc/Quinary
+ssvc:Quinary rdf:type owl:Class ;
+             rdfs:subClassOf ssvc:Archetype .
+
+
+###  http://www.cert.org/ns/ssvc/ReportCredibility
+ssvc:ReportCredibility rdf:type owl:Class ;
+                       rdfs:subClassOf ssvc:DecisionPoint ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty ssvc:hasValue ;
+                                         owl:someValuesFrom ssvc:ReportCredibilityValue
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty ssvc:hasValue ;
+                                         owl:allValuesFrom ssvc:ReportCredibilityValue
+                                       ] .
+
+
+###  http://www.cert.org/ns/ssvc/ReportCredibilityValue
+ssvc:ReportCredibilityValue rdf:type owl:Class ;
+                            rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/SafetyImpact
+ssvc:SafetyImpact rdf:type owl:Class ;
+                  rdfs:subClassOf ssvc:DecisionPoint ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ssvc:hasValue ;
+                                    owl:someValuesFrom ssvc:SafetyImpactValue
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ssvc:hasValue ;
+                                    owl:allValuesFrom ssvc:SafetyImpactValue
+                                  ] .
+
+
+###  http://www.cert.org/ns/ssvc/SafetyImpactValue
+ssvc:SafetyImpactValue rdf:type owl:Class ;
+                       rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/SignificantPublicSafetyImpact
+ssvc:SignificantPublicSafetyImpact rdf:type owl:Class ;
+                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                         owl:unionOf ( ssvc:CatastrophicSafetyImpactValue
+                                                                       ssvc:HazardousSafetyImpactValue
+                                                                       ssvc:MajorSafetyImpactValue
+                                                                     )
+                                                       ] ;
+                                   rdfs:subClassOf ssvc:High ,
+                                                   ssvc:PublicSafetyImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/SmallSystemExposureValue
+ssvc:SmallSystemExposureValue rdf:type owl:Class ;
+                              rdfs:subClassOf ssvc:Low ,
+                                              ssvc:SystemExposureValue .
+
+
+###  http://www.cert.org/ns/ssvc/SuperEffectiveUtilityValue
+ssvc:SuperEffectiveUtilityValue rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( ssvc:AutomatableYesValue
+                                                                           ssvc:ConcentratedValueDensityValue
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] ;
+                                rdfs:subClassOf ssvc:High ,
+                                                ssvc:UtilityValue .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierCardinality
+ssvc:SupplierCardinality rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:DecisionPoint ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty ssvc:hasValue ;
+                                           owl:someValuesFrom ssvc:SupplierCardinalityValue
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty ssvc:hasValue ;
+                                           owl:allValuesFrom ssvc:SupplierCardinalityValue
+                                         ] .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierCardinalityValue
+ssvc:SupplierCardinalityValue rdf:type owl:Class ;
+                              rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierContacted
+ssvc:SupplierContacted rdf:type owl:Class ;
+                       rdfs:subClassOf ssvc:DecisionPoint ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty ssvc:hasValue ;
+                                         owl:someValuesFrom ssvc:SupplierContactedValue
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty ssvc:hasValue ;
+                                         owl:allValuesFrom ssvc:SupplierContactedValue
+                                       ] .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierContactedNo
+ssvc:SupplierContactedNo rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:No ,
+                                         ssvc:SupplierContactedValue .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierContactedValue
+ssvc:SupplierContactedValue rdf:type owl:Class ;
+                            rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierContactedYes
+ssvc:SupplierContactedYes rdf:type owl:Class ;
+                          rdfs:subClassOf ssvc:SupplierContactedValue ,
+                                          ssvc:Yes .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierEngagement
+ssvc:SupplierEngagement rdf:type owl:Class ;
+                        rdfs:subClassOf ssvc:DecisionPoint ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty ssvc:hasValue ;
+                                          owl:someValuesFrom ssvc:SupplierEngagementValue
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty ssvc:hasValue ;
+                                          owl:allValuesFrom ssvc:SupplierEngagementValue
+                                        ] .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierEngagementValue
+ssvc:SupplierEngagementValue rdf:type owl:Class ;
+                             rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierInvolvement
+ssvc:SupplierInvolvement rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:DecisionPoint ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty ssvc:hasValue ;
+                                           owl:someValuesFrom ssvc:SupplierInvolvementValue
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty ssvc:hasValue ;
+                                           owl:allValuesFrom ssvc:SupplierInvolvementValue
+                                         ] .
+
+
+###  http://www.cert.org/ns/ssvc/SupplierInvolvementValue
+ssvc:SupplierInvolvementValue rdf:type owl:Class ;
+                              rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/SystemExposure
+ssvc:SystemExposure rdf:type owl:Class ;
+                    rdfs:subClassOf ssvc:DecisionPoint ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ssvc:hasValue ;
+                                      owl:someValuesFrom ssvc:SystemExposureValue
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty ssvc:hasValue ;
+                                      owl:allValuesFrom ssvc:SystemExposureValue
+                                    ] .
+
+
+###  http://www.cert.org/ns/ssvc/SystemExposureValue
+ssvc:SystemExposureValue rdf:type owl:Class ;
+                         rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/TechnicalImpact
+ssvc:TechnicalImpact rdf:type owl:Class ;
+                     rdfs:subClassOf ssvc:DecisionPoint ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty ssvc:hasValue ;
+                                       owl:someValuesFrom ssvc:TechnicalImpactValue
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty ssvc:hasValue ;
+                                       owl:allValuesFrom ssvc:TechnicalImpactValue
+                                     ] .
+
+
+###  http://www.cert.org/ns/ssvc/TechnicalImpactValue
+ssvc:TechnicalImpactValue rdf:type owl:Class ;
+                          rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/TotalTechnicalImpactValue
+ssvc:TotalTechnicalImpactValue rdf:type owl:Class ;
+                               rdfs:subClassOf ssvc:High ,
+                                               ssvc:TechnicalImpactValue .
+
+
+###  http://www.cert.org/ns/ssvc/Trinary
+ssvc:Trinary rdf:type owl:Class ;
+             rdfs:subClassOf ssvc:Archetype .
+
+
+###  http://www.cert.org/ns/ssvc/UnavoidableSystemExposureValue
+ssvc:UnavoidableSystemExposureValue rdf:type owl:Class ;
+                                    rdfs:subClassOf ssvc:High ,
+                                                    ssvc:SystemExposureValue .
+
+
+###  http://www.cert.org/ns/ssvc/UncooperativeSupplierInvolvementValue
+ssvc:UncooperativeSupplierInvolvementValue rdf:type owl:Class ;
+                                           rdfs:subClassOf ssvc:Low ,
+                                                           ssvc:SupplierInvolvementValue .
+
+
+###  http://www.cert.org/ns/ssvc/UnresponsiveSupplierEngagementValue
+ssvc:UnresponsiveSupplierEngagementValue rdf:type owl:Class ;
+                                         rdfs:subClassOf ssvc:Low ,
+                                                         ssvc:SupplierEngagementValue .
+
+
+###  http://www.cert.org/ns/ssvc/Utility
+ssvc:Utility rdf:type owl:Class ;
+             rdfs:subClassOf ssvc:DecisionPoint ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ssvc:hasValue ;
+                               owl:someValuesFrom ssvc:UtilityValue
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty ssvc:hasValue ;
+                               owl:allValuesFrom ssvc:UtilityValue
+                             ] .
+
+
+###  http://www.cert.org/ns/ssvc/UtilityValue
+ssvc:UtilityValue rdf:type owl:Class ;
+                  rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/VLMHV
+ssvc:VLMHV rdf:type owl:Class ;
+           rdfs:subClassOf ssvc:Quinary .
+
+
+###  http://www.cert.org/ns/ssvc/ValueDensity
+ssvc:ValueDensity rdf:type owl:Class ;
+                  rdfs:subClassOf ssvc:DecisionPoint ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ssvc:hasValue ;
+                                    owl:someValuesFrom ssvc:ValueDensityValue
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty ssvc:hasValue ;
+                                    owl:allValuesFrom ssvc:ValueDensityValue
+                                  ] .
+
+
+###  http://www.cert.org/ns/ssvc/ValueDensityValue
+ssvc:ValueDensityValue rdf:type owl:Class ;
+                       rdfs:subClassOf ssvc:DecisionPointValue .
+
+
+###  http://www.cert.org/ns/ssvc/VeryHigh
+ssvc:VeryHigh rdf:type owl:Class ;
+              rdfs:subClassOf ssvc:LMHV ,
+                              ssvc:VLMHV .
+
+
+###  http://www.cert.org/ns/ssvc/VeryHighHumanImpactValue
+ssvc:VeryHighHumanImpactValue rdf:type owl:Class ;
+                              rdfs:subClassOf ssvc:HumanImpactValue ,
+                                              ssvc:VeryHigh .
+
+
+###  http://www.cert.org/ns/ssvc/VeryLow
+ssvc:VeryLow rdf:type owl:Class ;
+             rdfs:subClassOf ssvc:VLMHV .
+
+
+###  http://www.cert.org/ns/ssvc/Yes
+ssvc:Yes rdf:type owl:Class ;
+         rdfs:subClassOf ssvc:YesNo .
+
+
+###  http://www.cert.org/ns/ssvc/YesInKevValue
+ssvc:YesInKevValue rdf:type owl:Class ;
+                   rdfs:subClassOf ssvc:InKevValue .
+
+
+###  http://www.cert.org/ns/ssvc/YesNo
+ssvc:YesNo rdf:type owl:Class ;
+           rdfs:subClassOf ssvc:Binary .
+
+
+###  http://www.semanticweb.org/adh/ontologies/2023/11/untitled-ontology-22/LaboriousUtilityValue
+<http://www.semanticweb.org/adh/ontologies/2023/11/untitled-ontology-22/LaboriousUtilityValue> rdf:type owl:Class ;
+                                                                                               owl:equivalentClass [ owl:intersectionOf ( ssvc:AutomatableNoValue
+                                                                                                                                          ssvc:DiffuseValueDensityValue
+                                                                                                                                        ) ;
+                                                                                                                     rdf:type owl:Class
+                                                                                                                   ] ,
+                                                                                                                   [ rdf:type owl:Class ;
+                                                                                                                     owl:unionOf ( [ owl:intersectionOf ( ssvc:AutomatableNoValue
+                                                                                                                                                          ssvc:ConcentratedValueDensityValue
+                                                                                                                                                        ) ;
+                                                                                                                                     rdf:type owl:Class
+                                                                                                                                   ]
+                                                                                                                                   [ owl:intersectionOf ( ssvc:AutomatableYesValue
+                                                                                                                                                          ssvc:DiffuseValueDensityValue
+                                                                                                                                                        ) ;
+                                                                                                                                     rdf:type owl:Class
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                                   ] .
+
+
+###  http://www.semanticweb.org/adh/ontologies/2023/11/untitled-ontology-22/SuperEffectiveUtilityValue
+<http://www.semanticweb.org/adh/ontologies/2023/11/untitled-ontology-22/SuperEffectiveUtilityValue> rdf:type owl:Class ;
+                                                                                                    owl:equivalentClass [ owl:intersectionOf ( ssvc:AutomatableYesValue
+                                                                                                                                               ssvc:ConcentratedValueDensityValue
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
