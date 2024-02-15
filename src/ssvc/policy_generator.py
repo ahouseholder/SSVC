@@ -3,7 +3,7 @@
 Provides a Policy Generator class for SSVC decision point groups.
 
 """
-#  Copyright (c) 2023 Carnegie Mellon University and Contributors.
+#  Copyright (c) 2023-2024 Carnegie Mellon University and Contributors.
 #  - see Contributors.md for a full list of Contributors
 #  - see ContributionInstructions.md for information on how you can Contribute to this project
 #  Stakeholder Specific Vulnerability Categorization (SSVC) is
@@ -49,6 +49,7 @@ class PolicyGenerator:
         dp_group: SsvcDecisionPointGroup = None,
         outcomes: OutcomeGroup = None,
         outcome_weights: List[float] = None,
+        validate: bool = False,
     ):
         """
         Create a policy generator.
@@ -98,6 +99,7 @@ class PolicyGenerator:
         self.bottom: Tuple[int] = None
 
         self._enumerated_vec = None
+        self._check_valid_paths = validate
 
     def __enter__(self) -> "PolicyGenerator":
         """
@@ -145,7 +147,8 @@ class PolicyGenerator:
         self._add_nodes()
         self._add_edges()
         self._assign_outcomes()
-        self._validate_paths()
+        if self._check_valid_paths:
+            self._validate_paths()
         self._create_policy()
 
     def _validate_paths(self):
@@ -278,7 +281,7 @@ class PolicyGenerator:
 def main():
     from ssvc.decision_points.automatable import AUTOMATABLE_1
     from ssvc.decision_points.exploitation import EXPLOITATION_1
-    from ssvc.decision_points.human_impact import HUMAN_IMPACT_1
+    from ssvc.decision_points.human_impact import HUMAN_IMPACT_2
     from ssvc.decision_points.system_exposure import SYSTEM_EXPOSURE_1_0_1
     from ssvc.outcomes.groups import DSOI
 
@@ -296,7 +299,7 @@ def main():
             EXPLOITATION_1,
             SYSTEM_EXPOSURE_1_0_1,
             AUTOMATABLE_1,
-            HUMAN_IMPACT_1,
+            HUMAN_IMPACT_2,
         ],
     )
 
