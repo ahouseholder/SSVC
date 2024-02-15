@@ -1,5 +1,5 @@
 site_name: SSVC
-copyright: Copyright &copy; 2023 Carnegie Mellon University.
+copyright: Copyright &copy; 2024 Carnegie Mellon University.
 nav:
   - Home: 'index.md'
   - Learning SSVC:
@@ -21,12 +21,10 @@ nav:
       - Items With Same Priority: 'topics/items_with_same_priority.md'
       - Risk Tolerance and Priority: 'topics/risk_tolerance_and_priority.md'
       - Scope: 'topics/scope.md'
-    - Compound Decision Points: 'topics/compound_decision_points.md'
-    - Credibility Indicators: 'topics/credibility_indicators.md'
+      - SSVC and Asset Management: 'topics/asset_management.md'
+    - Putting the Pieces Together: 'topics/decision_points_as_bricks.md'
     - Worked Example: 'topics/worked_example.md'
-    - Development Methodology:
-      - Intro: 'topics/evaluation/development_methodology.md'
-      - Evaluation: 'topics/evaluation/evaluation_of_draft_trees.md'
+    - Evaluation: 'topics/evaluation_of_draft_trees.md'
     - Related Systems: 'topics/related_systems.md'
     - Information Sources: 'topics/information_sources.md'
     - Limitations: 'topics/limitations.md'
@@ -47,17 +45,14 @@ nav:
       - Use & Respond: 'howto/bootstrap/use.md'
       - Summary: 'howto/bootstrap/summary.md'
     - Customizing SSVC: 'howto/tree_customization.md'
-    - SSVC and Asset Management: 'howto/asset_management.md'
-
+    - Acuity Ramp: 'howto/acuity_ramp.md'
   - Reference:
     - Intro: 'reference/index.md'
     - Decision Points:
-      - Intro: 'reference/decision_points/likely_decision_points.md'
+      - Intro: 'reference/decision_points/index.md'
       - Automatable: 'reference/decision_points/automatable.md'
       - Exploitation: 'reference/decision_points/exploitation.md'
-      - Human Impact: 'reference/decision_points/human_impact.md'
       - Mission Impact: 'reference/decision_points/mission_impact.md'
-      - Public Safety Impact: 'reference/decision_points/public_safety_impact.md'
       - Public Value Added: 'reference/decision_points/public_value_added.md'
       - Report Credibility: 'reference/decision_points/report_credibility.md'
       - Report Public: 'reference/decision_points/report_public.md'
@@ -68,23 +63,32 @@ nav:
       - Supplier Involvement: 'reference/decision_points/supplier_involvement.md'
       - System Exposure: 'reference/decision_points/system_exposure.md'
       - Technical Impact: 'reference/decision_points/technical_impact.md'
-      - Utility: 'reference/decision_points/utility.md'
       - Value Density: 'reference/decision_points/value_density.md'
+      - Compound Decision Points:
+        - Intro: 'reference/decision_points/compound_decision_points.md'
+        - Human Impact: 'reference/decision_points/human_impact.md'
+        - Public Safety Impact: 'reference/decision_points/public_safety_impact.md'
+        - Utility: 'reference/decision_points/utility.md'
     - Code:
-        CSV Analyzer: 'reference/code/analyze_csv.md'
-        Doctools: 'reference/code/doctools.md'
-        Outcomes: 'reference/code/outcomes.md'
-        Policy Generator: 'reference/code/policy_generator.md'
+        - Intro: 'reference/code/index.md'
+        - CSV Analyzer: 'reference/code/analyze_csv.md'
+        - Policy Generator: 'reference/code/policy_generator.md'
+        - Outcomes: 'reference/code/outcomes.md'
+        - Doctools: 'reference/code/doctools.md'
   - Calculator: 'ssvc-calc/index.html'
   - About:
     - Intro: 'about/index.md'
     - Change log: 'about/changelog.md'
     - Contributing: 'about/contributing.md'
 #    - FAQ: 'about/faq.md'
+    - Decision Records: 'adr/index.md'
     - Acknowledgements: 'about/acknowledgements.md'
     - Copyright: 'about/copyright.md'
     - Contact: 'about/contact_us.md'
   - Issue Tracker: 'https://github.com/CERTCC/SSVC/issues'
+not_in_nav: |
+  _*.md
+  _*/**/*.md
 theme:
   logo: 'assets/cert_seal.svg'
   name: 'material'
@@ -108,7 +112,8 @@ plugins:
   - include-markdown:
       comments: false
   - search
-  - table-reader
+  - table-reader:
+      data_path: 'data/csvs'
   - bibtex:
       bib_file: 'doc/md_src_files/sources_ssvc.bib'
   - mkdocstrings:
@@ -169,8 +174,6 @@ extra_javascript:
   - javascripts/tablesort.js
 extra_css:
   - stylesheets/extra.css
-exclude_docs: |
-  /adr/
 watch:
   - docs
   - src
