@@ -5,14 +5,6 @@ It is a methodology for prioritizing vulnerabilities based on the needs of the s
 SSVC is designed to be used by any stakeholder in the vulnerability management process, including finders, vendors, coordinators, deployers, and others.
 
 
-
-{== TODO remove this warning when the site is ready ==}
-!!! warning "Work in Progress"
-
-    This website is a work in progress.
-    While it is intended to eventually be the official documentation for SSVC, it is not yet complete.
-    For the latest version of SSVC documentation, see the [GitHub repository](https://github.com/CERTCC/SSVC).
-
 ## Where to go from here
 
 We have organized the SSVC documentation into four main sections:
@@ -28,15 +20,6 @@ We have organized the SSVC documentation into four main sections:
 
     [:octicons-arrow-right-24: Learning SSVC](tutorials/index.md)
 
-- :fontawesome-solid-book:{ .lg .middle } __Learn More about SSVC__
-
-    ---
-
-    Dig deeper to understand the SSVC methodology and how it works.
-    This section is intended for people who are already familiar with SSVC and want to learn more.
-
-    [:octicons-arrow-right-24: Understanding SSVC](topics/index.md)
-
 - :material-clipboard-check:{ .lg .middle } __SSVC How To__
 
     ---
@@ -45,6 +28,15 @@ We have organized the SSVC documentation into four main sections:
     This section is intended for people who are already familiar with SSVC and want to start using it.
 
     [:octicons-arrow-right-24: SSVC How To](howto/index.md)
+
+- :fontawesome-solid-book:{ .lg .middle } __Learn More about SSVC__
+
+    ---
+
+    Dig deeper to understand the SSVC methodology and how it works.
+    This section is intended for people who are already familiar with SSVC and want to learn more.
+
+    [:octicons-arrow-right-24: Understanding SSVC](topics/index.md)
 
 - :material-book-open-page-variant:{ .lg .middle } __SSVC Reference__
 
@@ -56,3 +48,6 @@ We have organized the SSVC documentation into four main sections:
     [:octicons-arrow-right-24: Reference](reference/index.md)
 
 </div>
+
+
+{% include-markdown "_includes/helping_out.md" heading-offset=1 %}

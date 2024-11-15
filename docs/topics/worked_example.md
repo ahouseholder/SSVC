@@ -1,7 +1,7 @@
 
 # Worked Example
 
-As an example, we will evaluate CVE-2018-14781 step by step from the deployer point of view.
+As an example, we will evaluate [CVE-2018-14781](https://nvd.nist.gov/vuln/detail/CVE-2018-14781) step by step from the deployer point of view.
 The scenario here is that used for the pilot study.
 This example uses the SSVC version 1 deployer decision tree.
 
@@ -43,9 +43,11 @@ use its installation to remotely identify targets.
 However, since most of the hospital’s clients have not installed the app, and for nearly all cases, physical proximity
 to the device is necessary; therefore, we select [*small*](../reference/decision_points/system_exposure.md) and move on to ask about mission impact.
 
-According to the fictional pilot scenario, “Our mission dictates that the first and foremost priority is to contribute
-to human welfare and to uphold the Hippocratic oath (do no harm).” The continuity of operations planning for a hospital
-is complex, with many MEFs.
+According to the fictional pilot scenario, 
+
+> Our mission dictates that the first and foremost priority is to contribute to human welfare and to uphold the Hippocratic oath (do no harm).
+
+The continuity of operations planning for a hospital is complex, with many Mission Essential Functions (MEFs).
 However, even from this abstract, it seems clear that “do no harm” is at risk due to this vulnerability.
 A mission essential function to that mission is each of the various medical devices works as expected, or at least if a
 device fails, it cannot actively be used to inflict harm.
@@ -58,7 +60,7 @@ Therefore, we select [*MEF failure*](../reference/decision_points/mission_impact
 
 This particular pilot study used SSVC version 1.
 In the suggested deployer tree for SSVC version 2.1, mission and safety impact would be used to calculate the overall [*Human Impact*](../reference/decision_points/human_impact.md), and [*Automatable*](../reference/decision_points/automatable.md) would need to be answered as well.
-Conducting further studies with the recommended version 2.1 Deployer tree remains an area of future work.
+Conducting further studies with the more recent versions of the Deployer decision model remains an area of future work.
 In the pilot study, this information is conveyed as follows:
 
 !!! info "Use of the cyber-physical system"
@@ -79,7 +81,7 @@ Depending on the details of the hospital’s contingency plans and its monitorin
 If there is no way to tell whether the insulin pumps are misbehaving, for example, then exploitation could go on for
 some time, leading to a [*catastrophic*](../reference/decision_points/safety_impact.md) [*Safety Impact*](../reference/decision_points/safety_impact.md).
 The pilot information is inadequate in this regard, which is the likely source of disagreement about
-[*Safety Impact*](../reference/decision_points/safety_impact.md) in Table 13.
+[*Safety Impact*](../reference/decision_points/safety_impact.md) in our evaluation of [inter-rater agreement](evaluation_of_draft_trees.md).
 For the purposes of this example, imagine that after gathering that information, the monitoring situation is adequate,
 and select [*hazardous*](../reference/decision_points/safety_impact.md).
 Therefore, mitigate this vulnerability *out-of-cycle*, meaning that it should be addressed quickly, ahead of the usual
