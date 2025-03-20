@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 """
-file: _basics
-author: adh
-created_at: 9/20/23 4:51 PM
+This module provides mixin classes for adding features to SSVC objects.
 """
-#  Copyright (c) 2023 Carnegie Mellon University and Contributors.
+#  Copyright (c) 2023-2025 Carnegie Mellon University and Contributors.
 #  - see Contributors.md for a full list of Contributors
 #  - see ContributionInstructions.md for information on how you can Contribute to this project
 #  Stakeholder Specific Vulnerability Categorization (SSVC) is
@@ -17,16 +15,16 @@ created_at: 9/20/23 4:51 PM
 #  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
 #  U.S. Patent and Trademark Office by Carnegie Mellon University
 
-from dataclasses import dataclass, field
 from typing import Optional
 
-from dataclasses_json import config, dataclass_json
+from pydantic import BaseModel, ConfigDict, Field, field_validator
+from semver import Version
 
+from ssvc.namespaces import NS_PATTERN, NameSpace
 from . import _schemaVersion
 
-@dataclass_json
-@dataclass(kw_only=True)
-class _Versioned:
+
+class _Versioned(BaseModel):
     """
     Mixin class for versioned SSVC objects.
     """
@@ -34,19 +32,55 @@ class _Versioned:
     version: str = "0.0.0"
     schemaVersion: str = _schemaVersion
 
-@dataclass_json
-@dataclass(kw_only=True)
-class _Namespaced:
+    @field_validator("version")
+    @classmethod
+    def validate_version(cls, value: str) -> str:
+        """
+        Validate the version field.
+        Args:
+            value: a string representing a version number
+
+        Returns:
+            a fully qualified version number
+
+        Raises:
+            ValueError: if the value is not a valid version number
+        """
+        version = Version.parse(value, optional_minor_and_patch=True)
+        return version.__str__()
+
+
+class _Namespaced(BaseModel):
     """
     Mixin class for namespaced SSVC objects.
     """
 
-    namespace: str = "ssvc"
+    # the field definition enforces the pattern for namespaces
+    # additional validation is performed in the field_validator immediately after the pattern check
+    namespace: str = Field(pattern=NS_PATTERN, min_length=3, max_length=25)
+
+    @field_validator("namespace", mode="before")
+    @classmethod
+    def validate_namespace(cls, value: str) -> str:
+        """
+        Validate the namespace field.
+        The value will have already been checked against the pattern in the field definition.
+        The value must be one of the official namespaces or start with 'x_'.
+
+        Args:
+            value: a string representing a namespace
+
+        Returns:
+            the validated namespace value
+
+        Raises:
+            ValueError: if the value is not a valid namespace
+        """
+
+        return NameSpace.validate(value)
 
 
-@dataclass_json
-@dataclass(kw_only=True)
-class _Keyed:
+class _Keyed(BaseModel):
     """
     Mixin class for keyed SSVC objects.
     """
@@ -58,21 +92,17 @@ def exclude_if_none(value):
     return value is None
 
 
-@dataclass_json
-@dataclass(kw_only=True)
-class _Commented:
+class _Commented(BaseModel):
     """
     Mixin class for commented SSVC objects.
     """
 
-    _comment: Optional[str] = field(
-        default=None, metadata=config(exclude=exclude_if_none)
-    )
+    _comment: Optional[str] = None
+
+    model_config = ConfigDict(json_encoders={Optional[str]: exclude_if_none})
 
 
-@dataclass_json
-@dataclass(kw_only=True)
-class _Base:
+class _Base(BaseModel):
     """
     Base class for SSVC objects.
     """

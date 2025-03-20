@@ -1,9 +1,23 @@
+#  Copyright (c) 2025 Carnegie Mellon University and Contributors.
+#  - see Contributors.md for a full list of Contributors
+#  - see ContributionInstructions.md for information on how you can Contribute to this project
+#  Stakeholder Specific Vulnerability Categorization (SSVC) is
+#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
+#  with this Software or contact permission@sei.cmu.edu for full terms.
+#  Created, in part, with funding and support from the United States Government
+#  (see Acknowledgments file). This program may include and/or can make use of
+#  certain third party source code, object code, documentation and other files
+#  (“Third Party Software”). See LICENSE.md for more details.
+#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
+#  U.S. Patent and Trademark Office by Carnegie Mellon University
+
 import unittest
-from dataclasses import dataclass
+from random import randint
 
-from dataclasses_json import dataclass_json
+from pydantic import BaseModel, ValidationError
 
-from ssvc._mixins import _Base, _Keyed, _Versioned, _Namespaced
+from ssvc._mixins import _Base, _Keyed, _Namespaced, _Versioned
+from ssvc.namespaces import NameSpace
 
 
 class TestMixins(unittest.TestCase):
@@ -16,34 +30,33 @@ class TestMixins(unittest.TestCase):
         self.assertEqual(obj.description, "baz")
 
         # empty
-        self.assertRaises(TypeError, _Base)
+        self.assertRaises(ValidationError, _Base)
         # no name
-        self.assertRaises(TypeError, _Base, description="baz")
+        self.assertRaises(ValidationError, _Base, description="baz")
         # no description
-        self.assertRaises(TypeError, _Base, name="foo")
+        self.assertRaises(ValidationError, _Base, name="foo")
 
     def test_json_roundtrip(self):
         obj = self.obj
-        json = obj.to_json()
+        json = obj.model_dump_json()
         # is it a string?
         self.assertIsInstance(json, str)
         # does it look right?
-        self.assertEqual(json, '{"name": "foo", "description": "baz"}')
+        self.assertEqual(json, '{"name":"foo","description":"baz"}')
 
         # modify the raw json string
         json = json.replace("foo", "quux")
-        self.assertEqual(json, '{"name": "quux", "description": "baz"}')
+        self.assertEqual(json, '{"name":"quux","description":"baz"}')
 
         # does it load?
-        obj2 = _Base.from_json(json)
+        obj2 = _Base.model_validate_json(json)
         self.assertEqual(obj2.name, "quux")
         self.assertEqual(obj2.description, "baz")
 
     def test_asdict_roundtrip(self):
-        from dataclasses import asdict
 
         obj = self.obj
-        d = asdict(obj)
+        d = obj.model_dump()
 
         self.assertIsInstance(d, dict)
         self.assertEqual(d["name"], "foo")
@@ -57,12 +70,47 @@ class TestMixins(unittest.TestCase):
         self.assertEqual(obj2.name, "quux")
         self.assertEqual(obj2.description, "baz")
 
-    def test_namespaced_create(self):
-        obj = _Namespaced()
-        self.assertEqual(obj.namespace, "ssvc")
+    def test_namespaced_create_errors(self):
+        # error if no namespace given
+        with self.assertRaises(ValidationError):
+            _Namespaced()
 
-        obj = _Namespaced(namespace="quux")
-        self.assertEqual(obj.namespace, "quux")
+        # error if namespace is not in the enum
+        # and it doesn't start with x_
+        self.assertNotIn("quux", NameSpace)
+        with self.assertRaises(ValidationError):
+            _Namespaced(namespace="quux")
+
+        # error if namespace starts with x_ but is too short
+        with self.assertRaises(ValidationError):
+            _Namespaced(namespace="x_")
+
+        # error if namespace starts with x_ but is too long
+        for i in range(100):
+            shortest = "x_aaa"
+            ns = shortest + "a" * i
+            with self.subTest(ns=ns):
+                # length limit set in the NS_PATTERN regex
+                if len(ns) <= 25:
+                    # expect success on shorter than limit
+                    _Namespaced(namespace=ns)
+                else:
+                    # expect failure on longer than limit
+                    with self.assertRaises(ValidationError):
+                        _Namespaced(namespace=ns)
+
+    def test_namespaced_create(self):
+        # use the official namespace values
+        for ns in NameSpace:
+            obj = _Namespaced(namespace=ns)
+            self.assertEqual(obj.namespace, ns)
+
+        # custom namespaces are allowed as long as they start with x_
+        for _ in range(100):
+            # we're just fuzzing some random strings here
+            ns = f"x_{randint(1000,1000000)}"
+            obj = _Namespaced(namespace=ns)
+            self.assertEqual(obj.namespace, ns)
 
     def test_versioned_create(self):
         obj = _Versioned()
@@ -75,14 +123,22 @@ class TestMixins(unittest.TestCase):
         obj = _Keyed(key="foo")
         self.assertEqual(obj.key, "foo")
 
-        self.assertRaises(TypeError, _Keyed)
+        self.assertRaises(ValidationError, _Keyed)
 
     def test_mixin_combos(self):
         # We need to test all the combinations
         mixins = [
             {"class": _Keyed, "args": {"key": "fizz"}, "has_default": False},
-            {"class": _Namespaced, "args": {"namespace": "buzz"}, "has_default": True},
-            {"class": _Versioned, "args": {"version": "1.2.3"}, "has_default": True},
+            {
+                "class": _Namespaced,
+                "args": {"namespace": "x_test"},
+                "has_default": False,
+            },
+            {
+                "class": _Versioned,
+                "args": {"version": "1.2.3"},
+                "has_default": True,
+            },
         ]
         keys_with_defaults = [x["args"].keys() for x in mixins if x["has_default"]]
         # flatten the list
@@ -99,9 +155,7 @@ class TestMixins(unittest.TestCase):
                 args = {k: v for x in combo for k, v in x["args"].items()}
 
                 # create an object with the mixins
-                @dataclass_json
-                @dataclass(kw_only=True)
-                class Foo(_Base, *classes):
+                class Foo(_Base, *classes, BaseModel):
                     pass
 
                 # make sure it breaks if we leave out a required arg
@@ -113,10 +167,14 @@ class TestMixins(unittest.TestCase):
                         # expect success
                         obj = Foo(name="foo", description="baz", **args_copy)
                         # make sure the key is defaulted
-                        self.assertEqual(getattr(Foo, k), getattr(obj, k))
+                        self.assertIsNotNone(getattr(obj, k))
                     else:
                         self.assertRaises(
-                            TypeError, Foo, name="foo", description="baz", **args_copy
+                            ValidationError,
+                            Foo,
+                            name="foo",
+                            description="baz",
+                            **args_copy,
                         )
 
                 # instantiate the object
@@ -128,19 +186,19 @@ class TestMixins(unittest.TestCase):
                     self.assertEqual(getattr(obj, k), v)
 
                 # test json roundtrip
-                json = obj.to_json()
+                json = obj.model_dump_json()
                 # is it a string?
                 self.assertIsInstance(json, str)
                 # does it look right?
-                self.assertIn('"name": "foo"', json)
-                self.assertIn('"description": "baz"', json)
+                self.assertIn('"name":"foo"', json)
+                self.assertIn('"description":"baz"', json)
                 for k, v in args.items():
-                    self.assertIn(f'"{k}": "{v}"', json)
+                    self.assertIn(f'"{k}":"{v}"', json)
                 # change the name and description
                 json = json.replace("foo", "quux")
                 json = json.replace("baz", "fizz")
                 # does it load?
-                obj2 = Foo.from_json(json)
+                obj2 = Foo.model_validate_json(json)
                 self.assertEqual(obj2.name, "quux")
                 self.assertEqual(obj2.description, "fizz")
                 # make sure the args are set
