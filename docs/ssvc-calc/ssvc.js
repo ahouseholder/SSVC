@@ -1,16 +1,22 @@
 /*
- * Copyright (c) 2025 Carnegie Mellon University and Contributors.
- * - see Contributors.md for a full list of Contributors
- * - see ContributionInstructions.md for information on how you can Contribute to this project
- * Stakeholder Specific Vulnerability Categorization (SSVC) is
- * licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
- * with this Software or contact permission@sei.cmu.edu for full terms.
- * Created, in part, with funding and support from the United States Government
- * (see Acknowledgments file). This program may include and/or can make use of
- * certain third party source code, object code, documentation and other files
- * (“Third Party Software”). See LICENSE.md for more details.
- * Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
- * U.S. Patent and Trademark Office by Carnegie Mellon University
+ * Copyright (c) 2025 Carnegie Mellon University.
+ * NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+ * ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+ * CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+ * EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+ * NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+ * MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+ * OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+ * ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+ * PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+ * Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+ * permission@sei.cmu.edu for full terms.
+ * [DISTRIBUTION STATEMENT A] This material has been approved for
+ * public release and unlimited distribution. Please see Copyright notice
+ * for non-US Government use and distribution.
+ * This Software includes and/or makes use of Third-Party Software each
+ * subject to its own license.
+ * DM24-0278
  */
 
 /* SSVC code for graph building */
@@ -1869,6 +1875,10 @@ function createPDF(vulnerability,cveinfo) {
     })
     doc.setFontSize(12);
     for(var i = 0; i < t.length; i++) {
+	if(ynow > 280) {
+	    doc.addPage("a4");
+	    ynow = 20;
+        }
 	if(steps[i] in ischild) {
 	    continue;
 	}
@@ -1904,17 +1914,21 @@ function createPDF(vulnerability,cveinfo) {
 	var f = t[i].match(/.{1,45}(\s|$)/g);	
 	doc.text("=> "+f[0],xOffset+q*5,ynow);
 	if(t[i].length<= f[0].length) {
-	    ynow = ynow +10
-            continue
+	    ynow = ynow + 10;
+            continue;
 	}	
 	//console.log(t[i].substr(f[0].length));
 	f = t[i].substr(f[0].length).match(/.{1,65}(\s|$)/g);
 	for (var j = 0; j<f.length; j++) {
 	    doc.setFont("courier",'normal')
-	    ynow = ynow +5
+	    ynow = ynow + 5;
+            if(ynow > 280) {
+		doc.addPage("a4");
+		ynow = 20;
+            }
 	    doc.text(f[j],xOffset,ynow);
 	}
-	ynow = ynow +10
+	ynow = ynow +10;
     }
     doc.setFont("helvetica",'bold');
     doc.text("Contact:",xOffset,ynow);
@@ -1923,10 +1937,12 @@ function createPDF(vulnerability,cveinfo) {
     var safetime = ts.toGMTString().replace(/[^a-z0-9]+/ig,'-');
     var fulltree = includetree ? "-with-full-tree" : ""
     var dfilename = "SSVC-"+role+"-"+vulid+"-"+safetime+fulltree+".pdf";
-    if(includetree)
-	appendtree(doc,dfilename)
-    else 
+    if(includetree) {
+	doc.text("*** Decision Tree included in next page ***", xOffset, ynow+10);
+	appendtree(doc,dfilename);
+    } else  {
 	doc.save(dfilename);
+    }
     $('.Exporter').css({'pointer-events':'all'});
 }
 function sigmoid(flen) {

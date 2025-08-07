@@ -3,31 +3,37 @@
 Models the CVSS Integrity Impact metric as an SSVC decision point.
 """
 
-#  Copyright (c) 2023-2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2023-2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 
-from ssvc.decision_points.base import SsvcDecisionPointValue
+from ssvc.decision_points.base import DecisionPointValue
 
 from ssvc.decision_points.cvss.base import CvssDecisionPoint
 from ssvc.decision_points.helpers import print_versions_and_diffs
 
-_II_HIGH = SsvcDecisionPointValue(
+_II_HIGH = DecisionPointValue(
     name="High",
     key="H",
     description="There is a total loss of integrity, or a complete loss of protection.",
 )
 
-_II_LOW = SsvcDecisionPointValue(
+_II_LOW = DecisionPointValue(
     name="Low",
     key="L",
     description="Modification of data is possible, but the attacker does not have control over the consequence of a "
@@ -35,19 +41,19 @@ _II_LOW = SsvcDecisionPointValue(
     "direct, serious impact on the impacted component.",
 )
 
-_II_NONE_2 = SsvcDecisionPointValue(
+_II_NONE_2 = DecisionPointValue(
     name="None",
     key="N",
     description="There is no impact to the integrity of the system.",
 )
-_COMPLETE = SsvcDecisionPointValue(
+_COMPLETE = DecisionPointValue(
     name="Complete",
     key="C",
     description="A total compromise of system integrity. There is a complete loss of system protection resulting in "
     "the entire system being compromised. The attacker has sovereign control to modify any system files.",
 )
 
-_PARTIAL = SsvcDecisionPointValue(
+_PARTIAL = DecisionPointValue(
     name="Partial",
     key="P",
     description="Considerable breach in integrity. Modification of critical system files or information is possible, "
@@ -56,7 +62,7 @@ _PARTIAL = SsvcDecisionPointValue(
     "but at random or in a limited context or scope.",
 )
 
-_II_NONE = SsvcDecisionPointValue(
+_II_NONE = DecisionPointValue(
     name="None", key="N", description="No impact on integrity."
 )
 
@@ -91,13 +97,13 @@ INTEGRITY_IMPACT_2 = CvssDecisionPoint(
 Updates None. Removes Partial and Complete. Adds Low and High values for CVSS Integrity Impact.
 """
 
-_II_HIGH_2 = SsvcDecisionPointValue(
+_II_HIGH_2 = DecisionPointValue(
     name="High",
     key="H",
     description="There is a total loss of integrity, or a complete loss of protection.",
 )
 
-_II_LOW_2 = SsvcDecisionPointValue(
+_II_LOW_2 = DecisionPointValue(
     name="Low",
     key="L",
     description="Modification of data is possible, but the attacker does not have control over the consequence of a "
@@ -106,7 +112,7 @@ _II_LOW_2 = SsvcDecisionPointValue(
 )
 
 
-_II_NONE_3 = SsvcDecisionPointValue(
+_II_NONE_3 = DecisionPointValue(
     name="None",
     key="N",
     description="There is no loss of integrity within the Vulnerable System.",

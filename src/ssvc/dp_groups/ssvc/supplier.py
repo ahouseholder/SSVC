@@ -5,28 +5,34 @@ author: adh
 created_at: 9/21/23 11:41 AM
 """
 
-#  Copyright (c) 2023-2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2023-2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 
-from ssvc.decision_points.automatable import AUTOMATABLE_2, VIRULENCE_1
-from ssvc.decision_points.exploitation import EXPLOITATION_1
-from ssvc.decision_points.safety_impact import SAFETY_IMPACT_1
-from ssvc.decision_points.technical_impact import TECHNICAL_IMPACT_1
-from ssvc.decision_points.utility import UTILITY_1, UTILITY_1_0_1
-from ssvc.decision_points.value_density import VALUE_DENSITY_1
-from ssvc.dp_groups.base import SsvcDecisionPointGroup
+from ssvc.decision_points.ssvc.automatable import AUTOMATABLE_2, VIRULENCE_1
+from ssvc.decision_points.ssvc.exploitation import EXPLOITATION_1
+from ssvc.decision_points.ssvc.safety_impact import SAFETY_IMPACT_1
+from ssvc.decision_points.ssvc.technical_impact import TECHNICAL_IMPACT_1
+from ssvc.decision_points.ssvc.utility import UTILITY_1, UTILITY_1_0_1
+from ssvc.decision_points.ssvc.value_density import VALUE_DENSITY_1
+from ssvc.dp_groups.base import DecisionPointGroup
 
-PATCH_DEVELOPER_1 = SsvcDecisionPointGroup(
+PATCH_DEVELOPER_1 = DecisionPointGroup(
     name="SSVC Patch Developer",
     description="The decision points used by the patch developer.",
     version="1.0.0",
@@ -56,18 +62,18 @@ It includes decision points:
 SUPPLIER_1 = PATCH_DEVELOPER_1
 
 # SSVC v2 renamed to SSVC Supplier
-SUPPLIER_2 = SsvcDecisionPointGroup(
+SUPPLIER_2 = DecisionPointGroup(
     name="SSVC Supplier",
     description="The decision points used by the supplier.",
     version="2.0.0",
-    decision_points=[
+    decision_points=(
         EXPLOITATION_1,
         UTILITY_1_0_1,
         TECHNICAL_IMPACT_1,
         AUTOMATABLE_2,
         VALUE_DENSITY_1,
         SAFETY_IMPACT_1,
-    ],
+    ),
 )
 """
 In SSVC v2, Supplier v2 represents the decision points used by the supplier.
@@ -89,10 +95,13 @@ Changes from Patch Developer v1:
 - Public Safety Impact v1.0.0 added, which subsumes Safety Impact v1.0.0
 """
 
+VERSIONS = (PATCH_DEVELOPER_1, SUPPLIER_2)
+LATEST = VERSIONS[-1]
+
 
 def main():
-    print(PATCH_DEVELOPER_1.model_dump_json(indent=2))
-    print(SUPPLIER_2.model_dump_json(indent=2))
+    for version in VERSIONS:
+        print(version.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

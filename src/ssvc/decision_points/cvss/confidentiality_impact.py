@@ -2,24 +2,30 @@
 """
 Models the CVSS Confidentiality Impact metric as an SSVC decision point.
 """
-#  Copyright (c) 2023-2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2023-2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 
-from ssvc.decision_points.base import SsvcDecisionPointValue
+from ssvc.decision_points.base import DecisionPointValue
 from ssvc.decision_points.cvss.base import CvssDecisionPoint
 from ssvc.decision_points.helpers import print_versions_and_diffs
 
-_HIGH = SsvcDecisionPointValue(
+_HIGH = DecisionPointValue(
     name="High",
     key="H",
     description="There is total loss of confidentiality, resulting in all resources within the impacted component "
@@ -28,7 +34,7 @@ _HIGH = SsvcDecisionPointValue(
     "steals the administrator's password, or private encryption keys of a web server.",
 )
 
-_LOW = SsvcDecisionPointValue(
+_LOW = DecisionPointValue(
     name="Low",
     key="L",
     description="There is some loss of confidentiality. Access to some restricted information is obtained, "
@@ -37,13 +43,13 @@ _LOW = SsvcDecisionPointValue(
     "impacted component.",
 )
 
-_CI_NONE_2 = SsvcDecisionPointValue(
+_CI_NONE_2 = DecisionPointValue(
     name="None",
     key="N",
     description="There is no loss of confidentiality within the impacted component.",
 )
 
-_COMPLETE = SsvcDecisionPointValue(
+_COMPLETE = DecisionPointValue(
     name="Complete",
     key="C",
     description="A total compromise of critical system information. A complete loss of system protection resulting in "
@@ -51,7 +57,7 @@ _COMPLETE = SsvcDecisionPointValue(
     "system's data (memory, files, etc).",
 )
 
-_PARTIAL = SsvcDecisionPointValue(
+_PARTIAL = DecisionPointValue(
     name="Partial",
     key="P",
     description="There is considerable informational disclosure. Access to critical system files is possible. There "
@@ -59,7 +65,7 @@ _PARTIAL = SsvcDecisionPointValue(
     "the scope of the loss is constrained.",
 )
 
-_CI_NONE = SsvcDecisionPointValue(
+_CI_NONE = DecisionPointValue(
     name="None",
     key="N",
     description="No impact on confidentiality.",
@@ -98,7 +104,7 @@ Updates None. Removes Partial and Complete. Adds Low and High values for CVSS Co
 """
 
 
-_HIGH_1 = SsvcDecisionPointValue(
+_HIGH_1 = DecisionPointValue(
     name="High",
     key="H",
     description="There is total loss of confidentiality, resulting in all resources within the impacted component "
@@ -107,7 +113,7 @@ _HIGH_1 = SsvcDecisionPointValue(
     "steals the administrator's password, or private encryption keys of a web server.",
 )
 
-_LOW_1 = SsvcDecisionPointValue(
+_LOW_1 = DecisionPointValue(
     name="Low",
     key="L",
     description="There is some loss of confidentiality. Access to some restricted information is obtained, "
@@ -116,7 +122,7 @@ _LOW_1 = SsvcDecisionPointValue(
     "impacted component.",
 )
 
-_CI_NONE_3 = SsvcDecisionPointValue(
+_CI_NONE_3 = DecisionPointValue(
     name="None",
     key="N",
     description="There is no loss of confidentiality within the impacted component.",

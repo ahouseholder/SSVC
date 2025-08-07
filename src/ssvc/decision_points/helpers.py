@@ -3,27 +3,33 @@
 """
 Provides helper functions for working with SSVC decision points.
 """
-#  Copyright (c) 2024-2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2024-2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 
 from typing import Sequence
 
 import semver
 
-from ssvc.decision_points import SsvcDecisionPoint
+from ssvc.decision_points.base import DecisionPoint
 
 
-def dp_diff(dp1: SsvcDecisionPoint, dp2: SsvcDecisionPoint) -> list[str]:
+def dp_diff(dp1: DecisionPoint, dp2: DecisionPoint) -> list[str]:
     """
     Compares two decision points and returns a list of differences.
 
@@ -212,7 +218,7 @@ def dp_diff(dp1: SsvcDecisionPoint, dp2: SsvcDecisionPoint) -> list[str]:
     return diffs
 
 
-def show_diffs(versions: Sequence[SsvcDecisionPoint]) -> None:
+def show_diffs(versions: Sequence[DecisionPoint]) -> None:
     if len(versions) < 2:
         print("Not enough versions to compare")
         return
@@ -223,7 +229,7 @@ def show_diffs(versions: Sequence[SsvcDecisionPoint]) -> None:
         print()
 
 
-def print_versions_and_diffs(versions: Sequence[SsvcDecisionPoint]) -> None:
+def print_versions_and_diffs(versions: Sequence[DecisionPoint]) -> None:
     """
     Prints the json representation of each version and then shows the diffs between each version.
 

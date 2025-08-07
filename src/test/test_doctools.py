@@ -1,22 +1,28 @@
-#  Copyright (c) 2023-2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2023-2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 import json
 import logging
 import os
 import tempfile
 import unittest
 
-from ssvc.decision_points import SsvcDecisionPoint
+from ssvc.decision_points.base import DecisionPoint
 from ssvc.doctools import (
     EnsureDirExists,
     _filename_friendly,
@@ -31,16 +37,16 @@ _dp_dict = {
     "key": "DPT",
     "name": "Decision Point Test",
     "description": "This is a test decision point.",
-    "values": [
+    "values": (
         {"key": "N", "name": "No", "description": "No means no"},
         {"key": "Y", "name": "Yes", "description": "Yes means yes"},
-    ],
+    ),
 }
 
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        self.dp = SsvcDecisionPoint.model_validate(_dp_dict)
+        self.dp = DecisionPoint.model_validate(_dp_dict)
 
         # create a temp working dir
         self.tempdir = tempfile.TemporaryDirectory()
@@ -97,7 +103,11 @@ class MyTestCase(unittest.TestCase):
         self.assertIn("json", os.listdir(self.tempdir.name))
         self.assertEqual(1, len(os.listdir(jsondir)))
 
-        file_created = os.listdir(jsondir)[0]
+        nsdir = os.path.join(jsondir, dp.namespace)
+        self.assertTrue(os.path.exists(nsdir))
+        self.assertEqual(1, len(os.listdir(nsdir)))
+
+        file_created = os.listdir(nsdir)[0]
 
         for word in dp.name.split():
             self.assertIn(word.lower(), file_created)
@@ -110,28 +120,43 @@ class MyTestCase(unittest.TestCase):
         dp = self.dp
         jsondir = self.tempdir.name
         overwrite = False
+        nsdir = os.path.join(jsondir, dp.namespace)
 
-        _jsonfile = os.path.join(jsondir, f"{basename}.json")
+        _jsonfile = os.path.join(nsdir, f"{basename}.json")
         self.assertFalse(os.path.exists(_jsonfile))
 
         # should create the file in the expected place
         json_file = dump_json(basename, dp, jsondir, overwrite)
+
         self.assertEqual(_jsonfile, json_file)
         self.assertTrue(os.path.exists(json_file))
 
         # file is loadable json
         d = json.load(open(json_file))
         for k, v in dp.model_dump().items():
-            self.assertEqual(v, d[k])
+            # on reload, the tuples are lists, but they should be the same
+            reloaded_value = d[k]
+            if isinstance(reloaded_value, list):
+                reloaded_value = tuple(reloaded_value)
+
+            self.assertEqual(v, reloaded_value)
 
         # should not overwrite the file
         overwrite = False
         # capture logger output
         with self.assertLogs() as cm:
             json_file = dump_json(basename, dp, jsondir, overwrite)
-        self.assertEqual(_jsonfile, json_file)
-        # logger warns that the file exists
-        self.assertIn("already exists", cm.output[0])
+            self.assertEqual(_jsonfile, json_file)
+            # logger warns that the file exists
+            found = False
+            for line in cm.output:
+                if not "WARNING" in line:
+                    continue
+                # it's a warning log
+                if "already exists" in line:
+                    found = True
+                    break
+            self.assertTrue(found, "Expected warning about existing file not found")
 
         # should overwrite the file
         overwrite = True
@@ -149,8 +174,25 @@ class MyTestCase(unittest.TestCase):
         d = json.load(open(json_file))
         self.assertEqual(dp.name, d["name"])
 
-    def test_main(self):
-        pass
+    def test_dump_schema(self):
+        schemafile = os.path.join(self.tempdir.name, "dummy_schema.json")
+        self.assertFalse(os.path.exists(schemafile))
+        from ssvc.doctools import dump_schema
+        from pydantic import BaseModel
+
+        class Dummy(BaseModel):
+            name: str = "Name"
+            description: str = "Description"
+
+        dump_schema(filepath=schemafile, schema=Dummy.model_json_schema())
+        self.assertTrue(os.path.exists(schemafile))
+
+        # file is loadable json
+        d = json.load(open(schemafile))
+        self.assertIn("title", d)
+        self.assertEqual("Dummy", d["title"])
+        self.assertIn("type", d)
+        self.assertEqual(d["type"], "object")
 
 
 if __name__ == "__main__":

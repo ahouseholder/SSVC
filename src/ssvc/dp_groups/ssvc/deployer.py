@@ -5,45 +5,51 @@ author: adh
 created_at: 9/21/23 11:40 AM
 """
 
-#  Copyright (c) 2023-2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2023-2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 
-from ssvc.decision_points.automatable import AUTOMATABLE_2
-from ssvc.decision_points.exploitation import EXPLOITATION_1
-from ssvc.decision_points.human_impact import HUMAN_IMPACT_2
-from ssvc.decision_points.mission_impact import (
+from ssvc.decision_points.ssvc.automatable import AUTOMATABLE_2
+from ssvc.decision_points.ssvc.exploitation import EXPLOITATION_1
+from ssvc.decision_points.ssvc.human_impact import HUMAN_IMPACT_2
+from ssvc.decision_points.ssvc.mission_impact import (
     MISSION_IMPACT_1,
     MISSION_IMPACT_2,
 )
-from ssvc.decision_points.safety_impact import SAFETY_IMPACT_1
-from ssvc.decision_points.system_exposure import (
+from ssvc.decision_points.ssvc.safety_impact import SAFETY_IMPACT_1
+from ssvc.decision_points.ssvc.system_exposure import (
     SYSTEM_EXPOSURE_1,
     SYSTEM_EXPOSURE_1_0_1,
 )
-from ssvc.decision_points.utility import UTILITY_1_0_1
-from ssvc.decision_points.value_density import VALUE_DENSITY_1
-from ssvc.dp_groups.base import SsvcDecisionPointGroup
+from ssvc.decision_points.ssvc.utility import UTILITY_1_0_1
+from ssvc.decision_points.ssvc.value_density import VALUE_DENSITY_1
+from ssvc.dp_groups.base import DecisionPointGroup
 
-PATCH_APPLIER_1 = SsvcDecisionPointGroup(
+PATCH_APPLIER_1 = DecisionPointGroup(
     name="SSVC Patch Applier",
     description="The decision points used by the patch applier.",
     version="1.0.0",
-    decision_points=[
+    decision_points=(
         EXPLOITATION_1,
         SYSTEM_EXPOSURE_1,
         MISSION_IMPACT_1,
         SAFETY_IMPACT_1,
-    ],
+    ),
 )
 """
 In SSVC v1, Patch Applier v1 represents the decision points used by the patch applier.
@@ -60,11 +66,11 @@ It includes decision points:
 DEPLOYER_1 = PATCH_APPLIER_1
 
 # SSVC v2
-DEPLOYER_2 = SsvcDecisionPointGroup(
+DEPLOYER_2 = DecisionPointGroup(
     name="SSVC Deployer",
     description="The decision points used by the deployer.",
     version="2.0.0",
-    decision_points=[
+    decision_points=(
         EXPLOITATION_1,
         SYSTEM_EXPOSURE_1_0_1,
         MISSION_IMPACT_1,
@@ -73,7 +79,7 @@ DEPLOYER_2 = SsvcDecisionPointGroup(
         AUTOMATABLE_2,
         VALUE_DENSITY_1,
         HUMAN_IMPACT_2,
-    ],
+    ),
 )
 """
 Deployer v2.0.0 is renamed from Patch Applier v1.0.0.
@@ -94,7 +100,7 @@ Changes from Patch Applier v1.0.0:
 - Human Impact v1.0.0 is added, which depends on Mission Impact v1.0.0 and Safety Impact v1.0.0
 """
 
-DEPLOYER_3 = SsvcDecisionPointGroup(
+DEPLOYER_3 = DecisionPointGroup(
     name="SSVC Deployer",
     description="The decision points used by the deployer.",
     version="3.0.0",
@@ -122,11 +128,13 @@ Changes from v2.0.0:
 - Mission Impact v1.0.0 -> v2.0.0
 """
 
+VERSIONS = (PATCH_APPLIER_1, DEPLOYER_2, DEPLOYER_3)
+LATEST = VERSIONS[-1]
+
 
 def main():
-    print(PATCH_APPLIER_1.model_dump_json(indent=2))
-    print(DEPLOYER_2.model_dump_json(indent=2))
-    print(DEPLOYER_3.model_dump_json(indent=2))
+    for version in VERSIONS:
+        print(version.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

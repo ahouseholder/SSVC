@@ -1,23 +1,36 @@
-#  Copyright (c) 2025 Carnegie Mellon University and Contributors.
-#  - see Contributors.md for a full list of Contributors
-#  - see ContributionInstructions.md for information on how you can Contribute to this project
-#  Stakeholder Specific Vulnerability Categorization (SSVC) is
-#  licensed under a MIT (SEI)-style license, please see LICENSE.md distributed
-#  with this Software or contact permission@sei.cmu.edu for full terms.
-#  Created, in part, with funding and support from the United States Government
-#  (see Acknowledgments file). This program may include and/or can make use of
-#  certain third party source code, object code, documentation and other files
-#  (“Third Party Software”). See LICENSE.md for more details.
-#  Carnegie Mellon®, CERT® and CERT Coordination Center® are registered in the
-#  U.S. Patent and Trademark Office by Carnegie Mellon University
+#  Copyright (c) 2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
 
 import unittest
 from random import randint
 
 from pydantic import BaseModel, ValidationError
 
-from ssvc._mixins import _Base, _Keyed, _Namespaced, _Versioned
+from ssvc._mixins import (
+    _Base,
+    _Keyed,
+    _Namespaced,
+    _Valued,
+    _Versioned,
+)
 from ssvc.namespaces import NameSpace
+from ssvc.utils.defaults import DEFAULT_VERSION, MAX_NS_LENGTH
 
 
 class TestMixins(unittest.TestCase):
@@ -86,12 +99,12 @@ class TestMixins(unittest.TestCase):
             _Namespaced(namespace="x_")
 
         # error if namespace starts with x_ but is too long
-        for i in range(100):
+        for i in range(MAX_NS_LENGTH + 50):
             shortest = "x_aaa"
             ns = shortest + "a" * i
             with self.subTest(ns=ns):
                 # length limit set in the NS_PATTERN regex
-                if len(ns) <= 25:
+                if len(ns) <= MAX_NS_LENGTH:
                     # expect success on shorter than limit
                     _Namespaced(namespace=ns)
                 else:
@@ -108,13 +121,13 @@ class TestMixins(unittest.TestCase):
         # custom namespaces are allowed as long as they start with x_
         for _ in range(100):
             # we're just fuzzing some random strings here
-            ns = f"x_{randint(1000,1000000)}"
+            ns = f"x_a{randint(1000,1000000)}"
             obj = _Namespaced(namespace=ns)
             self.assertEqual(obj.namespace, ns)
 
     def test_versioned_create(self):
         obj = _Versioned()
-        self.assertEqual(obj.version, "0.0.0")
+        self.assertEqual(obj.version, DEFAULT_VERSION)
 
         obj = _Versioned(version="1.2.3")
         self.assertEqual(obj.version, "1.2.3")
@@ -125,13 +138,58 @@ class TestMixins(unittest.TestCase):
 
         self.assertRaises(ValidationError, _Keyed)
 
+        good_keys = ["A", "1", "F1", "T*", "Mixed_case_OK", "alph4num3ric"]
+        bad_keys = [
+            "",  # no empty string
+            "foo_",  # no trailing underscore
+            "_",  # no solitary underscore
+            "_foo",  # no leading underscore
+            "A*",  # no trailing asterisk
+        ]
+        # add other bad keys that contain special characters
+        # these should not be allowed in keys
+        for char in " ~`!@#$%^&*()-+={}[]|\\:;\"'<>,.?/":
+            bad_keys.append(char)
+            bad_keys.append("foo" + char)
+            bad_keys.append(char + "bar")
+            bad_keys.append("foo" + char + "bar")
+
+        for key in good_keys:
+            with self.subTest(key=key):
+                obj = _Keyed(key=key)
+                self.assertEqual(obj.key, key)
+
+        for key in bad_keys:
+            with self.subTest(key=key):
+                with self.assertRaises(
+                    ValidationError, msg=f"Key '{key}' should be invalid"
+                ):
+                    _Keyed(key=key)
+
+    def test_valued_create(self):
+        values = ("foo", "bar", "baz", "quux")
+
+        obj = _Valued(values=values)
+
+        # length
+        self.assertEqual(len(obj), len(values))
+
+        # iteration
+        for i, v in enumerate(obj):
+            self.assertEqual(v, values[i])
+
+        # values
+        self.assertEqual(obj.values, values)
+
+        self.assertRaises(ValidationError, _Valued)
+
     def test_mixin_combos(self):
         # We need to test all the combinations
         mixins = [
             {"class": _Keyed, "args": {"key": "fizz"}, "has_default": False},
             {
                 "class": _Namespaced,
-                "args": {"namespace": "x_test"},
+                "args": {"namespace": "x_example.test"},
                 "has_default": False,
             },
             {
