@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "GM",
+  "version": "0.1.0",
+  "name": "Gradient Masking/Obfuscation",
+  "definition": "Measures the effectiveness of gradient masking or obfuscation techniques used to protect against gradient-based attacks.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "H",
+      "name": "Hidden",
+      "definition": "Gradients are completely hidden or formally proven to be unrecoverable."
+    },
+    {
+      "key": "S",
+      "name": "Strong",
+      "definition": "Strong gradient masking techniques used, making gradient-based attacks significantly more difficult."
+    },
+    {
+      "key": "B",
+      "name": "Basic",
+      "definition": "Basic gradient obfuscation methods employed, but gradients can still be partially recovered."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "Gradients are easily accessible and interpretable, no masking techniques used."
+    }
+  ]
+}

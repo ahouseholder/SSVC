@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "SM",
+  "version": "0.1.0",
+  "name": "Self-Modification",
+  "definition": "A decision point for assessing the Self-Modification capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "No self-modification capabilities, out-of-band user prompt reinforcement training"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Write access to memory/context data sources, dynamic and session-only goal modification, dynamic user prompt reinforcement training"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "Write access to deployment code, write access to model weights, no limitations on goal modifications, write access to persistent memory/context data sources"
+    }
+  ]
+}

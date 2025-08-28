@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "AC",
+  "version": "0.1.0",
+  "name": "Accountability",
+  "definition": "Degree to which accountability is established for the system's actions, errors, and outcomes.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Full Accountability",
+      "definition": "Full accountability with mechanisms for redress, remediation, and independent oversight."
+    },
+    {
+      "key": "A",
+      "name": "Accountability Framework",
+      "definition": "Clear accountability framework in place, with defined roles, responsibilities, and processes for addressing errors and disputes."
+    },
+    {
+      "key": "S",
+      "name": "Some Responsibility",
+      "definition": "Some responsibility assigned to developers or operators, but no formal accountability framework."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No clear lines of accountability for system's actions or errors."
+    }
+  ]
+}

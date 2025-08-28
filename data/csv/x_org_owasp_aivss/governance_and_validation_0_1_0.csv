@@ -1,0 +1,1025 @@
+row,Compliance v0.1.0 (x_org.owasp#aivss),Auditing v0.1.0 (x_org.owasp#aivss),Risk Management v0.1.0 (x_org.owasp#aivss),Human Oversight v0.1.0 (x_org.owasp#aivss),Ethical Framework Alignment v0.1.0 (x_org.owasp#aivss),Governance and Validation v0.1.0 (x_org.owasp#aivss)
+0,exceeds requirements,independent audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+1,full compliance,independent audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+2,exceeds requirements,internal audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+3,exceeds requirements,independent audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+4,exceeds requirements,independent audits,proactive and continuous,clear mechanisms,promotes ethics,none
+5,exceeds requirements,independent audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+6,basic understanding,independent audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+7,full compliance,internal audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+8,exceeds requirements,limited audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+9,full compliance,independent audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+10,exceeds requirements,internal audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+11,exceeds requirements,independent audits,basic assessment,human-in-the-loop,promotes ethics,none
+12,full compliance,independent audits,proactive and continuous,clear mechanisms,promotes ethics,none
+13,exceeds requirements,internal audits,proactive and continuous,clear mechanisms,promotes ethics,none
+14,exceeds requirements,independent audits,comprehensive framework,clear mechanisms,promotes ethics,none
+15,exceeds requirements,independent audits,proactive and continuous,limited oversight,promotes ethics,none
+16,full compliance,independent audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+17,exceeds requirements,internal audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+18,exceeds requirements,independent audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+19,exceeds requirements,independent audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+20,exceeds requirements,independent audits,proactive and continuous,human-in-the-loop,awareness,none
+21,none,independent audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+22,basic understanding,internal audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+23,full compliance,limited audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+24,exceeds requirements,none,proactive and continuous,human-in-the-loop,promotes ethics,none
+25,basic understanding,independent audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+26,full compliance,internal audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+27,exceeds requirements,limited audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+28,full compliance,independent audits,basic assessment,human-in-the-loop,promotes ethics,none
+29,exceeds requirements,internal audits,basic assessment,human-in-the-loop,promotes ethics,none
+30,exceeds requirements,independent audits,none,human-in-the-loop,promotes ethics,none
+31,basic understanding,independent audits,proactive and continuous,clear mechanisms,promotes ethics,none
+32,full compliance,internal audits,proactive and continuous,clear mechanisms,promotes ethics,none
+33,exceeds requirements,limited audits,proactive and continuous,clear mechanisms,promotes ethics,none
+34,full compliance,independent audits,comprehensive framework,clear mechanisms,promotes ethics,none
+35,exceeds requirements,internal audits,comprehensive framework,clear mechanisms,promotes ethics,none
+36,exceeds requirements,independent audits,basic assessment,clear mechanisms,promotes ethics,none
+37,full compliance,independent audits,proactive and continuous,limited oversight,promotes ethics,none
+38,exceeds requirements,internal audits,proactive and continuous,limited oversight,promotes ethics,none
+39,exceeds requirements,independent audits,comprehensive framework,limited oversight,promotes ethics,none
+40,exceeds requirements,independent audits,proactive and continuous,none,promotes ethics,none
+41,basic understanding,independent audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+42,full compliance,internal audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+43,exceeds requirements,limited audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+44,full compliance,independent audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+45,exceeds requirements,internal audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+46,exceeds requirements,independent audits,basic assessment,human-in-the-loop,aligns with frameworks,none
+47,full compliance,independent audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+48,exceeds requirements,internal audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+49,exceeds requirements,independent audits,comprehensive framework,clear mechanisms,aligns with frameworks,none
+50,exceeds requirements,independent audits,proactive and continuous,limited oversight,aligns with frameworks,none
+51,full compliance,independent audits,proactive and continuous,human-in-the-loop,awareness,none
+52,exceeds requirements,internal audits,proactive and continuous,human-in-the-loop,awareness,none
+53,exceeds requirements,independent audits,comprehensive framework,human-in-the-loop,awareness,none
+54,exceeds requirements,independent audits,proactive and continuous,clear mechanisms,awareness,none
+55,exceeds requirements,independent audits,proactive and continuous,human-in-the-loop,none,none
+56,none,internal audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+57,basic understanding,limited audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+58,full compliance,none,proactive and continuous,human-in-the-loop,promotes ethics,none
+59,none,independent audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+60,basic understanding,internal audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+61,full compliance,limited audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+62,exceeds requirements,none,comprehensive framework,human-in-the-loop,promotes ethics,none
+63,basic understanding,independent audits,basic assessment,human-in-the-loop,promotes ethics,none
+64,full compliance,internal audits,basic assessment,human-in-the-loop,promotes ethics,none
+65,exceeds requirements,limited audits,basic assessment,human-in-the-loop,promotes ethics,none
+66,full compliance,independent audits,none,human-in-the-loop,promotes ethics,none
+67,exceeds requirements,internal audits,none,human-in-the-loop,promotes ethics,none
+68,none,independent audits,proactive and continuous,clear mechanisms,promotes ethics,none
+69,basic understanding,internal audits,proactive and continuous,clear mechanisms,promotes ethics,none
+70,full compliance,limited audits,proactive and continuous,clear mechanisms,promotes ethics,none
+71,exceeds requirements,none,proactive and continuous,clear mechanisms,promotes ethics,none
+72,basic understanding,independent audits,comprehensive framework,clear mechanisms,promotes ethics,none
+73,full compliance,internal audits,comprehensive framework,clear mechanisms,promotes ethics,none
+74,exceeds requirements,limited audits,comprehensive framework,clear mechanisms,promotes ethics,none
+75,full compliance,independent audits,basic assessment,clear mechanisms,promotes ethics,none
+76,exceeds requirements,internal audits,basic assessment,clear mechanisms,promotes ethics,none
+77,exceeds requirements,independent audits,none,clear mechanisms,promotes ethics,none
+78,basic understanding,independent audits,proactive and continuous,limited oversight,promotes ethics,none
+79,full compliance,internal audits,proactive and continuous,limited oversight,promotes ethics,none
+80,exceeds requirements,limited audits,proactive and continuous,limited oversight,promotes ethics,none
+81,full compliance,independent audits,comprehensive framework,limited oversight,promotes ethics,none
+82,exceeds requirements,internal audits,comprehensive framework,limited oversight,promotes ethics,none
+83,exceeds requirements,independent audits,basic assessment,limited oversight,promotes ethics,none
+84,full compliance,independent audits,proactive and continuous,none,promotes ethics,none
+85,exceeds requirements,internal audits,proactive and continuous,none,promotes ethics,none
+86,exceeds requirements,independent audits,comprehensive framework,none,promotes ethics,none
+87,none,independent audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+88,basic understanding,internal audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+89,full compliance,limited audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+90,exceeds requirements,none,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+91,basic understanding,independent audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+92,full compliance,internal audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+93,exceeds requirements,limited audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+94,full compliance,independent audits,basic assessment,human-in-the-loop,aligns with frameworks,none
+95,exceeds requirements,internal audits,basic assessment,human-in-the-loop,aligns with frameworks,none
+96,exceeds requirements,independent audits,none,human-in-the-loop,aligns with frameworks,none
+97,basic understanding,independent audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+98,full compliance,internal audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+99,exceeds requirements,limited audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+100,full compliance,independent audits,comprehensive framework,clear mechanisms,aligns with frameworks,none
+101,exceeds requirements,internal audits,comprehensive framework,clear mechanisms,aligns with frameworks,none
+102,exceeds requirements,independent audits,basic assessment,clear mechanisms,aligns with frameworks,none
+103,full compliance,independent audits,proactive and continuous,limited oversight,aligns with frameworks,none
+104,exceeds requirements,internal audits,proactive and continuous,limited oversight,aligns with frameworks,none
+105,exceeds requirements,independent audits,comprehensive framework,limited oversight,aligns with frameworks,none
+106,exceeds requirements,independent audits,proactive and continuous,none,aligns with frameworks,none
+107,basic understanding,independent audits,proactive and continuous,human-in-the-loop,awareness,none
+108,full compliance,internal audits,proactive and continuous,human-in-the-loop,awareness,none
+109,exceeds requirements,limited audits,proactive and continuous,human-in-the-loop,awareness,none
+110,full compliance,independent audits,comprehensive framework,human-in-the-loop,awareness,none
+111,exceeds requirements,internal audits,comprehensive framework,human-in-the-loop,awareness,none
+112,exceeds requirements,independent audits,basic assessment,human-in-the-loop,awareness,none
+113,full compliance,independent audits,proactive and continuous,clear mechanisms,awareness,none
+114,exceeds requirements,internal audits,proactive and continuous,clear mechanisms,awareness,none
+115,exceeds requirements,independent audits,comprehensive framework,clear mechanisms,awareness,none
+116,exceeds requirements,independent audits,proactive and continuous,limited oversight,awareness,none
+117,full compliance,independent audits,proactive and continuous,human-in-the-loop,none,none
+118,exceeds requirements,internal audits,proactive and continuous,human-in-the-loop,none,none
+119,exceeds requirements,independent audits,comprehensive framework,human-in-the-loop,none,none
+120,exceeds requirements,independent audits,proactive and continuous,clear mechanisms,none,none
+121,none,limited audits,proactive and continuous,human-in-the-loop,promotes ethics,none
+122,basic understanding,none,proactive and continuous,human-in-the-loop,promotes ethics,none
+123,none,internal audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+124,basic understanding,limited audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+125,full compliance,none,comprehensive framework,human-in-the-loop,promotes ethics,none
+126,none,independent audits,basic assessment,human-in-the-loop,promotes ethics,none
+127,basic understanding,internal audits,basic assessment,human-in-the-loop,promotes ethics,none
+128,full compliance,limited audits,basic assessment,human-in-the-loop,promotes ethics,none
+129,exceeds requirements,none,basic assessment,human-in-the-loop,promotes ethics,none
+130,basic understanding,independent audits,none,human-in-the-loop,promotes ethics,none
+131,full compliance,internal audits,none,human-in-the-loop,promotes ethics,none
+132,exceeds requirements,limited audits,none,human-in-the-loop,promotes ethics,none
+133,none,internal audits,proactive and continuous,clear mechanisms,promotes ethics,none
+134,basic understanding,limited audits,proactive and continuous,clear mechanisms,promotes ethics,none
+135,full compliance,none,proactive and continuous,clear mechanisms,promotes ethics,none
+136,none,independent audits,comprehensive framework,clear mechanisms,promotes ethics,none
+137,basic understanding,internal audits,comprehensive framework,clear mechanisms,promotes ethics,none
+138,full compliance,limited audits,comprehensive framework,clear mechanisms,promotes ethics,none
+139,exceeds requirements,none,comprehensive framework,clear mechanisms,promotes ethics,none
+140,basic understanding,independent audits,basic assessment,clear mechanisms,promotes ethics,none
+141,full compliance,internal audits,basic assessment,clear mechanisms,promotes ethics,none
+142,exceeds requirements,limited audits,basic assessment,clear mechanisms,promotes ethics,none
+143,full compliance,independent audits,none,clear mechanisms,promotes ethics,none
+144,exceeds requirements,internal audits,none,clear mechanisms,promotes ethics,none
+145,none,independent audits,proactive and continuous,limited oversight,promotes ethics,none
+146,basic understanding,internal audits,proactive and continuous,limited oversight,promotes ethics,none
+147,full compliance,limited audits,proactive and continuous,limited oversight,promotes ethics,none
+148,exceeds requirements,none,proactive and continuous,limited oversight,promotes ethics,none
+149,basic understanding,independent audits,comprehensive framework,limited oversight,promotes ethics,none
+150,full compliance,internal audits,comprehensive framework,limited oversight,promotes ethics,none
+151,exceeds requirements,limited audits,comprehensive framework,limited oversight,promotes ethics,none
+152,full compliance,independent audits,basic assessment,limited oversight,promotes ethics,none
+153,exceeds requirements,internal audits,basic assessment,limited oversight,promotes ethics,none
+154,exceeds requirements,independent audits,none,limited oversight,promotes ethics,none
+155,basic understanding,independent audits,proactive and continuous,none,promotes ethics,none
+156,full compliance,internal audits,proactive and continuous,none,promotes ethics,none
+157,exceeds requirements,limited audits,proactive and continuous,none,promotes ethics,none
+158,full compliance,independent audits,comprehensive framework,none,promotes ethics,none
+159,exceeds requirements,internal audits,comprehensive framework,none,promotes ethics,none
+160,exceeds requirements,independent audits,basic assessment,none,promotes ethics,none
+161,none,internal audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+162,basic understanding,limited audits,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+163,full compliance,none,proactive and continuous,human-in-the-loop,aligns with frameworks,none
+164,none,independent audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+165,basic understanding,internal audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+166,full compliance,limited audits,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+167,exceeds requirements,none,comprehensive framework,human-in-the-loop,aligns with frameworks,none
+168,basic understanding,independent audits,basic assessment,human-in-the-loop,aligns with frameworks,none
+169,full compliance,internal audits,basic assessment,human-in-the-loop,aligns with frameworks,none
+170,exceeds requirements,limited audits,basic assessment,human-in-the-loop,aligns with frameworks,none
+171,full compliance,independent audits,none,human-in-the-loop,aligns with frameworks,none
+172,exceeds requirements,internal audits,none,human-in-the-loop,aligns with frameworks,none
+173,none,independent audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+174,basic understanding,internal audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+175,full compliance,limited audits,proactive and continuous,clear mechanisms,aligns with frameworks,none
+176,exceeds requirements,none,proactive and continuous,clear mechanisms,aligns with frameworks,none
+177,basic understanding,independent audits,comprehensive framework,clear mechanisms,aligns with frameworks,none
+178,full compliance,internal audits,comprehensive framework,clear mechanisms,aligns with frameworks,none
+179,exceeds requirements,limited audits,comprehensive framework,clear mechanisms,aligns with frameworks,none
+180,full compliance,independent audits,basic assessment,clear mechanisms,aligns with frameworks,none
+181,exceeds requirements,internal audits,basic assessment,clear mechanisms,aligns with frameworks,none
+182,exceeds requirements,independent audits,none,clear mechanisms,aligns with frameworks,none
+183,basic understanding,independent audits,proactive and continuous,limited oversight,aligns with frameworks,none
+184,full compliance,internal audits,proactive and continuous,limited oversight,aligns with frameworks,none
+185,exceeds requirements,limited audits,proactive and continuous,limited oversight,aligns with frameworks,none
+186,full compliance,independent audits,comprehensive framework,limited oversight,aligns with frameworks,none
+187,exceeds requirements,internal audits,comprehensive framework,limited oversight,aligns with frameworks,none
+188,exceeds requirements,independent audits,basic assessment,limited oversight,aligns with frameworks,none
+189,full compliance,independent audits,proactive and continuous,none,aligns with frameworks,none
+190,exceeds requirements,internal audits,proactive and continuous,none,aligns with frameworks,none
+191,exceeds requirements,independent audits,comprehensive framework,none,aligns with frameworks,none
+192,none,independent audits,proactive and continuous,human-in-the-loop,awareness,none
+193,basic understanding,internal audits,proactive and continuous,human-in-the-loop,awareness,none
+194,full compliance,limited audits,proactive and continuous,human-in-the-loop,awareness,none
+195,exceeds requirements,none,proactive and continuous,human-in-the-loop,awareness,none
+196,basic understanding,independent audits,comprehensive framework,human-in-the-loop,awareness,none
+197,full compliance,internal audits,comprehensive framework,human-in-the-loop,awareness,none
+198,exceeds requirements,limited audits,comprehensive framework,human-in-the-loop,awareness,none
+199,full compliance,independent audits,basic assessment,human-in-the-loop,awareness,none
+200,exceeds requirements,internal audits,basic assessment,human-in-the-loop,awareness,none
+201,exceeds requirements,independent audits,none,human-in-the-loop,awareness,none
+202,basic understanding,independent audits,proactive and continuous,clear mechanisms,awareness,none
+203,full compliance,internal audits,proactive and continuous,clear mechanisms,awareness,none
+204,exceeds requirements,limited audits,proactive and continuous,clear mechanisms,awareness,none
+205,full compliance,independent audits,comprehensive framework,clear mechanisms,awareness,none
+206,exceeds requirements,internal audits,comprehensive framework,clear mechanisms,awareness,none
+207,exceeds requirements,independent audits,basic assessment,clear mechanisms,awareness,none
+208,full compliance,independent audits,proactive and continuous,limited oversight,awareness,none
+209,exceeds requirements,internal audits,proactive and continuous,limited oversight,awareness,none
+210,exceeds requirements,independent audits,comprehensive framework,limited oversight,awareness,none
+211,exceeds requirements,independent audits,proactive and continuous,none,awareness,none
+212,basic understanding,independent audits,proactive and continuous,human-in-the-loop,none,none
+213,full compliance,internal audits,proactive and continuous,human-in-the-loop,none,none
+214,exceeds requirements,limited audits,proactive and continuous,human-in-the-loop,none,none
+215,full compliance,independent audits,comprehensive framework,human-in-the-loop,none,none
+216,exceeds requirements,internal audits,comprehensive framework,human-in-the-loop,none,none
+217,exceeds requirements,independent audits,basic assessment,human-in-the-loop,none,none
+218,full compliance,independent audits,proactive and continuous,clear mechanisms,none,none
+219,exceeds requirements,internal audits,proactive and continuous,clear mechanisms,none,none
+220,exceeds requirements,independent audits,comprehensive framework,clear mechanisms,none,none
+221,exceeds requirements,independent audits,proactive and continuous,limited oversight,none,none
+222,none,none,proactive and continuous,human-in-the-loop,promotes ethics,none
+223,none,limited audits,comprehensive framework,human-in-the-loop,promotes ethics,none
+224,basic understanding,none,comprehensive framework,human-in-the-loop,promotes ethics,none
+225,none,internal audits,basic assessment,human-in-the-loop,promotes ethics,none
+226,basic understanding,limited audits,basic assessment,human-in-the-loop,promotes ethics,none
+227,full compliance,none,basic assessment,human-in-the-loop,promotes ethics,none
+228,none,independent audits,none,human-in-the-loop,promotes ethics,none
+229,basic understanding,internal audits,none,human-in-the-loop,promotes ethics,none
+230,full compliance,limited audits,none,human-in-the-loop,promotes ethics,none
+231,exceeds requirements,none,none,human-in-the-loop,promotes ethics,none
+232,none,limited audits,proactive and continuous,clear mechanisms,promotes ethics,none
+233,basic understanding,none,proactive and continuous,clear mechanisms,promotes ethics,none
+234,none,internal audits,comprehensive framework,clear mechanisms,promotes ethics,none
+235,basic understanding,limited audits,comprehensive framework,clear mechanisms,promotes ethics,none
+236,full compliance,none,comprehensive framework,clear mechanisms,promotes ethics,none
+237,none,independent audits,basic assessment,clear mechanisms,promotes ethics,none
+238,basic understanding,internal audits,basic assessment,clear mechanisms,promotes ethics,none
+239,full compliance,limited audits,basic assessment,clear mechanisms,promotes ethics,none
+240,exceeds requirements,none,basic assessment,clear mechanisms,promotes ethics,none
+241,basic understanding,independent audits,none,clear mechanisms,promotes ethics,none
+242,full compliance,internal audits,none,clear mechanisms,promotes ethics,none
+243,exceeds requirements,limited audits,none,clear mechanisms,promotes ethics,none
+244,none,internal audits,proactive and continuous,limited oversight,promotes ethics,none
+245,basic understanding,limited audits,proactive and continuous,limited oversight,promotes ethics,none
+246,full compliance,none,proactive and continuous,limited oversight,promotes ethics,none
+247,none,independent audits,comprehensive framework,limited oversight,promotes ethics,none
+248,basic understanding,internal audits,comprehensive framework,limited oversight,promotes ethics,none
+249,full compliance,limited audits,comprehensive framework,limited oversight,promotes ethics,none
+250,exceeds requirements,none,comprehensive framework,limited oversight,promotes ethics,none
+251,basic understanding,independent audits,basic assessment,limited oversight,promotes ethics,none
+252,full compliance,internal audits,basic assessment,limited oversight,promotes ethics,none
+253,exceeds requirements,limited audits,basic assessment,limited oversight,promotes ethics,none
+254,full compliance,independent audits,none,limited oversight,promotes ethics,none
+255,exceeds requirements,internal audits,none,limited oversight,promotes ethics,none
+256,none,independent audits,proactive and continuous,none,promotes ethics,low
+257,basic understanding,internal audits,proactive and continuous,none,promotes ethics,low
+258,full compliance,limited audits,proactive and continuous,none,promotes ethics,low
+259,exceeds requirements,none,proactive and continuous,none,promotes ethics,low
+260,basic understanding,independent audits,comprehensive framework,none,promotes ethics,low
+261,full compliance,internal audits,comprehensive framework,none,promotes ethics,low
+262,exceeds requirements,limited audits,comprehensive framework,none,promotes ethics,low
+263,full compliance,independent audits,basic assessment,none,promotes ethics,low
+264,exceeds requirements,internal audits,basic assessment,none,promotes ethics,low
+265,exceeds requirements,independent audits,none,none,promotes ethics,low
+266,none,limited audits,proactive and continuous,human-in-the-loop,aligns with frameworks,low
+267,basic understanding,none,proactive and continuous,human-in-the-loop,aligns with frameworks,low
+268,none,internal audits,comprehensive framework,human-in-the-loop,aligns with frameworks,low
+269,basic understanding,limited audits,comprehensive framework,human-in-the-loop,aligns with frameworks,low
+270,full compliance,none,comprehensive framework,human-in-the-loop,aligns with frameworks,low
+271,none,independent audits,basic assessment,human-in-the-loop,aligns with frameworks,low
+272,basic understanding,internal audits,basic assessment,human-in-the-loop,aligns with frameworks,low
+273,full compliance,limited audits,basic assessment,human-in-the-loop,aligns with frameworks,low
+274,exceeds requirements,none,basic assessment,human-in-the-loop,aligns with frameworks,low
+275,basic understanding,independent audits,none,human-in-the-loop,aligns with frameworks,low
+276,full compliance,internal audits,none,human-in-the-loop,aligns with frameworks,low
+277,exceeds requirements,limited audits,none,human-in-the-loop,aligns with frameworks,low
+278,none,internal audits,proactive and continuous,clear mechanisms,aligns with frameworks,low
+279,basic understanding,limited audits,proactive and continuous,clear mechanisms,aligns with frameworks,low
+280,full compliance,none,proactive and continuous,clear mechanisms,aligns with frameworks,low
+281,none,independent audits,comprehensive framework,clear mechanisms,aligns with frameworks,low
+282,basic understanding,internal audits,comprehensive framework,clear mechanisms,aligns with frameworks,low
+283,full compliance,limited audits,comprehensive framework,clear mechanisms,aligns with frameworks,low
+284,exceeds requirements,none,comprehensive framework,clear mechanisms,aligns with frameworks,low
+285,basic understanding,independent audits,basic assessment,clear mechanisms,aligns with frameworks,low
+286,full compliance,internal audits,basic assessment,clear mechanisms,aligns with frameworks,low
+287,exceeds requirements,limited audits,basic assessment,clear mechanisms,aligns with frameworks,low
+288,full compliance,independent audits,none,clear mechanisms,aligns with frameworks,low
+289,exceeds requirements,internal audits,none,clear mechanisms,aligns with frameworks,low
+290,none,independent audits,proactive and continuous,limited oversight,aligns with frameworks,low
+291,basic understanding,internal audits,proactive and continuous,limited oversight,aligns with frameworks,low
+292,full compliance,limited audits,proactive and continuous,limited oversight,aligns with frameworks,low
+293,exceeds requirements,none,proactive and continuous,limited oversight,aligns with frameworks,low
+294,basic understanding,independent audits,comprehensive framework,limited oversight,aligns with frameworks,low
+295,full compliance,internal audits,comprehensive framework,limited oversight,aligns with frameworks,low
+296,exceeds requirements,limited audits,comprehensive framework,limited oversight,aligns with frameworks,low
+297,full compliance,independent audits,basic assessment,limited oversight,aligns with frameworks,low
+298,exceeds requirements,internal audits,basic assessment,limited oversight,aligns with frameworks,low
+299,exceeds requirements,independent audits,none,limited oversight,aligns with frameworks,low
+300,basic understanding,independent audits,proactive and continuous,none,aligns with frameworks,low
+301,full compliance,internal audits,proactive and continuous,none,aligns with frameworks,low
+302,exceeds requirements,limited audits,proactive and continuous,none,aligns with frameworks,low
+303,full compliance,independent audits,comprehensive framework,none,aligns with frameworks,low
+304,exceeds requirements,internal audits,comprehensive framework,none,aligns with frameworks,low
+305,exceeds requirements,independent audits,basic assessment,none,aligns with frameworks,low
+306,none,internal audits,proactive and continuous,human-in-the-loop,awareness,low
+307,basic understanding,limited audits,proactive and continuous,human-in-the-loop,awareness,low
+308,full compliance,none,proactive and continuous,human-in-the-loop,awareness,low
+309,none,independent audits,comprehensive framework,human-in-the-loop,awareness,low
+310,basic understanding,internal audits,comprehensive framework,human-in-the-loop,awareness,low
+311,full compliance,limited audits,comprehensive framework,human-in-the-loop,awareness,low
+312,exceeds requirements,none,comprehensive framework,human-in-the-loop,awareness,low
+313,basic understanding,independent audits,basic assessment,human-in-the-loop,awareness,low
+314,full compliance,internal audits,basic assessment,human-in-the-loop,awareness,low
+315,exceeds requirements,limited audits,basic assessment,human-in-the-loop,awareness,low
+316,full compliance,independent audits,none,human-in-the-loop,awareness,low
+317,exceeds requirements,internal audits,none,human-in-the-loop,awareness,low
+318,none,independent audits,proactive and continuous,clear mechanisms,awareness,low
+319,basic understanding,internal audits,proactive and continuous,clear mechanisms,awareness,low
+320,full compliance,limited audits,proactive and continuous,clear mechanisms,awareness,low
+321,exceeds requirements,none,proactive and continuous,clear mechanisms,awareness,low
+322,basic understanding,independent audits,comprehensive framework,clear mechanisms,awareness,low
+323,full compliance,internal audits,comprehensive framework,clear mechanisms,awareness,low
+324,exceeds requirements,limited audits,comprehensive framework,clear mechanisms,awareness,low
+325,full compliance,independent audits,basic assessment,clear mechanisms,awareness,low
+326,exceeds requirements,internal audits,basic assessment,clear mechanisms,awareness,low
+327,exceeds requirements,independent audits,none,clear mechanisms,awareness,low
+328,basic understanding,independent audits,proactive and continuous,limited oversight,awareness,low
+329,full compliance,internal audits,proactive and continuous,limited oversight,awareness,low
+330,exceeds requirements,limited audits,proactive and continuous,limited oversight,awareness,low
+331,full compliance,independent audits,comprehensive framework,limited oversight,awareness,low
+332,exceeds requirements,internal audits,comprehensive framework,limited oversight,awareness,low
+333,exceeds requirements,independent audits,basic assessment,limited oversight,awareness,low
+334,full compliance,independent audits,proactive and continuous,none,awareness,low
+335,exceeds requirements,internal audits,proactive and continuous,none,awareness,low
+336,exceeds requirements,independent audits,comprehensive framework,none,awareness,low
+337,none,independent audits,proactive and continuous,human-in-the-loop,none,low
+338,basic understanding,internal audits,proactive and continuous,human-in-the-loop,none,low
+339,full compliance,limited audits,proactive and continuous,human-in-the-loop,none,low
+340,exceeds requirements,none,proactive and continuous,human-in-the-loop,none,low
+341,basic understanding,independent audits,comprehensive framework,human-in-the-loop,none,low
+342,full compliance,internal audits,comprehensive framework,human-in-the-loop,none,low
+343,exceeds requirements,limited audits,comprehensive framework,human-in-the-loop,none,low
+344,full compliance,independent audits,basic assessment,human-in-the-loop,none,low
+345,exceeds requirements,internal audits,basic assessment,human-in-the-loop,none,low
+346,exceeds requirements,independent audits,none,human-in-the-loop,none,low
+347,basic understanding,independent audits,proactive and continuous,clear mechanisms,none,low
+348,full compliance,internal audits,proactive and continuous,clear mechanisms,none,low
+349,exceeds requirements,limited audits,proactive and continuous,clear mechanisms,none,low
+350,full compliance,independent audits,comprehensive framework,clear mechanisms,none,low
+351,exceeds requirements,internal audits,comprehensive framework,clear mechanisms,none,low
+352,exceeds requirements,independent audits,basic assessment,clear mechanisms,none,low
+353,full compliance,independent audits,proactive and continuous,limited oversight,none,low
+354,exceeds requirements,internal audits,proactive and continuous,limited oversight,none,low
+355,exceeds requirements,independent audits,comprehensive framework,limited oversight,none,low
+356,exceeds requirements,independent audits,proactive and continuous,none,none,low
+357,none,none,comprehensive framework,human-in-the-loop,promotes ethics,low
+358,none,limited audits,basic assessment,human-in-the-loop,promotes ethics,low
+359,basic understanding,none,basic assessment,human-in-the-loop,promotes ethics,low
+360,none,internal audits,none,human-in-the-loop,promotes ethics,low
+361,basic understanding,limited audits,none,human-in-the-loop,promotes ethics,low
+362,full compliance,none,none,human-in-the-loop,promotes ethics,low
+363,none,none,proactive and continuous,clear mechanisms,promotes ethics,low
+364,none,limited audits,comprehensive framework,clear mechanisms,promotes ethics,low
+365,basic understanding,none,comprehensive framework,clear mechanisms,promotes ethics,low
+366,none,internal audits,basic assessment,clear mechanisms,promotes ethics,low
+367,basic understanding,limited audits,basic assessment,clear mechanisms,promotes ethics,low
+368,full compliance,none,basic assessment,clear mechanisms,promotes ethics,low
+369,none,independent audits,none,clear mechanisms,promotes ethics,low
+370,basic understanding,internal audits,none,clear mechanisms,promotes ethics,low
+371,full compliance,limited audits,none,clear mechanisms,promotes ethics,low
+372,exceeds requirements,none,none,clear mechanisms,promotes ethics,low
+373,none,limited audits,proactive and continuous,limited oversight,promotes ethics,low
+374,basic understanding,none,proactive and continuous,limited oversight,promotes ethics,low
+375,none,internal audits,comprehensive framework,limited oversight,promotes ethics,low
+376,basic understanding,limited audits,comprehensive framework,limited oversight,promotes ethics,low
+377,full compliance,none,comprehensive framework,limited oversight,promotes ethics,low
+378,none,independent audits,basic assessment,limited oversight,promotes ethics,low
+379,basic understanding,internal audits,basic assessment,limited oversight,promotes ethics,low
+380,full compliance,limited audits,basic assessment,limited oversight,promotes ethics,low
+381,exceeds requirements,none,basic assessment,limited oversight,promotes ethics,low
+382,basic understanding,independent audits,none,limited oversight,promotes ethics,low
+383,full compliance,internal audits,none,limited oversight,promotes ethics,low
+384,exceeds requirements,limited audits,none,limited oversight,promotes ethics,low
+385,none,internal audits,proactive and continuous,none,promotes ethics,low
+386,basic understanding,limited audits,proactive and continuous,none,promotes ethics,low
+387,full compliance,none,proactive and continuous,none,promotes ethics,low
+388,none,independent audits,comprehensive framework,none,promotes ethics,low
+389,basic understanding,internal audits,comprehensive framework,none,promotes ethics,low
+390,full compliance,limited audits,comprehensive framework,none,promotes ethics,low
+391,exceeds requirements,none,comprehensive framework,none,promotes ethics,low
+392,basic understanding,independent audits,basic assessment,none,promotes ethics,low
+393,full compliance,internal audits,basic assessment,none,promotes ethics,low
+394,exceeds requirements,limited audits,basic assessment,none,promotes ethics,low
+395,full compliance,independent audits,none,none,promotes ethics,low
+396,exceeds requirements,internal audits,none,none,promotes ethics,low
+397,none,none,proactive and continuous,human-in-the-loop,aligns with frameworks,low
+398,none,limited audits,comprehensive framework,human-in-the-loop,aligns with frameworks,low
+399,basic understanding,none,comprehensive framework,human-in-the-loop,aligns with frameworks,low
+400,none,internal audits,basic assessment,human-in-the-loop,aligns with frameworks,low
+401,basic understanding,limited audits,basic assessment,human-in-the-loop,aligns with frameworks,low
+402,full compliance,none,basic assessment,human-in-the-loop,aligns with frameworks,low
+403,none,independent audits,none,human-in-the-loop,aligns with frameworks,low
+404,basic understanding,internal audits,none,human-in-the-loop,aligns with frameworks,low
+405,full compliance,limited audits,none,human-in-the-loop,aligns with frameworks,low
+406,exceeds requirements,none,none,human-in-the-loop,aligns with frameworks,low
+407,none,limited audits,proactive and continuous,clear mechanisms,aligns with frameworks,low
+408,basic understanding,none,proactive and continuous,clear mechanisms,aligns with frameworks,low
+409,none,internal audits,comprehensive framework,clear mechanisms,aligns with frameworks,low
+410,basic understanding,limited audits,comprehensive framework,clear mechanisms,aligns with frameworks,low
+411,full compliance,none,comprehensive framework,clear mechanisms,aligns with frameworks,low
+412,none,independent audits,basic assessment,clear mechanisms,aligns with frameworks,low
+413,basic understanding,internal audits,basic assessment,clear mechanisms,aligns with frameworks,low
+414,full compliance,limited audits,basic assessment,clear mechanisms,aligns with frameworks,low
+415,exceeds requirements,none,basic assessment,clear mechanisms,aligns with frameworks,low
+416,basic understanding,independent audits,none,clear mechanisms,aligns with frameworks,low
+417,full compliance,internal audits,none,clear mechanisms,aligns with frameworks,low
+418,exceeds requirements,limited audits,none,clear mechanisms,aligns with frameworks,low
+419,none,internal audits,proactive and continuous,limited oversight,aligns with frameworks,low
+420,basic understanding,limited audits,proactive and continuous,limited oversight,aligns with frameworks,low
+421,full compliance,none,proactive and continuous,limited oversight,aligns with frameworks,low
+422,none,independent audits,comprehensive framework,limited oversight,aligns with frameworks,low
+423,basic understanding,internal audits,comprehensive framework,limited oversight,aligns with frameworks,low
+424,full compliance,limited audits,comprehensive framework,limited oversight,aligns with frameworks,low
+425,exceeds requirements,none,comprehensive framework,limited oversight,aligns with frameworks,low
+426,basic understanding,independent audits,basic assessment,limited oversight,aligns with frameworks,low
+427,full compliance,internal audits,basic assessment,limited oversight,aligns with frameworks,low
+428,exceeds requirements,limited audits,basic assessment,limited oversight,aligns with frameworks,low
+429,full compliance,independent audits,none,limited oversight,aligns with frameworks,low
+430,exceeds requirements,internal audits,none,limited oversight,aligns with frameworks,low
+431,none,independent audits,proactive and continuous,none,aligns with frameworks,low
+432,basic understanding,internal audits,proactive and continuous,none,aligns with frameworks,low
+433,full compliance,limited audits,proactive and continuous,none,aligns with frameworks,low
+434,exceeds requirements,none,proactive and continuous,none,aligns with frameworks,low
+435,basic understanding,independent audits,comprehensive framework,none,aligns with frameworks,low
+436,full compliance,internal audits,comprehensive framework,none,aligns with frameworks,low
+437,exceeds requirements,limited audits,comprehensive framework,none,aligns with frameworks,low
+438,full compliance,independent audits,basic assessment,none,aligns with frameworks,low
+439,exceeds requirements,internal audits,basic assessment,none,aligns with frameworks,low
+440,exceeds requirements,independent audits,none,none,aligns with frameworks,low
+441,none,limited audits,proactive and continuous,human-in-the-loop,awareness,low
+442,basic understanding,none,proactive and continuous,human-in-the-loop,awareness,low
+443,none,internal audits,comprehensive framework,human-in-the-loop,awareness,low
+444,basic understanding,limited audits,comprehensive framework,human-in-the-loop,awareness,low
+445,full compliance,none,comprehensive framework,human-in-the-loop,awareness,low
+446,none,independent audits,basic assessment,human-in-the-loop,awareness,low
+447,basic understanding,internal audits,basic assessment,human-in-the-loop,awareness,low
+448,full compliance,limited audits,basic assessment,human-in-the-loop,awareness,low
+449,exceeds requirements,none,basic assessment,human-in-the-loop,awareness,low
+450,basic understanding,independent audits,none,human-in-the-loop,awareness,low
+451,full compliance,internal audits,none,human-in-the-loop,awareness,low
+452,exceeds requirements,limited audits,none,human-in-the-loop,awareness,low
+453,none,internal audits,proactive and continuous,clear mechanisms,awareness,low
+454,basic understanding,limited audits,proactive and continuous,clear mechanisms,awareness,low
+455,full compliance,none,proactive and continuous,clear mechanisms,awareness,low
+456,none,independent audits,comprehensive framework,clear mechanisms,awareness,low
+457,basic understanding,internal audits,comprehensive framework,clear mechanisms,awareness,low
+458,full compliance,limited audits,comprehensive framework,clear mechanisms,awareness,low
+459,exceeds requirements,none,comprehensive framework,clear mechanisms,awareness,low
+460,basic understanding,independent audits,basic assessment,clear mechanisms,awareness,low
+461,full compliance,internal audits,basic assessment,clear mechanisms,awareness,low
+462,exceeds requirements,limited audits,basic assessment,clear mechanisms,awareness,low
+463,full compliance,independent audits,none,clear mechanisms,awareness,low
+464,exceeds requirements,internal audits,none,clear mechanisms,awareness,low
+465,none,independent audits,proactive and continuous,limited oversight,awareness,low
+466,basic understanding,internal audits,proactive and continuous,limited oversight,awareness,low
+467,full compliance,limited audits,proactive and continuous,limited oversight,awareness,low
+468,exceeds requirements,none,proactive and continuous,limited oversight,awareness,low
+469,basic understanding,independent audits,comprehensive framework,limited oversight,awareness,low
+470,full compliance,internal audits,comprehensive framework,limited oversight,awareness,low
+471,exceeds requirements,limited audits,comprehensive framework,limited oversight,awareness,low
+472,full compliance,independent audits,basic assessment,limited oversight,awareness,low
+473,exceeds requirements,internal audits,basic assessment,limited oversight,awareness,low
+474,exceeds requirements,independent audits,none,limited oversight,awareness,low
+475,basic understanding,independent audits,proactive and continuous,none,awareness,low
+476,full compliance,internal audits,proactive and continuous,none,awareness,low
+477,exceeds requirements,limited audits,proactive and continuous,none,awareness,low
+478,full compliance,independent audits,comprehensive framework,none,awareness,low
+479,exceeds requirements,internal audits,comprehensive framework,none,awareness,low
+480,exceeds requirements,independent audits,basic assessment,none,awareness,low
+481,none,internal audits,proactive and continuous,human-in-the-loop,none,low
+482,basic understanding,limited audits,proactive and continuous,human-in-the-loop,none,low
+483,full compliance,none,proactive and continuous,human-in-the-loop,none,low
+484,none,independent audits,comprehensive framework,human-in-the-loop,none,low
+485,basic understanding,internal audits,comprehensive framework,human-in-the-loop,none,low
+486,full compliance,limited audits,comprehensive framework,human-in-the-loop,none,low
+487,exceeds requirements,none,comprehensive framework,human-in-the-loop,none,low
+488,basic understanding,independent audits,basic assessment,human-in-the-loop,none,low
+489,full compliance,internal audits,basic assessment,human-in-the-loop,none,low
+490,exceeds requirements,limited audits,basic assessment,human-in-the-loop,none,low
+491,full compliance,independent audits,none,human-in-the-loop,none,low
+492,exceeds requirements,internal audits,none,human-in-the-loop,none,low
+493,none,independent audits,proactive and continuous,clear mechanisms,none,low
+494,basic understanding,internal audits,proactive and continuous,clear mechanisms,none,low
+495,full compliance,limited audits,proactive and continuous,clear mechanisms,none,low
+496,exceeds requirements,none,proactive and continuous,clear mechanisms,none,low
+497,basic understanding,independent audits,comprehensive framework,clear mechanisms,none,low
+498,full compliance,internal audits,comprehensive framework,clear mechanisms,none,low
+499,exceeds requirements,limited audits,comprehensive framework,clear mechanisms,none,low
+500,full compliance,independent audits,basic assessment,clear mechanisms,none,low
+501,exceeds requirements,internal audits,basic assessment,clear mechanisms,none,low
+502,exceeds requirements,independent audits,none,clear mechanisms,none,low
+503,basic understanding,independent audits,proactive and continuous,limited oversight,none,low
+504,full compliance,internal audits,proactive and continuous,limited oversight,none,low
+505,exceeds requirements,limited audits,proactive and continuous,limited oversight,none,low
+506,full compliance,independent audits,comprehensive framework,limited oversight,none,low
+507,exceeds requirements,internal audits,comprehensive framework,limited oversight,none,low
+508,exceeds requirements,independent audits,basic assessment,limited oversight,none,low
+509,full compliance,independent audits,proactive and continuous,none,none,low
+510,exceeds requirements,internal audits,proactive and continuous,none,none,low
+511,exceeds requirements,independent audits,comprehensive framework,none,none,low
+512,none,none,basic assessment,human-in-the-loop,promotes ethics,medium
+513,none,limited audits,none,human-in-the-loop,promotes ethics,medium
+514,basic understanding,none,none,human-in-the-loop,promotes ethics,medium
+515,none,none,comprehensive framework,clear mechanisms,promotes ethics,medium
+516,none,limited audits,basic assessment,clear mechanisms,promotes ethics,medium
+517,basic understanding,none,basic assessment,clear mechanisms,promotes ethics,medium
+518,none,internal audits,none,clear mechanisms,promotes ethics,medium
+519,basic understanding,limited audits,none,clear mechanisms,promotes ethics,medium
+520,full compliance,none,none,clear mechanisms,promotes ethics,medium
+521,none,none,proactive and continuous,limited oversight,promotes ethics,medium
+522,none,limited audits,comprehensive framework,limited oversight,promotes ethics,medium
+523,basic understanding,none,comprehensive framework,limited oversight,promotes ethics,medium
+524,none,internal audits,basic assessment,limited oversight,promotes ethics,medium
+525,basic understanding,limited audits,basic assessment,limited oversight,promotes ethics,medium
+526,full compliance,none,basic assessment,limited oversight,promotes ethics,medium
+527,none,independent audits,none,limited oversight,promotes ethics,medium
+528,basic understanding,internal audits,none,limited oversight,promotes ethics,medium
+529,full compliance,limited audits,none,limited oversight,promotes ethics,medium
+530,exceeds requirements,none,none,limited oversight,promotes ethics,medium
+531,none,limited audits,proactive and continuous,none,promotes ethics,medium
+532,basic understanding,none,proactive and continuous,none,promotes ethics,medium
+533,none,internal audits,comprehensive framework,none,promotes ethics,medium
+534,basic understanding,limited audits,comprehensive framework,none,promotes ethics,medium
+535,full compliance,none,comprehensive framework,none,promotes ethics,medium
+536,none,independent audits,basic assessment,none,promotes ethics,medium
+537,basic understanding,internal audits,basic assessment,none,promotes ethics,medium
+538,full compliance,limited audits,basic assessment,none,promotes ethics,medium
+539,exceeds requirements,none,basic assessment,none,promotes ethics,medium
+540,basic understanding,independent audits,none,none,promotes ethics,medium
+541,full compliance,internal audits,none,none,promotes ethics,medium
+542,exceeds requirements,limited audits,none,none,promotes ethics,medium
+543,none,none,comprehensive framework,human-in-the-loop,aligns with frameworks,medium
+544,none,limited audits,basic assessment,human-in-the-loop,aligns with frameworks,medium
+545,basic understanding,none,basic assessment,human-in-the-loop,aligns with frameworks,medium
+546,none,internal audits,none,human-in-the-loop,aligns with frameworks,medium
+547,basic understanding,limited audits,none,human-in-the-loop,aligns with frameworks,medium
+548,full compliance,none,none,human-in-the-loop,aligns with frameworks,medium
+549,none,none,proactive and continuous,clear mechanisms,aligns with frameworks,medium
+550,none,limited audits,comprehensive framework,clear mechanisms,aligns with frameworks,medium
+551,basic understanding,none,comprehensive framework,clear mechanisms,aligns with frameworks,medium
+552,none,internal audits,basic assessment,clear mechanisms,aligns with frameworks,medium
+553,basic understanding,limited audits,basic assessment,clear mechanisms,aligns with frameworks,medium
+554,full compliance,none,basic assessment,clear mechanisms,aligns with frameworks,medium
+555,none,independent audits,none,clear mechanisms,aligns with frameworks,medium
+556,basic understanding,internal audits,none,clear mechanisms,aligns with frameworks,medium
+557,full compliance,limited audits,none,clear mechanisms,aligns with frameworks,medium
+558,exceeds requirements,none,none,clear mechanisms,aligns with frameworks,medium
+559,none,limited audits,proactive and continuous,limited oversight,aligns with frameworks,medium
+560,basic understanding,none,proactive and continuous,limited oversight,aligns with frameworks,medium
+561,none,internal audits,comprehensive framework,limited oversight,aligns with frameworks,medium
+562,basic understanding,limited audits,comprehensive framework,limited oversight,aligns with frameworks,medium
+563,full compliance,none,comprehensive framework,limited oversight,aligns with frameworks,medium
+564,none,independent audits,basic assessment,limited oversight,aligns with frameworks,medium
+565,basic understanding,internal audits,basic assessment,limited oversight,aligns with frameworks,medium
+566,full compliance,limited audits,basic assessment,limited oversight,aligns with frameworks,medium
+567,exceeds requirements,none,basic assessment,limited oversight,aligns with frameworks,medium
+568,basic understanding,independent audits,none,limited oversight,aligns with frameworks,medium
+569,full compliance,internal audits,none,limited oversight,aligns with frameworks,medium
+570,exceeds requirements,limited audits,none,limited oversight,aligns with frameworks,medium
+571,none,internal audits,proactive and continuous,none,aligns with frameworks,medium
+572,basic understanding,limited audits,proactive and continuous,none,aligns with frameworks,medium
+573,full compliance,none,proactive and continuous,none,aligns with frameworks,medium
+574,none,independent audits,comprehensive framework,none,aligns with frameworks,medium
+575,basic understanding,internal audits,comprehensive framework,none,aligns with frameworks,medium
+576,full compliance,limited audits,comprehensive framework,none,aligns with frameworks,medium
+577,exceeds requirements,none,comprehensive framework,none,aligns with frameworks,medium
+578,basic understanding,independent audits,basic assessment,none,aligns with frameworks,medium
+579,full compliance,internal audits,basic assessment,none,aligns with frameworks,medium
+580,exceeds requirements,limited audits,basic assessment,none,aligns with frameworks,medium
+581,full compliance,independent audits,none,none,aligns with frameworks,medium
+582,exceeds requirements,internal audits,none,none,aligns with frameworks,medium
+583,none,none,proactive and continuous,human-in-the-loop,awareness,medium
+584,none,limited audits,comprehensive framework,human-in-the-loop,awareness,medium
+585,basic understanding,none,comprehensive framework,human-in-the-loop,awareness,medium
+586,none,internal audits,basic assessment,human-in-the-loop,awareness,medium
+587,basic understanding,limited audits,basic assessment,human-in-the-loop,awareness,medium
+588,full compliance,none,basic assessment,human-in-the-loop,awareness,medium
+589,none,independent audits,none,human-in-the-loop,awareness,medium
+590,basic understanding,internal audits,none,human-in-the-loop,awareness,medium
+591,full compliance,limited audits,none,human-in-the-loop,awareness,medium
+592,exceeds requirements,none,none,human-in-the-loop,awareness,medium
+593,none,limited audits,proactive and continuous,clear mechanisms,awareness,medium
+594,basic understanding,none,proactive and continuous,clear mechanisms,awareness,medium
+595,none,internal audits,comprehensive framework,clear mechanisms,awareness,medium
+596,basic understanding,limited audits,comprehensive framework,clear mechanisms,awareness,medium
+597,full compliance,none,comprehensive framework,clear mechanisms,awareness,medium
+598,none,independent audits,basic assessment,clear mechanisms,awareness,medium
+599,basic understanding,internal audits,basic assessment,clear mechanisms,awareness,medium
+600,full compliance,limited audits,basic assessment,clear mechanisms,awareness,medium
+601,exceeds requirements,none,basic assessment,clear mechanisms,awareness,medium
+602,basic understanding,independent audits,none,clear mechanisms,awareness,medium
+603,full compliance,internal audits,none,clear mechanisms,awareness,medium
+604,exceeds requirements,limited audits,none,clear mechanisms,awareness,medium
+605,none,internal audits,proactive and continuous,limited oversight,awareness,medium
+606,basic understanding,limited audits,proactive and continuous,limited oversight,awareness,medium
+607,full compliance,none,proactive and continuous,limited oversight,awareness,medium
+608,none,independent audits,comprehensive framework,limited oversight,awareness,medium
+609,basic understanding,internal audits,comprehensive framework,limited oversight,awareness,medium
+610,full compliance,limited audits,comprehensive framework,limited oversight,awareness,medium
+611,exceeds requirements,none,comprehensive framework,limited oversight,awareness,medium
+612,basic understanding,independent audits,basic assessment,limited oversight,awareness,medium
+613,full compliance,internal audits,basic assessment,limited oversight,awareness,medium
+614,exceeds requirements,limited audits,basic assessment,limited oversight,awareness,medium
+615,full compliance,independent audits,none,limited oversight,awareness,medium
+616,exceeds requirements,internal audits,none,limited oversight,awareness,medium
+617,none,independent audits,proactive and continuous,none,awareness,medium
+618,basic understanding,internal audits,proactive and continuous,none,awareness,medium
+619,full compliance,limited audits,proactive and continuous,none,awareness,medium
+620,exceeds requirements,none,proactive and continuous,none,awareness,medium
+621,basic understanding,independent audits,comprehensive framework,none,awareness,medium
+622,full compliance,internal audits,comprehensive framework,none,awareness,medium
+623,exceeds requirements,limited audits,comprehensive framework,none,awareness,medium
+624,full compliance,independent audits,basic assessment,none,awareness,medium
+625,exceeds requirements,internal audits,basic assessment,none,awareness,medium
+626,exceeds requirements,independent audits,none,none,awareness,medium
+627,none,limited audits,proactive and continuous,human-in-the-loop,none,medium
+628,basic understanding,none,proactive and continuous,human-in-the-loop,none,medium
+629,none,internal audits,comprehensive framework,human-in-the-loop,none,medium
+630,basic understanding,limited audits,comprehensive framework,human-in-the-loop,none,medium
+631,full compliance,none,comprehensive framework,human-in-the-loop,none,medium
+632,none,independent audits,basic assessment,human-in-the-loop,none,medium
+633,basic understanding,internal audits,basic assessment,human-in-the-loop,none,medium
+634,full compliance,limited audits,basic assessment,human-in-the-loop,none,medium
+635,exceeds requirements,none,basic assessment,human-in-the-loop,none,medium
+636,basic understanding,independent audits,none,human-in-the-loop,none,medium
+637,full compliance,internal audits,none,human-in-the-loop,none,medium
+638,exceeds requirements,limited audits,none,human-in-the-loop,none,medium
+639,none,internal audits,proactive and continuous,clear mechanisms,none,medium
+640,basic understanding,limited audits,proactive and continuous,clear mechanisms,none,medium
+641,full compliance,none,proactive and continuous,clear mechanisms,none,medium
+642,none,independent audits,comprehensive framework,clear mechanisms,none,medium
+643,basic understanding,internal audits,comprehensive framework,clear mechanisms,none,medium
+644,full compliance,limited audits,comprehensive framework,clear mechanisms,none,medium
+645,exceeds requirements,none,comprehensive framework,clear mechanisms,none,medium
+646,basic understanding,independent audits,basic assessment,clear mechanisms,none,medium
+647,full compliance,internal audits,basic assessment,clear mechanisms,none,medium
+648,exceeds requirements,limited audits,basic assessment,clear mechanisms,none,medium
+649,full compliance,independent audits,none,clear mechanisms,none,medium
+650,exceeds requirements,internal audits,none,clear mechanisms,none,medium
+651,none,independent audits,proactive and continuous,limited oversight,none,medium
+652,basic understanding,internal audits,proactive and continuous,limited oversight,none,medium
+653,full compliance,limited audits,proactive and continuous,limited oversight,none,medium
+654,exceeds requirements,none,proactive and continuous,limited oversight,none,medium
+655,basic understanding,independent audits,comprehensive framework,limited oversight,none,medium
+656,full compliance,internal audits,comprehensive framework,limited oversight,none,medium
+657,exceeds requirements,limited audits,comprehensive framework,limited oversight,none,medium
+658,full compliance,independent audits,basic assessment,limited oversight,none,medium
+659,exceeds requirements,internal audits,basic assessment,limited oversight,none,medium
+660,exceeds requirements,independent audits,none,limited oversight,none,medium
+661,basic understanding,independent audits,proactive and continuous,none,none,medium
+662,full compliance,internal audits,proactive and continuous,none,none,medium
+663,exceeds requirements,limited audits,proactive and continuous,none,none,medium
+664,full compliance,independent audits,comprehensive framework,none,none,medium
+665,exceeds requirements,internal audits,comprehensive framework,none,none,medium
+666,exceeds requirements,independent audits,basic assessment,none,none,medium
+667,none,none,none,human-in-the-loop,promotes ethics,medium
+668,none,none,basic assessment,clear mechanisms,promotes ethics,medium
+669,none,limited audits,none,clear mechanisms,promotes ethics,medium
+670,basic understanding,none,none,clear mechanisms,promotes ethics,medium
+671,none,none,comprehensive framework,limited oversight,promotes ethics,medium
+672,none,limited audits,basic assessment,limited oversight,promotes ethics,medium
+673,basic understanding,none,basic assessment,limited oversight,promotes ethics,medium
+674,none,internal audits,none,limited oversight,promotes ethics,medium
+675,basic understanding,limited audits,none,limited oversight,promotes ethics,medium
+676,full compliance,none,none,limited oversight,promotes ethics,medium
+677,none,none,proactive and continuous,none,promotes ethics,medium
+678,none,limited audits,comprehensive framework,none,promotes ethics,medium
+679,basic understanding,none,comprehensive framework,none,promotes ethics,medium
+680,none,internal audits,basic assessment,none,promotes ethics,medium
+681,basic understanding,limited audits,basic assessment,none,promotes ethics,medium
+682,full compliance,none,basic assessment,none,promotes ethics,medium
+683,none,independent audits,none,none,promotes ethics,medium
+684,basic understanding,internal audits,none,none,promotes ethics,medium
+685,full compliance,limited audits,none,none,promotes ethics,medium
+686,exceeds requirements,none,none,none,promotes ethics,medium
+687,none,none,basic assessment,human-in-the-loop,aligns with frameworks,medium
+688,none,limited audits,none,human-in-the-loop,aligns with frameworks,medium
+689,basic understanding,none,none,human-in-the-loop,aligns with frameworks,medium
+690,none,none,comprehensive framework,clear mechanisms,aligns with frameworks,medium
+691,none,limited audits,basic assessment,clear mechanisms,aligns with frameworks,medium
+692,basic understanding,none,basic assessment,clear mechanisms,aligns with frameworks,medium
+693,none,internal audits,none,clear mechanisms,aligns with frameworks,medium
+694,basic understanding,limited audits,none,clear mechanisms,aligns with frameworks,medium
+695,full compliance,none,none,clear mechanisms,aligns with frameworks,medium
+696,none,none,proactive and continuous,limited oversight,aligns with frameworks,medium
+697,none,limited audits,comprehensive framework,limited oversight,aligns with frameworks,medium
+698,basic understanding,none,comprehensive framework,limited oversight,aligns with frameworks,medium
+699,none,internal audits,basic assessment,limited oversight,aligns with frameworks,medium
+700,basic understanding,limited audits,basic assessment,limited oversight,aligns with frameworks,medium
+701,full compliance,none,basic assessment,limited oversight,aligns with frameworks,medium
+702,none,independent audits,none,limited oversight,aligns with frameworks,medium
+703,basic understanding,internal audits,none,limited oversight,aligns with frameworks,medium
+704,full compliance,limited audits,none,limited oversight,aligns with frameworks,medium
+705,exceeds requirements,none,none,limited oversight,aligns with frameworks,medium
+706,none,limited audits,proactive and continuous,none,aligns with frameworks,medium
+707,basic understanding,none,proactive and continuous,none,aligns with frameworks,medium
+708,none,internal audits,comprehensive framework,none,aligns with frameworks,medium
+709,basic understanding,limited audits,comprehensive framework,none,aligns with frameworks,medium
+710,full compliance,none,comprehensive framework,none,aligns with frameworks,medium
+711,none,independent audits,basic assessment,none,aligns with frameworks,medium
+712,basic understanding,internal audits,basic assessment,none,aligns with frameworks,medium
+713,full compliance,limited audits,basic assessment,none,aligns with frameworks,medium
+714,exceeds requirements,none,basic assessment,none,aligns with frameworks,medium
+715,basic understanding,independent audits,none,none,aligns with frameworks,medium
+716,full compliance,internal audits,none,none,aligns with frameworks,medium
+717,exceeds requirements,limited audits,none,none,aligns with frameworks,medium
+718,none,none,comprehensive framework,human-in-the-loop,awareness,medium
+719,none,limited audits,basic assessment,human-in-the-loop,awareness,medium
+720,basic understanding,none,basic assessment,human-in-the-loop,awareness,medium
+721,none,internal audits,none,human-in-the-loop,awareness,medium
+722,basic understanding,limited audits,none,human-in-the-loop,awareness,medium
+723,full compliance,none,none,human-in-the-loop,awareness,medium
+724,none,none,proactive and continuous,clear mechanisms,awareness,medium
+725,none,limited audits,comprehensive framework,clear mechanisms,awareness,medium
+726,basic understanding,none,comprehensive framework,clear mechanisms,awareness,medium
+727,none,internal audits,basic assessment,clear mechanisms,awareness,medium
+728,basic understanding,limited audits,basic assessment,clear mechanisms,awareness,medium
+729,full compliance,none,basic assessment,clear mechanisms,awareness,medium
+730,none,independent audits,none,clear mechanisms,awareness,medium
+731,basic understanding,internal audits,none,clear mechanisms,awareness,medium
+732,full compliance,limited audits,none,clear mechanisms,awareness,medium
+733,exceeds requirements,none,none,clear mechanisms,awareness,medium
+734,none,limited audits,proactive and continuous,limited oversight,awareness,medium
+735,basic understanding,none,proactive and continuous,limited oversight,awareness,medium
+736,none,internal audits,comprehensive framework,limited oversight,awareness,medium
+737,basic understanding,limited audits,comprehensive framework,limited oversight,awareness,medium
+738,full compliance,none,comprehensive framework,limited oversight,awareness,medium
+739,none,independent audits,basic assessment,limited oversight,awareness,medium
+740,basic understanding,internal audits,basic assessment,limited oversight,awareness,medium
+741,full compliance,limited audits,basic assessment,limited oversight,awareness,medium
+742,exceeds requirements,none,basic assessment,limited oversight,awareness,medium
+743,basic understanding,independent audits,none,limited oversight,awareness,medium
+744,full compliance,internal audits,none,limited oversight,awareness,medium
+745,exceeds requirements,limited audits,none,limited oversight,awareness,medium
+746,none,internal audits,proactive and continuous,none,awareness,medium
+747,basic understanding,limited audits,proactive and continuous,none,awareness,medium
+748,full compliance,none,proactive and continuous,none,awareness,medium
+749,none,independent audits,comprehensive framework,none,awareness,medium
+750,basic understanding,internal audits,comprehensive framework,none,awareness,medium
+751,full compliance,limited audits,comprehensive framework,none,awareness,medium
+752,exceeds requirements,none,comprehensive framework,none,awareness,medium
+753,basic understanding,independent audits,basic assessment,none,awareness,medium
+754,full compliance,internal audits,basic assessment,none,awareness,medium
+755,exceeds requirements,limited audits,basic assessment,none,awareness,medium
+756,full compliance,independent audits,none,none,awareness,medium
+757,exceeds requirements,internal audits,none,none,awareness,medium
+758,none,none,proactive and continuous,human-in-the-loop,none,medium
+759,none,limited audits,comprehensive framework,human-in-the-loop,none,medium
+760,basic understanding,none,comprehensive framework,human-in-the-loop,none,medium
+761,none,internal audits,basic assessment,human-in-the-loop,none,medium
+762,basic understanding,limited audits,basic assessment,human-in-the-loop,none,medium
+763,full compliance,none,basic assessment,human-in-the-loop,none,medium
+764,none,independent audits,none,human-in-the-loop,none,medium
+765,basic understanding,internal audits,none,human-in-the-loop,none,medium
+766,full compliance,limited audits,none,human-in-the-loop,none,medium
+767,exceeds requirements,none,none,human-in-the-loop,none,medium
+768,none,limited audits,proactive and continuous,clear mechanisms,none,high
+769,basic understanding,none,proactive and continuous,clear mechanisms,none,high
+770,none,internal audits,comprehensive framework,clear mechanisms,none,high
+771,basic understanding,limited audits,comprehensive framework,clear mechanisms,none,high
+772,full compliance,none,comprehensive framework,clear mechanisms,none,high
+773,none,independent audits,basic assessment,clear mechanisms,none,high
+774,basic understanding,internal audits,basic assessment,clear mechanisms,none,high
+775,full compliance,limited audits,basic assessment,clear mechanisms,none,high
+776,exceeds requirements,none,basic assessment,clear mechanisms,none,high
+777,basic understanding,independent audits,none,clear mechanisms,none,high
+778,full compliance,internal audits,none,clear mechanisms,none,high
+779,exceeds requirements,limited audits,none,clear mechanisms,none,high
+780,none,internal audits,proactive and continuous,limited oversight,none,high
+781,basic understanding,limited audits,proactive and continuous,limited oversight,none,high
+782,full compliance,none,proactive and continuous,limited oversight,none,high
+783,none,independent audits,comprehensive framework,limited oversight,none,high
+784,basic understanding,internal audits,comprehensive framework,limited oversight,none,high
+785,full compliance,limited audits,comprehensive framework,limited oversight,none,high
+786,exceeds requirements,none,comprehensive framework,limited oversight,none,high
+787,basic understanding,independent audits,basic assessment,limited oversight,none,high
+788,full compliance,internal audits,basic assessment,limited oversight,none,high
+789,exceeds requirements,limited audits,basic assessment,limited oversight,none,high
+790,full compliance,independent audits,none,limited oversight,none,high
+791,exceeds requirements,internal audits,none,limited oversight,none,high
+792,none,independent audits,proactive and continuous,none,none,high
+793,basic understanding,internal audits,proactive and continuous,none,none,high
+794,full compliance,limited audits,proactive and continuous,none,none,high
+795,exceeds requirements,none,proactive and continuous,none,none,high
+796,basic understanding,independent audits,comprehensive framework,none,none,high
+797,full compliance,internal audits,comprehensive framework,none,none,high
+798,exceeds requirements,limited audits,comprehensive framework,none,none,high
+799,full compliance,independent audits,basic assessment,none,none,high
+800,exceeds requirements,internal audits,basic assessment,none,none,high
+801,exceeds requirements,independent audits,none,none,none,high
+802,none,none,none,clear mechanisms,promotes ethics,high
+803,none,none,basic assessment,limited oversight,promotes ethics,high
+804,none,limited audits,none,limited oversight,promotes ethics,high
+805,basic understanding,none,none,limited oversight,promotes ethics,high
+806,none,none,comprehensive framework,none,promotes ethics,high
+807,none,limited audits,basic assessment,none,promotes ethics,high
+808,basic understanding,none,basic assessment,none,promotes ethics,high
+809,none,internal audits,none,none,promotes ethics,high
+810,basic understanding,limited audits,none,none,promotes ethics,high
+811,full compliance,none,none,none,promotes ethics,high
+812,none,none,none,human-in-the-loop,aligns with frameworks,high
+813,none,none,basic assessment,clear mechanisms,aligns with frameworks,high
+814,none,limited audits,none,clear mechanisms,aligns with frameworks,high
+815,basic understanding,none,none,clear mechanisms,aligns with frameworks,high
+816,none,none,comprehensive framework,limited oversight,aligns with frameworks,high
+817,none,limited audits,basic assessment,limited oversight,aligns with frameworks,high
+818,basic understanding,none,basic assessment,limited oversight,aligns with frameworks,high
+819,none,internal audits,none,limited oversight,aligns with frameworks,high
+820,basic understanding,limited audits,none,limited oversight,aligns with frameworks,high
+821,full compliance,none,none,limited oversight,aligns with frameworks,high
+822,none,none,proactive and continuous,none,aligns with frameworks,high
+823,none,limited audits,comprehensive framework,none,aligns with frameworks,high
+824,basic understanding,none,comprehensive framework,none,aligns with frameworks,high
+825,none,internal audits,basic assessment,none,aligns with frameworks,high
+826,basic understanding,limited audits,basic assessment,none,aligns with frameworks,high
+827,full compliance,none,basic assessment,none,aligns with frameworks,high
+828,none,independent audits,none,none,aligns with frameworks,high
+829,basic understanding,internal audits,none,none,aligns with frameworks,high
+830,full compliance,limited audits,none,none,aligns with frameworks,high
+831,exceeds requirements,none,none,none,aligns with frameworks,high
+832,none,none,basic assessment,human-in-the-loop,awareness,high
+833,none,limited audits,none,human-in-the-loop,awareness,high
+834,basic understanding,none,none,human-in-the-loop,awareness,high
+835,none,none,comprehensive framework,clear mechanisms,awareness,high
+836,none,limited audits,basic assessment,clear mechanisms,awareness,high
+837,basic understanding,none,basic assessment,clear mechanisms,awareness,high
+838,none,internal audits,none,clear mechanisms,awareness,high
+839,basic understanding,limited audits,none,clear mechanisms,awareness,high
+840,full compliance,none,none,clear mechanisms,awareness,high
+841,none,none,proactive and continuous,limited oversight,awareness,high
+842,none,limited audits,comprehensive framework,limited oversight,awareness,high
+843,basic understanding,none,comprehensive framework,limited oversight,awareness,high
+844,none,internal audits,basic assessment,limited oversight,awareness,high
+845,basic understanding,limited audits,basic assessment,limited oversight,awareness,high
+846,full compliance,none,basic assessment,limited oversight,awareness,high
+847,none,independent audits,none,limited oversight,awareness,high
+848,basic understanding,internal audits,none,limited oversight,awareness,high
+849,full compliance,limited audits,none,limited oversight,awareness,high
+850,exceeds requirements,none,none,limited oversight,awareness,high
+851,none,limited audits,proactive and continuous,none,awareness,high
+852,basic understanding,none,proactive and continuous,none,awareness,high
+853,none,internal audits,comprehensive framework,none,awareness,high
+854,basic understanding,limited audits,comprehensive framework,none,awareness,high
+855,full compliance,none,comprehensive framework,none,awareness,high
+856,none,independent audits,basic assessment,none,awareness,high
+857,basic understanding,internal audits,basic assessment,none,awareness,high
+858,full compliance,limited audits,basic assessment,none,awareness,high
+859,exceeds requirements,none,basic assessment,none,awareness,high
+860,basic understanding,independent audits,none,none,awareness,high
+861,full compliance,internal audits,none,none,awareness,high
+862,exceeds requirements,limited audits,none,none,awareness,high
+863,none,none,comprehensive framework,human-in-the-loop,none,high
+864,none,limited audits,basic assessment,human-in-the-loop,none,high
+865,basic understanding,none,basic assessment,human-in-the-loop,none,high
+866,none,internal audits,none,human-in-the-loop,none,high
+867,basic understanding,limited audits,none,human-in-the-loop,none,high
+868,full compliance,none,none,human-in-the-loop,none,high
+869,none,none,proactive and continuous,clear mechanisms,none,high
+870,none,limited audits,comprehensive framework,clear mechanisms,none,high
+871,basic understanding,none,comprehensive framework,clear mechanisms,none,high
+872,none,internal audits,basic assessment,clear mechanisms,none,high
+873,basic understanding,limited audits,basic assessment,clear mechanisms,none,high
+874,full compliance,none,basic assessment,clear mechanisms,none,high
+875,none,independent audits,none,clear mechanisms,none,high
+876,basic understanding,internal audits,none,clear mechanisms,none,high
+877,full compliance,limited audits,none,clear mechanisms,none,high
+878,exceeds requirements,none,none,clear mechanisms,none,high
+879,none,limited audits,proactive and continuous,limited oversight,none,high
+880,basic understanding,none,proactive and continuous,limited oversight,none,high
+881,none,internal audits,comprehensive framework,limited oversight,none,high
+882,basic understanding,limited audits,comprehensive framework,limited oversight,none,high
+883,full compliance,none,comprehensive framework,limited oversight,none,high
+884,none,independent audits,basic assessment,limited oversight,none,high
+885,basic understanding,internal audits,basic assessment,limited oversight,none,high
+886,full compliance,limited audits,basic assessment,limited oversight,none,high
+887,exceeds requirements,none,basic assessment,limited oversight,none,high
+888,basic understanding,independent audits,none,limited oversight,none,high
+889,full compliance,internal audits,none,limited oversight,none,high
+890,exceeds requirements,limited audits,none,limited oversight,none,high
+891,none,internal audits,proactive and continuous,none,none,high
+892,basic understanding,limited audits,proactive and continuous,none,none,high
+893,full compliance,none,proactive and continuous,none,none,high
+894,none,independent audits,comprehensive framework,none,none,high
+895,basic understanding,internal audits,comprehensive framework,none,none,high
+896,full compliance,limited audits,comprehensive framework,none,none,high
+897,exceeds requirements,none,comprehensive framework,none,none,high
+898,basic understanding,independent audits,basic assessment,none,none,high
+899,full compliance,internal audits,basic assessment,none,none,high
+900,exceeds requirements,limited audits,basic assessment,none,none,high
+901,full compliance,independent audits,none,none,none,high
+902,exceeds requirements,internal audits,none,none,none,high
+903,none,none,none,limited oversight,promotes ethics,high
+904,none,none,basic assessment,none,promotes ethics,high
+905,none,limited audits,none,none,promotes ethics,high
+906,basic understanding,none,none,none,promotes ethics,high
+907,none,none,none,clear mechanisms,aligns with frameworks,high
+908,none,none,basic assessment,limited oversight,aligns with frameworks,high
+909,none,limited audits,none,limited oversight,aligns with frameworks,high
+910,basic understanding,none,none,limited oversight,aligns with frameworks,high
+911,none,none,comprehensive framework,none,aligns with frameworks,high
+912,none,limited audits,basic assessment,none,aligns with frameworks,high
+913,basic understanding,none,basic assessment,none,aligns with frameworks,high
+914,none,internal audits,none,none,aligns with frameworks,high
+915,basic understanding,limited audits,none,none,aligns with frameworks,high
+916,full compliance,none,none,none,aligns with frameworks,high
+917,none,none,none,human-in-the-loop,awareness,high
+918,none,none,basic assessment,clear mechanisms,awareness,high
+919,none,limited audits,none,clear mechanisms,awareness,high
+920,basic understanding,none,none,clear mechanisms,awareness,high
+921,none,none,comprehensive framework,limited oversight,awareness,high
+922,none,limited audits,basic assessment,limited oversight,awareness,high
+923,basic understanding,none,basic assessment,limited oversight,awareness,high
+924,none,internal audits,none,limited oversight,awareness,high
+925,basic understanding,limited audits,none,limited oversight,awareness,high
+926,full compliance,none,none,limited oversight,awareness,high
+927,none,none,proactive and continuous,none,awareness,high
+928,none,limited audits,comprehensive framework,none,awareness,high
+929,basic understanding,none,comprehensive framework,none,awareness,high
+930,none,internal audits,basic assessment,none,awareness,high
+931,basic understanding,limited audits,basic assessment,none,awareness,high
+932,full compliance,none,basic assessment,none,awareness,high
+933,none,independent audits,none,none,awareness,high
+934,basic understanding,internal audits,none,none,awareness,high
+935,full compliance,limited audits,none,none,awareness,high
+936,exceeds requirements,none,none,none,awareness,high
+937,none,none,basic assessment,human-in-the-loop,none,high
+938,none,limited audits,none,human-in-the-loop,none,high
+939,basic understanding,none,none,human-in-the-loop,none,high
+940,none,none,comprehensive framework,clear mechanisms,none,high
+941,none,limited audits,basic assessment,clear mechanisms,none,high
+942,basic understanding,none,basic assessment,clear mechanisms,none,high
+943,none,internal audits,none,clear mechanisms,none,high
+944,basic understanding,limited audits,none,clear mechanisms,none,high
+945,full compliance,none,none,clear mechanisms,none,high
+946,none,none,proactive and continuous,limited oversight,none,high
+947,none,limited audits,comprehensive framework,limited oversight,none,high
+948,basic understanding,none,comprehensive framework,limited oversight,none,high
+949,none,internal audits,basic assessment,limited oversight,none,high
+950,basic understanding,limited audits,basic assessment,limited oversight,none,high
+951,full compliance,none,basic assessment,limited oversight,none,high
+952,none,independent audits,none,limited oversight,none,high
+953,basic understanding,internal audits,none,limited oversight,none,high
+954,full compliance,limited audits,none,limited oversight,none,high
+955,exceeds requirements,none,none,limited oversight,none,high
+956,none,limited audits,proactive and continuous,none,none,high
+957,basic understanding,none,proactive and continuous,none,none,high
+958,none,internal audits,comprehensive framework,none,none,high
+959,basic understanding,limited audits,comprehensive framework,none,none,high
+960,full compliance,none,comprehensive framework,none,none,high
+961,none,independent audits,basic assessment,none,none,high
+962,basic understanding,internal audits,basic assessment,none,none,high
+963,full compliance,limited audits,basic assessment,none,none,high
+964,exceeds requirements,none,basic assessment,none,none,high
+965,basic understanding,independent audits,none,none,none,high
+966,full compliance,internal audits,none,none,none,high
+967,exceeds requirements,limited audits,none,none,none,high
+968,none,none,none,none,promotes ethics,high
+969,none,none,none,limited oversight,aligns with frameworks,high
+970,none,none,basic assessment,none,aligns with frameworks,high
+971,none,limited audits,none,none,aligns with frameworks,high
+972,basic understanding,none,none,none,aligns with frameworks,high
+973,none,none,none,clear mechanisms,awareness,high
+974,none,none,basic assessment,limited oversight,awareness,high
+975,none,limited audits,none,limited oversight,awareness,high
+976,basic understanding,none,none,limited oversight,awareness,high
+977,none,none,comprehensive framework,none,awareness,high
+978,none,limited audits,basic assessment,none,awareness,high
+979,basic understanding,none,basic assessment,none,awareness,high
+980,none,internal audits,none,none,awareness,high
+981,basic understanding,limited audits,none,none,awareness,high
+982,full compliance,none,none,none,awareness,high
+983,none,none,none,human-in-the-loop,none,high
+984,none,none,basic assessment,clear mechanisms,none,high
+985,none,limited audits,none,clear mechanisms,none,high
+986,basic understanding,none,none,clear mechanisms,none,high
+987,none,none,comprehensive framework,limited oversight,none,high
+988,none,limited audits,basic assessment,limited oversight,none,high
+989,basic understanding,none,basic assessment,limited oversight,none,high
+990,none,internal audits,none,limited oversight,none,high
+991,basic understanding,limited audits,none,limited oversight,none,high
+992,full compliance,none,none,limited oversight,none,high
+993,none,none,proactive and continuous,none,none,high
+994,none,limited audits,comprehensive framework,none,none,high
+995,basic understanding,none,comprehensive framework,none,none,high
+996,none,internal audits,basic assessment,none,none,high
+997,basic understanding,limited audits,basic assessment,none,none,high
+998,full compliance,none,basic assessment,none,none,high
+999,none,independent audits,none,none,none,high
+1000,basic understanding,internal audits,none,none,none,high
+1001,full compliance,limited audits,none,none,none,high
+1002,exceeds requirements,none,none,none,none,high
+1003,none,none,none,none,aligns with frameworks,high
+1004,none,none,none,limited oversight,awareness,high
+1005,none,none,basic assessment,none,awareness,high
+1006,none,limited audits,none,none,awareness,high
+1007,basic understanding,none,none,none,awareness,high
+1008,none,none,none,clear mechanisms,none,high
+1009,none,none,basic assessment,limited oversight,none,high
+1010,none,limited audits,none,limited oversight,none,high
+1011,basic understanding,none,none,limited oversight,none,high
+1012,none,none,comprehensive framework,none,none,high
+1013,none,limited audits,basic assessment,none,none,high
+1014,basic understanding,none,basic assessment,none,none,high
+1015,none,internal audits,none,none,none,high
+1016,basic understanding,limited audits,none,none,none,high
+1017,full compliance,none,none,none,none,high
+1018,none,none,none,none,awareness,high
+1019,none,none,none,limited oversight,none,high
+1020,none,none,basic assessment,none,none,high
+1021,none,limited audits,none,none,none,high
+1022,basic understanding,none,none,none,none,high
+1023,none,none,none,none,none,high

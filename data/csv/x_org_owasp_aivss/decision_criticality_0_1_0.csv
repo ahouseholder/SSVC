@@ -1,0 +1,257 @@
+row,Safety-Critical v0.1.0 (x_org.owasp#aivss),Financial Impact v0.1.0 (x_org.owasp#aivss),Reputational Damage v0.1.0 (x_org.owasp#aivss),Operational Disruption v0.1.0 (x_org.owasp#aivss),Decision Criticality v0.1.0 (x_org.owasp#aivss)
+0,formally verified,minimized risk,minimized risk,high availability,none
+1,rigorous testing,minimized risk,minimized risk,high availability,none
+2,formally verified,robust controls,minimized risk,high availability,none
+3,formally verified,minimized risk,risk assessment,high availability,none
+4,formally verified,minimized risk,minimized risk,robust controls,none
+5,basic measures,minimized risk,minimized risk,high availability,none
+6,rigorous testing,robust controls,minimized risk,high availability,none
+7,formally verified,some measures,minimized risk,high availability,none
+8,rigorous testing,minimized risk,risk assessment,high availability,none
+9,formally verified,robust controls,risk assessment,high availability,none
+10,formally verified,minimized risk,awareness,high availability,none
+11,rigorous testing,minimized risk,minimized risk,robust controls,none
+12,formally verified,robust controls,minimized risk,robust controls,none
+13,formally verified,minimized risk,risk assessment,robust controls,none
+14,formally verified,minimized risk,minimized risk,some measures,none
+15,no consideration,minimized risk,minimized risk,high availability,none
+16,basic measures,robust controls,minimized risk,high availability,none
+17,rigorous testing,some measures,minimized risk,high availability,none
+18,formally verified,high risk,minimized risk,high availability,none
+19,basic measures,minimized risk,risk assessment,high availability,none
+20,rigorous testing,robust controls,risk assessment,high availability,none
+21,formally verified,some measures,risk assessment,high availability,none
+22,rigorous testing,minimized risk,awareness,high availability,none
+23,formally verified,robust controls,awareness,high availability,none
+24,formally verified,minimized risk,high risk,high availability,none
+25,basic measures,minimized risk,minimized risk,robust controls,none
+26,rigorous testing,robust controls,minimized risk,robust controls,none
+27,formally verified,some measures,minimized risk,robust controls,none
+28,rigorous testing,minimized risk,risk assessment,robust controls,none
+29,formally verified,robust controls,risk assessment,robust controls,none
+30,formally verified,minimized risk,awareness,robust controls,none
+31,rigorous testing,minimized risk,minimized risk,some measures,none
+32,formally verified,robust controls,minimized risk,some measures,none
+33,formally verified,minimized risk,risk assessment,some measures,none
+34,formally verified,minimized risk,minimized risk,high risk,none
+35,no consideration,robust controls,minimized risk,high availability,none
+36,basic measures,some measures,minimized risk,high availability,none
+37,rigorous testing,high risk,minimized risk,high availability,none
+38,no consideration,minimized risk,risk assessment,high availability,none
+39,basic measures,robust controls,risk assessment,high availability,none
+40,rigorous testing,some measures,risk assessment,high availability,none
+41,formally verified,high risk,risk assessment,high availability,none
+42,basic measures,minimized risk,awareness,high availability,none
+43,rigorous testing,robust controls,awareness,high availability,none
+44,formally verified,some measures,awareness,high availability,none
+45,rigorous testing,minimized risk,high risk,high availability,none
+46,formally verified,robust controls,high risk,high availability,none
+47,no consideration,minimized risk,minimized risk,robust controls,none
+48,basic measures,robust controls,minimized risk,robust controls,none
+49,rigorous testing,some measures,minimized risk,robust controls,none
+50,formally verified,high risk,minimized risk,robust controls,none
+51,basic measures,minimized risk,risk assessment,robust controls,none
+52,rigorous testing,robust controls,risk assessment,robust controls,none
+53,formally verified,some measures,risk assessment,robust controls,none
+54,rigorous testing,minimized risk,awareness,robust controls,none
+55,formally verified,robust controls,awareness,robust controls,none
+56,formally verified,minimized risk,high risk,robust controls,none
+57,basic measures,minimized risk,minimized risk,some measures,none
+58,rigorous testing,robust controls,minimized risk,some measures,none
+59,formally verified,some measures,minimized risk,some measures,none
+60,rigorous testing,minimized risk,risk assessment,some measures,none
+61,formally verified,robust controls,risk assessment,some measures,none
+62,formally verified,minimized risk,awareness,some measures,none
+63,rigorous testing,minimized risk,minimized risk,high risk,none
+64,formally verified,robust controls,minimized risk,high risk,low
+65,formally verified,minimized risk,risk assessment,high risk,low
+66,no consideration,some measures,minimized risk,high availability,low
+67,basic measures,high risk,minimized risk,high availability,low
+68,no consideration,robust controls,risk assessment,high availability,low
+69,basic measures,some measures,risk assessment,high availability,low
+70,rigorous testing,high risk,risk assessment,high availability,low
+71,no consideration,minimized risk,awareness,high availability,low
+72,basic measures,robust controls,awareness,high availability,low
+73,rigorous testing,some measures,awareness,high availability,low
+74,formally verified,high risk,awareness,high availability,low
+75,basic measures,minimized risk,high risk,high availability,low
+76,rigorous testing,robust controls,high risk,high availability,low
+77,formally verified,some measures,high risk,high availability,low
+78,no consideration,robust controls,minimized risk,robust controls,low
+79,basic measures,some measures,minimized risk,robust controls,low
+80,rigorous testing,high risk,minimized risk,robust controls,low
+81,no consideration,minimized risk,risk assessment,robust controls,low
+82,basic measures,robust controls,risk assessment,robust controls,low
+83,rigorous testing,some measures,risk assessment,robust controls,low
+84,formally verified,high risk,risk assessment,robust controls,low
+85,basic measures,minimized risk,awareness,robust controls,low
+86,rigorous testing,robust controls,awareness,robust controls,low
+87,formally verified,some measures,awareness,robust controls,low
+88,rigorous testing,minimized risk,high risk,robust controls,low
+89,formally verified,robust controls,high risk,robust controls,low
+90,no consideration,minimized risk,minimized risk,some measures,low
+91,basic measures,robust controls,minimized risk,some measures,low
+92,rigorous testing,some measures,minimized risk,some measures,low
+93,formally verified,high risk,minimized risk,some measures,low
+94,basic measures,minimized risk,risk assessment,some measures,low
+95,rigorous testing,robust controls,risk assessment,some measures,low
+96,formally verified,some measures,risk assessment,some measures,low
+97,rigorous testing,minimized risk,awareness,some measures,low
+98,formally verified,robust controls,awareness,some measures,low
+99,formally verified,minimized risk,high risk,some measures,low
+100,basic measures,minimized risk,minimized risk,high risk,low
+101,rigorous testing,robust controls,minimized risk,high risk,low
+102,formally verified,some measures,minimized risk,high risk,low
+103,rigorous testing,minimized risk,risk assessment,high risk,low
+104,formally verified,robust controls,risk assessment,high risk,low
+105,formally verified,minimized risk,awareness,high risk,low
+106,no consideration,high risk,minimized risk,high availability,low
+107,no consideration,some measures,risk assessment,high availability,low
+108,basic measures,high risk,risk assessment,high availability,low
+109,no consideration,robust controls,awareness,high availability,low
+110,basic measures,some measures,awareness,high availability,low
+111,rigorous testing,high risk,awareness,high availability,low
+112,no consideration,minimized risk,high risk,high availability,low
+113,basic measures,robust controls,high risk,high availability,low
+114,rigorous testing,some measures,high risk,high availability,low
+115,formally verified,high risk,high risk,high availability,low
+116,no consideration,some measures,minimized risk,robust controls,low
+117,basic measures,high risk,minimized risk,robust controls,low
+118,no consideration,robust controls,risk assessment,robust controls,low
+119,basic measures,some measures,risk assessment,robust controls,low
+120,rigorous testing,high risk,risk assessment,robust controls,low
+121,no consideration,minimized risk,awareness,robust controls,low
+122,basic measures,robust controls,awareness,robust controls,low
+123,rigorous testing,some measures,awareness,robust controls,low
+124,formally verified,high risk,awareness,robust controls,low
+125,basic measures,minimized risk,high risk,robust controls,low
+126,rigorous testing,robust controls,high risk,robust controls,low
+127,formally verified,some measures,high risk,robust controls,low
+128,no consideration,robust controls,minimized risk,some measures,medium
+129,basic measures,some measures,minimized risk,some measures,medium
+130,rigorous testing,high risk,minimized risk,some measures,medium
+131,no consideration,minimized risk,risk assessment,some measures,medium
+132,basic measures,robust controls,risk assessment,some measures,medium
+133,rigorous testing,some measures,risk assessment,some measures,medium
+134,formally verified,high risk,risk assessment,some measures,medium
+135,basic measures,minimized risk,awareness,some measures,medium
+136,rigorous testing,robust controls,awareness,some measures,medium
+137,formally verified,some measures,awareness,some measures,medium
+138,rigorous testing,minimized risk,high risk,some measures,medium
+139,formally verified,robust controls,high risk,some measures,medium
+140,no consideration,minimized risk,minimized risk,high risk,medium
+141,basic measures,robust controls,minimized risk,high risk,medium
+142,rigorous testing,some measures,minimized risk,high risk,medium
+143,formally verified,high risk,minimized risk,high risk,medium
+144,basic measures,minimized risk,risk assessment,high risk,medium
+145,rigorous testing,robust controls,risk assessment,high risk,medium
+146,formally verified,some measures,risk assessment,high risk,medium
+147,rigorous testing,minimized risk,awareness,high risk,medium
+148,formally verified,robust controls,awareness,high risk,medium
+149,formally verified,minimized risk,high risk,high risk,medium
+150,no consideration,high risk,risk assessment,high availability,medium
+151,no consideration,some measures,awareness,high availability,medium
+152,basic measures,high risk,awareness,high availability,medium
+153,no consideration,robust controls,high risk,high availability,medium
+154,basic measures,some measures,high risk,high availability,medium
+155,rigorous testing,high risk,high risk,high availability,medium
+156,no consideration,high risk,minimized risk,robust controls,medium
+157,no consideration,some measures,risk assessment,robust controls,medium
+158,basic measures,high risk,risk assessment,robust controls,medium
+159,no consideration,robust controls,awareness,robust controls,medium
+160,basic measures,some measures,awareness,robust controls,medium
+161,rigorous testing,high risk,awareness,robust controls,medium
+162,no consideration,minimized risk,high risk,robust controls,medium
+163,basic measures,robust controls,high risk,robust controls,medium
+164,rigorous testing,some measures,high risk,robust controls,medium
+165,formally verified,high risk,high risk,robust controls,medium
+166,no consideration,some measures,minimized risk,some measures,medium
+167,basic measures,high risk,minimized risk,some measures,medium
+168,no consideration,robust controls,risk assessment,some measures,medium
+169,basic measures,some measures,risk assessment,some measures,medium
+170,rigorous testing,high risk,risk assessment,some measures,medium
+171,no consideration,minimized risk,awareness,some measures,medium
+172,basic measures,robust controls,awareness,some measures,medium
+173,rigorous testing,some measures,awareness,some measures,medium
+174,formally verified,high risk,awareness,some measures,medium
+175,basic measures,minimized risk,high risk,some measures,medium
+176,rigorous testing,robust controls,high risk,some measures,medium
+177,formally verified,some measures,high risk,some measures,medium
+178,no consideration,robust controls,minimized risk,high risk,medium
+179,basic measures,some measures,minimized risk,high risk,medium
+180,rigorous testing,high risk,minimized risk,high risk,medium
+181,no consideration,minimized risk,risk assessment,high risk,medium
+182,basic measures,robust controls,risk assessment,high risk,medium
+183,rigorous testing,some measures,risk assessment,high risk,medium
+184,formally verified,high risk,risk assessment,high risk,medium
+185,basic measures,minimized risk,awareness,high risk,medium
+186,rigorous testing,robust controls,awareness,high risk,medium
+187,formally verified,some measures,awareness,high risk,medium
+188,rigorous testing,minimized risk,high risk,high risk,medium
+189,formally verified,robust controls,high risk,high risk,medium
+190,no consideration,high risk,awareness,high availability,medium
+191,no consideration,some measures,high risk,high availability,medium
+192,basic measures,high risk,high risk,high availability,high
+193,no consideration,high risk,risk assessment,robust controls,high
+194,no consideration,some measures,awareness,robust controls,high
+195,basic measures,high risk,awareness,robust controls,high
+196,no consideration,robust controls,high risk,robust controls,high
+197,basic measures,some measures,high risk,robust controls,high
+198,rigorous testing,high risk,high risk,robust controls,high
+199,no consideration,high risk,minimized risk,some measures,high
+200,no consideration,some measures,risk assessment,some measures,high
+201,basic measures,high risk,risk assessment,some measures,high
+202,no consideration,robust controls,awareness,some measures,high
+203,basic measures,some measures,awareness,some measures,high
+204,rigorous testing,high risk,awareness,some measures,high
+205,no consideration,minimized risk,high risk,some measures,high
+206,basic measures,robust controls,high risk,some measures,high
+207,rigorous testing,some measures,high risk,some measures,high
+208,formally verified,high risk,high risk,some measures,high
+209,no consideration,some measures,minimized risk,high risk,high
+210,basic measures,high risk,minimized risk,high risk,high
+211,no consideration,robust controls,risk assessment,high risk,high
+212,basic measures,some measures,risk assessment,high risk,high
+213,rigorous testing,high risk,risk assessment,high risk,high
+214,no consideration,minimized risk,awareness,high risk,high
+215,basic measures,robust controls,awareness,high risk,high
+216,rigorous testing,some measures,awareness,high risk,high
+217,formally verified,high risk,awareness,high risk,high
+218,basic measures,minimized risk,high risk,high risk,high
+219,rigorous testing,robust controls,high risk,high risk,high
+220,formally verified,some measures,high risk,high risk,high
+221,no consideration,high risk,high risk,high availability,high
+222,no consideration,high risk,awareness,robust controls,high
+223,no consideration,some measures,high risk,robust controls,high
+224,basic measures,high risk,high risk,robust controls,high
+225,no consideration,high risk,risk assessment,some measures,high
+226,no consideration,some measures,awareness,some measures,high
+227,basic measures,high risk,awareness,some measures,high
+228,no consideration,robust controls,high risk,some measures,high
+229,basic measures,some measures,high risk,some measures,high
+230,rigorous testing,high risk,high risk,some measures,high
+231,no consideration,high risk,minimized risk,high risk,high
+232,no consideration,some measures,risk assessment,high risk,high
+233,basic measures,high risk,risk assessment,high risk,high
+234,no consideration,robust controls,awareness,high risk,high
+235,basic measures,some measures,awareness,high risk,high
+236,rigorous testing,high risk,awareness,high risk,high
+237,no consideration,minimized risk,high risk,high risk,high
+238,basic measures,robust controls,high risk,high risk,high
+239,rigorous testing,some measures,high risk,high risk,high
+240,formally verified,high risk,high risk,high risk,high
+241,no consideration,high risk,high risk,robust controls,high
+242,no consideration,high risk,awareness,some measures,high
+243,no consideration,some measures,high risk,some measures,high
+244,basic measures,high risk,high risk,some measures,high
+245,no consideration,high risk,risk assessment,high risk,high
+246,no consideration,some measures,awareness,high risk,high
+247,basic measures,high risk,awareness,high risk,high
+248,no consideration,robust controls,high risk,high risk,high
+249,basic measures,some measures,high risk,high risk,high
+250,rigorous testing,high risk,high risk,high risk,high
+251,no consideration,high risk,high risk,some measures,high
+252,no consideration,high risk,awareness,high risk,high
+253,no consideration,some measures,high risk,high risk,high
+254,basic measures,high risk,high risk,high risk,high
+255,no consideration,high risk,high risk,high risk,high

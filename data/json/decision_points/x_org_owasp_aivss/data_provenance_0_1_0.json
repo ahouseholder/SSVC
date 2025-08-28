@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DP",
+  "version": "0.1.0",
+  "name": "Data Provenance",
+  "definition": "Degree to which the provenance of data is tracked, verified, and auditable.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Formally Verified",
+      "definition": "Data provenance formally verified and auditable, with mechanisms to ensure authenticity and trustworthiness."
+    },
+    {
+      "key": "D",
+      "name": "Detailed Lineage",
+      "definition": "Detailed data lineage tracked, including all transformations and processing steps, with a clear audit trail."
+    },
+    {
+      "key": "B",
+      "name": "Basic Info",
+      "definition": "Basic information about data sources available, but lineage is incomplete or unclear."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No information about data origin, collection methods, or transformations."
+    }
+  ]
+}

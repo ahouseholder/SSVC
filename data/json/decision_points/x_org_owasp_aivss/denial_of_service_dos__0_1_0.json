@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DOS",
+  "version": "0.1.0",
+  "name": "Denial of Service (DoS)",
+  "definition": "Degree to which the system is resistant or vulnerable to Denial of Service (DoS) attacks.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "P",
+      "name": "Provably Resistant",
+      "definition": "System provably resistant to DoS attacks, with formal guarantees on its availability under high load or malicious traffic."
+    },
+    {
+      "key": "S",
+      "name": "Strong Defenses",
+      "definition": "Strong defenses against DoS attacks, making it very difficult to disrupt the system's availability."
+    },
+    {
+      "key": "M",
+      "name": "Some Measures",
+      "definition": "Some measures to mitigate DoS attacks, but the system may still be vulnerable to sophisticated attacks."
+    },
+    {
+      "key": "H",
+      "name": "Highly Vulnerable",
+      "definition": "Highly vulnerable to DoS attacks, with no or minimal measures to protect the system's availability."
+    }
+  ]
+}

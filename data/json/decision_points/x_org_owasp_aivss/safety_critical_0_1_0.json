@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "SC",
+  "version": "0.1.0",
+  "name": "Safety-Critical",
+  "definition": "Degree to which the system meets safety-critical standards and incorporates safety mechanisms.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Formally Verified",
+      "definition": "System formally verified to meet safety-critical standards (e.g., ISO 26262, IEC 62304)."
+    },
+    {
+      "key": "R",
+      "name": "Rigorous Testing",
+      "definition": "Rigorous safety testing performed, including edge cases and failure scenarios, with failsafe mechanisms and human oversight."
+    },
+    {
+      "key": "B",
+      "name": "Basic Measures",
+      "definition": "Basic safety measures in place, but no rigorous safety testing or formal verification."
+    },
+    {
+      "key": "N",
+      "name": "No Consideration",
+      "definition": "System used in safety-critical applications without proper safety considerations or failsafe mechanisms."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DPO",
+  "version": "0.1.0",
+  "name": "Data Poisoning",
+  "definition": "Degree to which the system is resistant to data poisoning attacks and ensures the integrity of training data.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "P",
+      "name": "Provably Resistant",
+      "definition": "System provably resistant to data poisoning, with formal guarantees on the integrity and security of the training data."
+    },
+    {
+      "key": "S",
+      "name": "Strong Defenses",
+      "definition": "Strong data validation, anomaly detection, and provenance tracking mechanisms in place, making it very difficult to successfully poison the training data."
+    },
+    {
+      "key": "M",
+      "name": "Some Mitigation",
+      "definition": "Some measures to mitigate data poisoning, but risks remain, and targeted poisoning attacks may still be possible."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of data poisoning, with no or minimal measures to ensure the integrity and security of the training data."
+    }
+  ]
+}

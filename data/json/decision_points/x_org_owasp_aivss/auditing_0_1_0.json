@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "AU",
+  "version": "0.1.0",
+  "name": "Auditing",
+  "definition": "Degree to which the AI system is subject to regular, independent, and comprehensive audits.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "I",
+      "name": "Independent Audits",
+      "definition": "Regular independent audits by reputable third parties, with formal verification of the system's security, fairness, and ethical performance."
+    },
+    {
+      "key": "N",
+      "name": "Internal Audits",
+      "definition": "Regular internal audits conducted, covering all aspects of the AI system lifecycle, with clear audit trails and documentation."
+    },
+    {
+      "key": "L",
+      "name": "Limited Audits",
+      "definition": "Infrequent or limited audits, with no independent verification."
+    },
+    {
+      "key": "O",
+      "name": "None",
+      "definition": "No auditing of the AI system's design, development, deployment, or operation."
+    }
+  ]
+}

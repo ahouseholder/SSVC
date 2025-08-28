@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "GENERIC2",
+  "version": "2.0.0",
+  "name": "Generic AIVSS Decision Point",
+  "definition": "A generic decision point for AI-Specific Vulnerability Scoring System (AIVSS) metrics based on the 0.5 paper.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None / Not Present",
+      "definition": "The agent does not possess this characteristic."
+    },
+    {
+      "key": "P",
+      "name": "Partial / Limited",
+      "definition": "The characteristic is present but constrained or limited."
+    },
+    {
+      "key": "F",
+      "name": "Full / Unconstrained",
+      "definition": "The characteristic is a primary, fully-enabled feature."
+    }
+  ]
+}

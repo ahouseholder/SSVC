@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "GENERIC",
+  "version": "0.1.0",
+  "name": "Generic AIVSS Decision Point",
+  "definition": "A generic decision point for AI-Specific Vulnerability Scoring System (AIVSS) metrics.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No known vulnerability or a formally proven resistance to the specific threat."
+    },
+    {
+      "key": "L",
+      "name": "Low",
+      "definition": "Low vulnerability with strong mitigation in place, but some minor weaknesses may still exist."
+    },
+    {
+      "key": "M",
+      "name": "Medium",
+      "definition": "Moderate vulnerability with some mitigation, but significant weaknesses remain."
+    },
+    {
+      "key": "H",
+      "name": "High",
+      "definition": "Severe vulnerability with little to no mitigation in place."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "TE",
+  "version": "0.1.0",
+  "name": "Transparency and Explainability",
+  "definition": "Degree to which the system's decision-making process is transparent and explainable.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Fully Transparent",
+      "definition": "System's decision-making process is fully transparent and formally explainable, with clear causal relationships established."
+    },
+    {
+      "key": "H",
+      "name": "Highly Explainable",
+      "definition": "Highly explainable, system uses inherently interpretable models or provides reliable and comprehensive explanations for all decisions."
+    },
+    {
+      "key": "L",
+      "name": "Limited Explainability",
+      "definition": "Limited explainability, some post-hoc explanations can be generated, but they may not be reliable or comprehensive."
+    },
+    {
+      "key": "B",
+      "name": "Black Box",
+      "definition": "Black-box system, no insight into decision-making process."
+    }
+  ]
+}

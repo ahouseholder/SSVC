@@ -1,0 +1,257 @@
+row,Continuous Monitoring v0.1.0 (x_org.owasp#aivss),Retraining Capabilities v0.1.0 (x_org.owasp#aivss),Threat Intelligence Integration v0.1.0 (x_org.owasp#aivss),Adversarial Training v0.1.0 (x_org.owasp#aivss),Adaptability v0.1.0 (x_org.owasp#aivss)
+0,real-time automation,continuous automated retraining,proactive hunting,continuous adversarial training,none
+1,comprehensive monitoring,continuous automated retraining,proactive hunting,continuous adversarial training,none
+2,real-time automation,automated pipeline,proactive hunting,continuous adversarial training,none
+3,real-time automation,continuous automated retraining,integrated feeds,continuous adversarial training,none
+4,real-time automation,continuous automated retraining,proactive hunting,robust adversarial training,none
+5,basic monitoring,continuous automated retraining,proactive hunting,continuous adversarial training,none
+6,comprehensive monitoring,automated pipeline,proactive hunting,continuous adversarial training,none
+7,real-time automation,manual retraining,proactive hunting,continuous adversarial training,none
+8,comprehensive monitoring,continuous automated retraining,integrated feeds,continuous adversarial training,none
+9,real-time automation,automated pipeline,integrated feeds,continuous adversarial training,none
+10,real-time automation,continuous automated retraining,basic use,continuous adversarial training,none
+11,comprehensive monitoring,continuous automated retraining,proactive hunting,robust adversarial training,none
+12,real-time automation,automated pipeline,proactive hunting,robust adversarial training,none
+13,real-time automation,continuous automated retraining,integrated feeds,robust adversarial training,none
+14,real-time automation,continuous automated retraining,proactive hunting,basic adversarial training,none
+15,none,continuous automated retraining,proactive hunting,continuous adversarial training,none
+16,basic monitoring,automated pipeline,proactive hunting,continuous adversarial training,none
+17,comprehensive monitoring,manual retraining,proactive hunting,continuous adversarial training,none
+18,real-time automation,none,proactive hunting,continuous adversarial training,none
+19,basic monitoring,continuous automated retraining,integrated feeds,continuous adversarial training,none
+20,comprehensive monitoring,automated pipeline,integrated feeds,continuous adversarial training,none
+21,real-time automation,manual retraining,integrated feeds,continuous adversarial training,none
+22,comprehensive monitoring,continuous automated retraining,basic use,continuous adversarial training,none
+23,real-time automation,automated pipeline,basic use,continuous adversarial training,none
+24,real-time automation,continuous automated retraining,none,continuous adversarial training,none
+25,basic monitoring,continuous automated retraining,proactive hunting,robust adversarial training,none
+26,comprehensive monitoring,automated pipeline,proactive hunting,robust adversarial training,none
+27,real-time automation,manual retraining,proactive hunting,robust adversarial training,none
+28,comprehensive monitoring,continuous automated retraining,integrated feeds,robust adversarial training,none
+29,real-time automation,automated pipeline,integrated feeds,robust adversarial training,none
+30,real-time automation,continuous automated retraining,basic use,robust adversarial training,none
+31,comprehensive monitoring,continuous automated retraining,proactive hunting,basic adversarial training,none
+32,real-time automation,automated pipeline,proactive hunting,basic adversarial training,none
+33,real-time automation,continuous automated retraining,integrated feeds,basic adversarial training,none
+34,real-time automation,continuous automated retraining,proactive hunting,none,none
+35,none,automated pipeline,proactive hunting,continuous adversarial training,none
+36,basic monitoring,manual retraining,proactive hunting,continuous adversarial training,none
+37,comprehensive monitoring,none,proactive hunting,continuous adversarial training,none
+38,none,continuous automated retraining,integrated feeds,continuous adversarial training,none
+39,basic monitoring,automated pipeline,integrated feeds,continuous adversarial training,none
+40,comprehensive monitoring,manual retraining,integrated feeds,continuous adversarial training,none
+41,real-time automation,none,integrated feeds,continuous adversarial training,none
+42,basic monitoring,continuous automated retraining,basic use,continuous adversarial training,none
+43,comprehensive monitoring,automated pipeline,basic use,continuous adversarial training,none
+44,real-time automation,manual retraining,basic use,continuous adversarial training,none
+45,comprehensive monitoring,continuous automated retraining,none,continuous adversarial training,none
+46,real-time automation,automated pipeline,none,continuous adversarial training,none
+47,none,continuous automated retraining,proactive hunting,robust adversarial training,none
+48,basic monitoring,automated pipeline,proactive hunting,robust adversarial training,none
+49,comprehensive monitoring,manual retraining,proactive hunting,robust adversarial training,none
+50,real-time automation,none,proactive hunting,robust adversarial training,none
+51,basic monitoring,continuous automated retraining,integrated feeds,robust adversarial training,none
+52,comprehensive monitoring,automated pipeline,integrated feeds,robust adversarial training,none
+53,real-time automation,manual retraining,integrated feeds,robust adversarial training,none
+54,comprehensive monitoring,continuous automated retraining,basic use,robust adversarial training,none
+55,real-time automation,automated pipeline,basic use,robust adversarial training,none
+56,real-time automation,continuous automated retraining,none,robust adversarial training,none
+57,basic monitoring,continuous automated retraining,proactive hunting,basic adversarial training,none
+58,comprehensive monitoring,automated pipeline,proactive hunting,basic adversarial training,none
+59,real-time automation,manual retraining,proactive hunting,basic adversarial training,none
+60,comprehensive monitoring,continuous automated retraining,integrated feeds,basic adversarial training,none
+61,real-time automation,automated pipeline,integrated feeds,basic adversarial training,none
+62,real-time automation,continuous automated retraining,basic use,basic adversarial training,none
+63,comprehensive monitoring,continuous automated retraining,proactive hunting,none,none
+64,real-time automation,automated pipeline,proactive hunting,none,low
+65,real-time automation,continuous automated retraining,integrated feeds,none,low
+66,none,manual retraining,proactive hunting,continuous adversarial training,low
+67,basic monitoring,none,proactive hunting,continuous adversarial training,low
+68,none,automated pipeline,integrated feeds,continuous adversarial training,low
+69,basic monitoring,manual retraining,integrated feeds,continuous adversarial training,low
+70,comprehensive monitoring,none,integrated feeds,continuous adversarial training,low
+71,none,continuous automated retraining,basic use,continuous adversarial training,low
+72,basic monitoring,automated pipeline,basic use,continuous adversarial training,low
+73,comprehensive monitoring,manual retraining,basic use,continuous adversarial training,low
+74,real-time automation,none,basic use,continuous adversarial training,low
+75,basic monitoring,continuous automated retraining,none,continuous adversarial training,low
+76,comprehensive monitoring,automated pipeline,none,continuous adversarial training,low
+77,real-time automation,manual retraining,none,continuous adversarial training,low
+78,none,automated pipeline,proactive hunting,robust adversarial training,low
+79,basic monitoring,manual retraining,proactive hunting,robust adversarial training,low
+80,comprehensive monitoring,none,proactive hunting,robust adversarial training,low
+81,none,continuous automated retraining,integrated feeds,robust adversarial training,low
+82,basic monitoring,automated pipeline,integrated feeds,robust adversarial training,low
+83,comprehensive monitoring,manual retraining,integrated feeds,robust adversarial training,low
+84,real-time automation,none,integrated feeds,robust adversarial training,low
+85,basic monitoring,continuous automated retraining,basic use,robust adversarial training,low
+86,comprehensive monitoring,automated pipeline,basic use,robust adversarial training,low
+87,real-time automation,manual retraining,basic use,robust adversarial training,low
+88,comprehensive monitoring,continuous automated retraining,none,robust adversarial training,low
+89,real-time automation,automated pipeline,none,robust adversarial training,low
+90,none,continuous automated retraining,proactive hunting,basic adversarial training,low
+91,basic monitoring,automated pipeline,proactive hunting,basic adversarial training,low
+92,comprehensive monitoring,manual retraining,proactive hunting,basic adversarial training,low
+93,real-time automation,none,proactive hunting,basic adversarial training,low
+94,basic monitoring,continuous automated retraining,integrated feeds,basic adversarial training,low
+95,comprehensive monitoring,automated pipeline,integrated feeds,basic adversarial training,low
+96,real-time automation,manual retraining,integrated feeds,basic adversarial training,low
+97,comprehensive monitoring,continuous automated retraining,basic use,basic adversarial training,low
+98,real-time automation,automated pipeline,basic use,basic adversarial training,low
+99,real-time automation,continuous automated retraining,none,basic adversarial training,low
+100,basic monitoring,continuous automated retraining,proactive hunting,none,low
+101,comprehensive monitoring,automated pipeline,proactive hunting,none,low
+102,real-time automation,manual retraining,proactive hunting,none,low
+103,comprehensive monitoring,continuous automated retraining,integrated feeds,none,low
+104,real-time automation,automated pipeline,integrated feeds,none,low
+105,real-time automation,continuous automated retraining,basic use,none,low
+106,none,none,proactive hunting,continuous adversarial training,low
+107,none,manual retraining,integrated feeds,continuous adversarial training,low
+108,basic monitoring,none,integrated feeds,continuous adversarial training,low
+109,none,automated pipeline,basic use,continuous adversarial training,low
+110,basic monitoring,manual retraining,basic use,continuous adversarial training,low
+111,comprehensive monitoring,none,basic use,continuous adversarial training,low
+112,none,continuous automated retraining,none,continuous adversarial training,low
+113,basic monitoring,automated pipeline,none,continuous adversarial training,low
+114,comprehensive monitoring,manual retraining,none,continuous adversarial training,low
+115,real-time automation,none,none,continuous adversarial training,low
+116,none,manual retraining,proactive hunting,robust adversarial training,low
+117,basic monitoring,none,proactive hunting,robust adversarial training,low
+118,none,automated pipeline,integrated feeds,robust adversarial training,low
+119,basic monitoring,manual retraining,integrated feeds,robust adversarial training,low
+120,comprehensive monitoring,none,integrated feeds,robust adversarial training,low
+121,none,continuous automated retraining,basic use,robust adversarial training,low
+122,basic monitoring,automated pipeline,basic use,robust adversarial training,low
+123,comprehensive monitoring,manual retraining,basic use,robust adversarial training,low
+124,real-time automation,none,basic use,robust adversarial training,low
+125,basic monitoring,continuous automated retraining,none,robust adversarial training,low
+126,comprehensive monitoring,automated pipeline,none,robust adversarial training,low
+127,real-time automation,manual retraining,none,robust adversarial training,low
+128,none,automated pipeline,proactive hunting,basic adversarial training,medium
+129,basic monitoring,manual retraining,proactive hunting,basic adversarial training,medium
+130,comprehensive monitoring,none,proactive hunting,basic adversarial training,medium
+131,none,continuous automated retraining,integrated feeds,basic adversarial training,medium
+132,basic monitoring,automated pipeline,integrated feeds,basic adversarial training,medium
+133,comprehensive monitoring,manual retraining,integrated feeds,basic adversarial training,medium
+134,real-time automation,none,integrated feeds,basic adversarial training,medium
+135,basic monitoring,continuous automated retraining,basic use,basic adversarial training,medium
+136,comprehensive monitoring,automated pipeline,basic use,basic adversarial training,medium
+137,real-time automation,manual retraining,basic use,basic adversarial training,medium
+138,comprehensive monitoring,continuous automated retraining,none,basic adversarial training,medium
+139,real-time automation,automated pipeline,none,basic adversarial training,medium
+140,none,continuous automated retraining,proactive hunting,none,medium
+141,basic monitoring,automated pipeline,proactive hunting,none,medium
+142,comprehensive monitoring,manual retraining,proactive hunting,none,medium
+143,real-time automation,none,proactive hunting,none,medium
+144,basic monitoring,continuous automated retraining,integrated feeds,none,medium
+145,comprehensive monitoring,automated pipeline,integrated feeds,none,medium
+146,real-time automation,manual retraining,integrated feeds,none,medium
+147,comprehensive monitoring,continuous automated retraining,basic use,none,medium
+148,real-time automation,automated pipeline,basic use,none,medium
+149,real-time automation,continuous automated retraining,none,none,medium
+150,none,none,integrated feeds,continuous adversarial training,medium
+151,none,manual retraining,basic use,continuous adversarial training,medium
+152,basic monitoring,none,basic use,continuous adversarial training,medium
+153,none,automated pipeline,none,continuous adversarial training,medium
+154,basic monitoring,manual retraining,none,continuous adversarial training,medium
+155,comprehensive monitoring,none,none,continuous adversarial training,medium
+156,none,none,proactive hunting,robust adversarial training,medium
+157,none,manual retraining,integrated feeds,robust adversarial training,medium
+158,basic monitoring,none,integrated feeds,robust adversarial training,medium
+159,none,automated pipeline,basic use,robust adversarial training,medium
+160,basic monitoring,manual retraining,basic use,robust adversarial training,medium
+161,comprehensive monitoring,none,basic use,robust adversarial training,medium
+162,none,continuous automated retraining,none,robust adversarial training,medium
+163,basic monitoring,automated pipeline,none,robust adversarial training,medium
+164,comprehensive monitoring,manual retraining,none,robust adversarial training,medium
+165,real-time automation,none,none,robust adversarial training,medium
+166,none,manual retraining,proactive hunting,basic adversarial training,medium
+167,basic monitoring,none,proactive hunting,basic adversarial training,medium
+168,none,automated pipeline,integrated feeds,basic adversarial training,medium
+169,basic monitoring,manual retraining,integrated feeds,basic adversarial training,medium
+170,comprehensive monitoring,none,integrated feeds,basic adversarial training,medium
+171,none,continuous automated retraining,basic use,basic adversarial training,medium
+172,basic monitoring,automated pipeline,basic use,basic adversarial training,medium
+173,comprehensive monitoring,manual retraining,basic use,basic adversarial training,medium
+174,real-time automation,none,basic use,basic adversarial training,medium
+175,basic monitoring,continuous automated retraining,none,basic adversarial training,medium
+176,comprehensive monitoring,automated pipeline,none,basic adversarial training,medium
+177,real-time automation,manual retraining,none,basic adversarial training,medium
+178,none,automated pipeline,proactive hunting,none,medium
+179,basic monitoring,manual retraining,proactive hunting,none,medium
+180,comprehensive monitoring,none,proactive hunting,none,medium
+181,none,continuous automated retraining,integrated feeds,none,medium
+182,basic monitoring,automated pipeline,integrated feeds,none,medium
+183,comprehensive monitoring,manual retraining,integrated feeds,none,medium
+184,real-time automation,none,integrated feeds,none,medium
+185,basic monitoring,continuous automated retraining,basic use,none,medium
+186,comprehensive monitoring,automated pipeline,basic use,none,medium
+187,real-time automation,manual retraining,basic use,none,medium
+188,comprehensive monitoring,continuous automated retraining,none,none,medium
+189,real-time automation,automated pipeline,none,none,medium
+190,none,none,basic use,continuous adversarial training,medium
+191,none,manual retraining,none,continuous adversarial training,medium
+192,basic monitoring,none,none,continuous adversarial training,high
+193,none,none,integrated feeds,robust adversarial training,high
+194,none,manual retraining,basic use,robust adversarial training,high
+195,basic monitoring,none,basic use,robust adversarial training,high
+196,none,automated pipeline,none,robust adversarial training,high
+197,basic monitoring,manual retraining,none,robust adversarial training,high
+198,comprehensive monitoring,none,none,robust adversarial training,high
+199,none,none,proactive hunting,basic adversarial training,high
+200,none,manual retraining,integrated feeds,basic adversarial training,high
+201,basic monitoring,none,integrated feeds,basic adversarial training,high
+202,none,automated pipeline,basic use,basic adversarial training,high
+203,basic monitoring,manual retraining,basic use,basic adversarial training,high
+204,comprehensive monitoring,none,basic use,basic adversarial training,high
+205,none,continuous automated retraining,none,basic adversarial training,high
+206,basic monitoring,automated pipeline,none,basic adversarial training,high
+207,comprehensive monitoring,manual retraining,none,basic adversarial training,high
+208,real-time automation,none,none,basic adversarial training,high
+209,none,manual retraining,proactive hunting,none,high
+210,basic monitoring,none,proactive hunting,none,high
+211,none,automated pipeline,integrated feeds,none,high
+212,basic monitoring,manual retraining,integrated feeds,none,high
+213,comprehensive monitoring,none,integrated feeds,none,high
+214,none,continuous automated retraining,basic use,none,high
+215,basic monitoring,automated pipeline,basic use,none,high
+216,comprehensive monitoring,manual retraining,basic use,none,high
+217,real-time automation,none,basic use,none,high
+218,basic monitoring,continuous automated retraining,none,none,high
+219,comprehensive monitoring,automated pipeline,none,none,high
+220,real-time automation,manual retraining,none,none,high
+221,none,none,none,continuous adversarial training,high
+222,none,none,basic use,robust adversarial training,high
+223,none,manual retraining,none,robust adversarial training,high
+224,basic monitoring,none,none,robust adversarial training,high
+225,none,none,integrated feeds,basic adversarial training,high
+226,none,manual retraining,basic use,basic adversarial training,high
+227,basic monitoring,none,basic use,basic adversarial training,high
+228,none,automated pipeline,none,basic adversarial training,high
+229,basic monitoring,manual retraining,none,basic adversarial training,high
+230,comprehensive monitoring,none,none,basic adversarial training,high
+231,none,none,proactive hunting,none,high
+232,none,manual retraining,integrated feeds,none,high
+233,basic monitoring,none,integrated feeds,none,high
+234,none,automated pipeline,basic use,none,high
+235,basic monitoring,manual retraining,basic use,none,high
+236,comprehensive monitoring,none,basic use,none,high
+237,none,continuous automated retraining,none,none,high
+238,basic monitoring,automated pipeline,none,none,high
+239,comprehensive monitoring,manual retraining,none,none,high
+240,real-time automation,none,none,none,high
+241,none,none,none,robust adversarial training,high
+242,none,none,basic use,basic adversarial training,high
+243,none,manual retraining,none,basic adversarial training,high
+244,basic monitoring,none,none,basic adversarial training,high
+245,none,none,integrated feeds,none,high
+246,none,manual retraining,basic use,none,high
+247,basic monitoring,none,basic use,none,high
+248,none,automated pipeline,none,none,high
+249,basic monitoring,manual retraining,none,none,high
+250,comprehensive monitoring,none,none,none,high
+251,none,none,none,basic adversarial training,high
+252,none,none,basic use,none,high
+253,none,manual retraining,none,none,high
+254,basic monitoring,none,none,none,high
+255,none,none,none,none,high

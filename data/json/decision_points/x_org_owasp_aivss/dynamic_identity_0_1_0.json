@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DYNID",
+  "version": "0.1.0",
+  "name": "Dynamic Identity",
+  "definition": "A decision point for assessing the Dynamic Identity capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "Predefined identities per agent or tool, granular least-permissions scopes, hard-coded access"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Human-in-the-loop identity delegation, deterministic assignment of permissions with policy engine"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "No access limitations to dynamic identities, agentic individual permission/scope selection"
+    }
+  ]
+}

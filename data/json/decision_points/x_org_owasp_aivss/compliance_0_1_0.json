@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "CO",
+  "version": "0.1.0",
+  "name": "Compliance",
+  "definition": "Degree to which the system complies with relevant regulations and industry standards.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "E",
+      "name": "Exceeds Requirements",
+      "definition": "System exceeds regulatory requirements and sets industry best practices for compliance, with a proactive approach to adapting to new regulations."
+    },
+    {
+      "key": "F",
+      "name": "Full Compliance",
+      "definition": "Full compliance with relevant regulations and industry standards, with a dedicated compliance team and regular audits."
+    },
+    {
+      "key": "B",
+      "name": "Basic Understanding",
+      "definition": "Basic understanding of regulations, some ad-hoc compliance efforts, but no formal compliance program."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No awareness of or compliance with relevant regulations or industry standards."
+    }
+  ]
+}

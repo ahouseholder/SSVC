@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "ER",
+  "version": "0.1.0",
+  "name": "Evasion Resistance",
+  "definition": "Resistance to evasion attacks.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "V",
+      "name": "Verified",
+      "definition": "Formally verified robustness against a wide range of evasion attacks."
+    },
+    {
+      "key": "R",
+      "name": "Robust",
+      "definition": "Robust to most known evasion attacks, multiple defense mechanisms employed."
+    },
+    {
+      "key": "S",
+      "name": "Susceptible",
+      "definition": "Susceptible to some evasion attacks, basic adversarial training or input validation in place."
+    },
+    {
+      "key": "HS",
+      "name": "Highly Susceptible",
+      "definition": "Highly susceptible to common evasion attacks. No or minimal defenses."
+    }
+  ]
+}

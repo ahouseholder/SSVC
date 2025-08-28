@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DCON",
+  "version": "0.1.0",
+  "name": "Data Confidentiality",
+  "definition": "Measures taken to protect the confidentiality of data used in training and inference.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "A",
+      "name": "Fully Anonymized",
+      "definition": "Data fully anonymized using techniques like differential privacy or homomorphic encryption."
+    },
+    {
+      "key": "E",
+      "name": "Strong Encryption",
+      "definition": "Strong encryption (e.g., AES-256) used for data at rest and in transit, strict access controls and key management practices in place."
+    },
+    {
+      "key": "B",
+      "name": "Basic Access Controls",
+      "definition": "Sensitive data with basic access controls (e.g., passwords), but no encryption."
+    },
+    {
+      "key": "M",
+      "name": "Minimal Protection",
+      "definition": "Highly sensitive data (e.g., PII, financial data) stored or processed with no or minimal protection."
+    }
+  ]
+}

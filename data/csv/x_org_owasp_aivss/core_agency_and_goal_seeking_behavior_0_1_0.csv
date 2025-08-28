@@ -1,0 +1,28 @@
+row,Autonomy v0.1.0 (x_org.owasp#aivss),Goal-Driven Planning v0.1.0 (x_org.owasp#aivss),Self-Modification v0.1.0 (x_org.owasp#aivss),LowMediumHigh v1.0.0 (basic)
+0,none/not present,none/not present,none/not present,low
+1,partial/limited,none/not present,none/not present,low
+2,none/not present,partial/limited,none/not present,low
+3,none/not present,none/not present,partial/limited,low
+4,full/unconstrained,none/not present,none/not present,low
+5,partial/limited,partial/limited,none/not present,low
+6,none/not present,full/unconstrained,none/not present,low
+7,partial/limited,none/not present,partial/limited,low
+8,none/not present,partial/limited,partial/limited,low
+9,none/not present,none/not present,full/unconstrained,medium
+10,full/unconstrained,partial/limited,none/not present,medium
+11,partial/limited,full/unconstrained,none/not present,medium
+12,full/unconstrained,none/not present,partial/limited,medium
+13,partial/limited,partial/limited,partial/limited,medium
+14,none/not present,full/unconstrained,partial/limited,medium
+15,partial/limited,none/not present,full/unconstrained,medium
+16,none/not present,partial/limited,full/unconstrained,medium
+17,full/unconstrained,full/unconstrained,none/not present,medium
+18,full/unconstrained,partial/limited,partial/limited,high
+19,partial/limited,full/unconstrained,partial/limited,high
+20,full/unconstrained,none/not present,full/unconstrained,high
+21,partial/limited,partial/limited,full/unconstrained,high
+22,none/not present,full/unconstrained,full/unconstrained,high
+23,full/unconstrained,full/unconstrained,partial/limited,high
+24,full/unconstrained,partial/limited,full/unconstrained,high
+25,partial/limited,full/unconstrained,full/unconstrained,high
+26,full/unconstrained,full/unconstrained,full/unconstrained,high

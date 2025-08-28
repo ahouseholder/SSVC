@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "SDD",
+  "version": "0.1.0",
+  "name": "Sensitive Data Disclosure",
+  "definition": "Degree to which the system prevents or is vulnerable to sensitive data disclosure.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "P",
+      "name": "Provably Prevents Disclosure",
+      "definition": "System provably prevents sensitive data disclosure, with formal guarantees on the privacy of sensitive information."
+    },
+    {
+      "key": "S",
+      "name": "Strong Controls",
+      "definition": "Strong access controls, encryption, and output sanitization mechanisms in place, making it very difficult to extract sensitive data from the system."
+    },
+    {
+      "key": "M",
+      "name": "Some Measures",
+      "definition": "Some measures to prevent data leakage, but vulnerabilities remain, and sensitive information may be disclosed under certain circumstances."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of sensitive data disclosure, with no or minimal measures to protect sensitive information processed or stored by the system."
+    }
+  ]
+}

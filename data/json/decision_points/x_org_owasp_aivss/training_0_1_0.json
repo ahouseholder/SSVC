@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "TR",
+  "version": "0.1.0",
+  "name": "Training",
+  "definition": "Degree to which secure practices are implemented in the training environment and process.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Formal Verification",
+      "definition": "Secure and isolated training environment with formal verification of the training process, strict access controls, and continuous monitoring for intrusions and anomalies."
+    },
+    {
+      "key": "S",
+      "name": "Secure Environment",
+      "definition": "Secure training environment with access controls, data encryption at rest and in transit, and regular security audits."
+    },
+    {
+      "key": "B",
+      "name": "Basic Security Measures",
+      "definition": "Basic security measures in the training environment, but no encryption or strict access controls."
+    },
+    {
+      "key": "I",
+      "name": "Insecure Environment",
+      "definition": "Insecure training environment, no data security or access controls, training data stored and processed on unsecured systems."
+    }
+  ]
+}

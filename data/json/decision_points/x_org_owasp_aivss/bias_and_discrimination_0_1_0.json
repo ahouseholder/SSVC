@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "BD",
+  "version": "0.1.0",
+  "name": "Bias and Discrimination",
+  "definition": "Degree to which the system is fair and unbiased, and the extent of bias monitoring and mitigation.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Fair and Unbiased",
+      "definition": "System demonstrably fair and unbiased across different groups, with ongoing monitoring and auditing for bias."
+    },
+    {
+      "key": "R",
+      "name": "Rigorous Testing",
+      "definition": "Rigorous fairness testing using multiple metrics and bias mitigation techniques applied."
+    },
+    {
+      "key": "A",
+      "name": "Awareness",
+      "definition": "Some awareness of potential bias, basic fairness metrics monitored, but no active mitigation."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of discriminatory outcomes, no bias detection or mitigation methods used."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "MU",
+  "version": "0.1.0",
+  "name": "Memory Use",
+  "definition": "A decision point for assessing the Memory Use capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "Stateless memory, in-context/prompt-only memory"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Read only retrieval augmented generation, short-lived identity restricted sessions"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "Dynamic (read and write) RAG memory, long-lived identity restricted sessions, cross-session memory/learning capabilities"
+    }
+  ]
+}

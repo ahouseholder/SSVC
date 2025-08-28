@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "AUT",
+  "version": "0.1.0",
+  "name": "Autonomy",
+  "definition": "A decision point for assessing the Autonomy of Action of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "Full human-in-the-loop, human required for action (e.g. copilot style assistant)"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Well-defined actions, hard coded decision trees, low risk dynamic actions"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "Open-ended actions, free communication with other agents, capable of higher risk action"
+    }
+  ]
+}

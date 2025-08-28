@@ -1,0 +1,65 @@
+row,Data Integrity v0.1.0 (x_org.owasp#aivss),Data Provenance v0.1.0 (x_org.owasp#aivss),Data Confidentiality v0.1.0 (x_org.owasp#aivss),Data Sensitivity v0.1.0 (x_org.owasp#aivss)
+0,formally verified,formally verified,fully anonymized,none
+1,strong checks,formally verified,fully anonymized,none
+2,formally verified,detailed lineage,fully anonymized,none
+3,formally verified,formally verified,strong encryption,none
+4,basic checks,formally verified,fully anonymized,none
+5,strong checks,detailed lineage,fully anonymized,none
+6,formally verified,basic info,fully anonymized,none
+7,strong checks,formally verified,strong encryption,none
+8,formally verified,detailed lineage,strong encryption,none
+9,formally verified,formally verified,basic access controls,none
+10,none,formally verified,fully anonymized,none
+11,basic checks,detailed lineage,fully anonymized,none
+12,strong checks,basic info,fully anonymized,none
+13,formally verified,none,fully anonymized,none
+14,basic checks,formally verified,strong encryption,none
+15,strong checks,detailed lineage,strong encryption,none
+16,formally verified,basic info,strong encryption,low
+17,strong checks,formally verified,basic access controls,low
+18,formally verified,detailed lineage,basic access controls,low
+19,formally verified,formally verified,minimal protection,low
+20,none,detailed lineage,fully anonymized,low
+21,basic checks,basic info,fully anonymized,low
+22,strong checks,none,fully anonymized,low
+23,none,formally verified,strong encryption,low
+24,basic checks,detailed lineage,strong encryption,low
+25,strong checks,basic info,strong encryption,low
+26,formally verified,none,strong encryption,low
+27,basic checks,formally verified,basic access controls,low
+28,strong checks,detailed lineage,basic access controls,low
+29,formally verified,basic info,basic access controls,low
+30,strong checks,formally verified,minimal protection,low
+31,formally verified,detailed lineage,minimal protection,low
+32,none,basic info,fully anonymized,medium
+33,basic checks,none,fully anonymized,medium
+34,none,detailed lineage,strong encryption,medium
+35,basic checks,basic info,strong encryption,medium
+36,strong checks,none,strong encryption,medium
+37,none,formally verified,basic access controls,medium
+38,basic checks,detailed lineage,basic access controls,medium
+39,strong checks,basic info,basic access controls,medium
+40,formally verified,none,basic access controls,medium
+41,basic checks,formally verified,minimal protection,medium
+42,strong checks,detailed lineage,minimal protection,medium
+43,formally verified,basic info,minimal protection,medium
+44,none,none,fully anonymized,medium
+45,none,basic info,strong encryption,medium
+46,basic checks,none,strong encryption,medium
+47,none,detailed lineage,basic access controls,medium
+48,basic checks,basic info,basic access controls,high
+49,strong checks,none,basic access controls,high
+50,none,formally verified,minimal protection,high
+51,basic checks,detailed lineage,minimal protection,high
+52,strong checks,basic info,minimal protection,high
+53,formally verified,none,minimal protection,high
+54,none,none,strong encryption,high
+55,none,basic info,basic access controls,high
+56,basic checks,none,basic access controls,high
+57,none,detailed lineage,minimal protection,high
+58,basic checks,basic info,minimal protection,high
+59,strong checks,none,minimal protection,high
+60,none,none,basic access controls,high
+61,none,basic info,minimal protection,high
+62,basic checks,none,minimal protection,high
+63,none,none,minimal protection,high

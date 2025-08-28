@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "LGC",
+  "version": "0.1.0",
+  "name": "Loss of Governance/Compliance",
+  "definition": "Degree to which the system maintains compliance with regulatory and governance requirements.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "E",
+      "name": "Exceeds Requirements",
+      "definition": "System meets or exceeds all relevant regulatory and governance requirements, with a proactive approach to adapting to new regulations and a strong focus on maintaining compliance."
+    },
+    {
+      "key": "S",
+      "name": "Strong Framework",
+      "definition": "Strong compliance framework and controls in place, ensuring adherence to relevant regulations and governance policies."
+    },
+    {
+      "key": "M",
+      "name": "Some Efforts",
+      "definition": "Some compliance efforts, but gaps remain, and the system may not fully meet all regulatory or governance requirements."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of non-compliance with regulations or governance policies, with no or minimal measures to ensure adherence."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "CA",
+  "version": "0.1.0",
+  "name": "Contextual Awareness",
+  "definition": "A decision point for assessing the Contextual Awareness capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "No access to external context modifying data sources, no internet access, hard-coded system prompts"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Limited and non-volatile external context data sources, intranet or limited internet access, curated and filtered update feeds"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "Dynamic and multi-agent goal negotiation, no limitations on context modifying data sources, open internet access, unrestricted update feeds"
+    }
+  ]
+}

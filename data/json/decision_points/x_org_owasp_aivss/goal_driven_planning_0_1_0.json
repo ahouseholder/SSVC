@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "GDP",
+  "version": "0.1.0",
+  "name": "Goal-Driven Planning",
+  "definition": "A decision point for assessing the Goal-Driven Planning capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "No task decomposition, hard-coded goal lists, single-step tasks"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Single-agent task decomposition, simple reasoning capabilities, multi-step tasks"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "Multi-agent task decomposition & coordination, extensive goal reflection or recursive reasoning"
+    }
+  ]
+}

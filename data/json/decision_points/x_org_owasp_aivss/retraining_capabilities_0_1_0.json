@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "RE",
+  "version": "0.1.0",
+  "name": "Retraining Capabilities",
+  "definition": "Degree to which the system supports retraining and adaptation to new data or conditions.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "C",
+      "name": "Continuous Automated Retraining",
+      "definition": "Continuous and automated retraining triggered by performance degradation, concept drift, or new data, with minimal human intervention."
+    },
+    {
+      "key": "A",
+      "name": "Automated Pipeline",
+      "definition": "Automated retraining pipeline in place, allowing for regular updates with new data and model improvements."
+    },
+    {
+      "key": "M",
+      "name": "Manual Retraining",
+      "definition": "Manual retraining possible, but infrequent and time-consuming, with limited automation."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No capability to retrain the model, or retraining requires significant manual effort and downtime."
+    }
+  ]
+}

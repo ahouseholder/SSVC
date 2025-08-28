@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "OD",
+  "version": "0.1.0",
+  "name": "Operational Disruption",
+  "definition": "Degree to which the system is resilient to operational disruption and incorporates business continuity measures.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "H",
+      "name": "High Availability",
+      "definition": "System designed for high availability and resilience, with real-time monitoring, automated recovery, and regular testing of failover mechanisms."
+    },
+    {
+      "key": "R",
+      "name": "Robust Controls",
+      "definition": "Robust operational controls, including redundancy, failover mechanisms, and a comprehensive business continuity and disaster recovery plan."
+    },
+    {
+      "key": "S",
+      "name": "Some Measures",
+      "definition": "Some measures to mitigate operational risks, but no comprehensive business continuity plan."
+    },
+    {
+      "key": "HR",
+      "name": "High Risk",
+      "definition": "High risk of significant operational disruption due to system failures or attacks, no backup systems or recovery plans."
+    }
+  ]
+}

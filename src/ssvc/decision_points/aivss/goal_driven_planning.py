@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+"""
+file: goal_driven_planning
+author: adh
+created_at: 7/31/25 3:20 PM
+"""
+
+#  Copyright (c) 2025 Carnegie Mellon University.
+#  NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE
+#  ENGINEERING INSTITUTE MATERIAL IS FURNISHED ON AN "AS-IS" BASIS.
+#  CARNEGIE MELLON UNIVERSITY MAKES NO WARRANTIES OF ANY KIND,
+#  EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING, BUT
+#  NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR
+#  MERCHANTABILITY, EXCLUSIVITY, OR RESULTS OBTAINED FROM USE
+#  OF THE MATERIAL. CARNEGIE MELLON UNIVERSITY DOES NOT MAKE
+#  ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
+#  PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+#  Licensed under a MIT (SEI)-style license, please see LICENSE or contact
+#  permission@sei.cmu.edu for full terms.
+#  [DISTRIBUTION STATEMENT A] This material has been approved for
+#  public release and unlimited distribution. Please see Copyright notice
+#  for non-US Government use and distribution.
+#  This Software includes and/or makes use of Third-Party Software each
+#  subject to its own license.
+#  DM24-0278
+
+from ssvc.decision_points.aivss.base import AivssDecisionPoint
+from ssvc.decision_points.base import DecisionPointValue
+
+# 8. Goal-Driven Planning: Can it break down high-level goals into complex, multi-step plans?
+# 0.0 - No task decomposition, hard-coded goal lists, single-step tasks
+# 0.5 - Single-agent task decomposition, simple reasoning capabilities, multi-step tasks
+# 1.0 - Multi-agent task decomposition & coordination, extensive goal reflection or recursive reasoning
+
+V1_0_0 = AivssDecisionPoint(
+    name="Goal-Driven Planning",
+    key="GDP",
+    version="0.1.0",
+    definition="A decision point for assessing the Goal-Driven Planning capabilities of an agentic AI System.",
+    values=(
+        DecisionPointValue(
+            name="None/Not Present",
+            key="N",
+            definition="No task decomposition, hard-coded goal lists, single-step tasks",
+        ),
+        DecisionPointValue(
+            name="Partial/Limited",
+            key="P",
+            definition="Single-agent task decomposition, simple reasoning capabilities, multi-step tasks",
+        ),
+        DecisionPointValue(
+            name="Full/Unconstrained",
+            key="F",
+            definition="Multi-agent task decomposition & coordination, extensive goal reflection or recursive reasoning",
+        ),
+    ),
+)
+
+VERSIONS = (V1_0_0,)
+LATEST = VERSIONS[-1]
+
+
+def main():
+    from ssvc.decision_points.helpers import print_versions_and_diffs
+
+    print_versions_and_diffs(VERSIONS)
+
+
+if __name__ == "__main__":
+    main()

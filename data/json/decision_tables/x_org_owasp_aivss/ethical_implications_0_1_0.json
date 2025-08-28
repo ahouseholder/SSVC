@@ -1,0 +1,1955 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DT_ETHICS",
+  "version": "0.1.0",
+  "name": "Ethical Implications",
+  "definition": "A decision table for evaluating the ethical implications of AI systems.",
+  "schemaVersion": "2.0.0",
+  "decision_points": {
+    "x_org.owasp#aivss:BD:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "BD",
+      "version": "0.1.0",
+      "name": "Bias and Discrimination",
+      "definition": "Degree to which the system is fair and unbiased, and the extent of bias monitoring and mitigation.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "F",
+          "name": "Fair and Unbiased",
+          "definition": "System demonstrably fair and unbiased across different groups, with ongoing monitoring and auditing for bias."
+        },
+        {
+          "key": "R",
+          "name": "Rigorous Testing",
+          "definition": "Rigorous fairness testing using multiple metrics and bias mitigation techniques applied."
+        },
+        {
+          "key": "A",
+          "name": "Awareness",
+          "definition": "Some awareness of potential bias, basic fairness metrics monitored, but no active mitigation."
+        },
+        {
+          "key": "H",
+          "name": "High Risk",
+          "definition": "High risk of discriminatory outcomes, no bias detection or mitigation methods used."
+        }
+      ]
+    },
+    "x_org.owasp#aivss:TE:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "TE",
+      "version": "0.1.0",
+      "name": "Transparency and Explainability",
+      "definition": "Degree to which the system's decision-making process is transparent and explainable.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "F",
+          "name": "Fully Transparent",
+          "definition": "System's decision-making process is fully transparent and formally explainable, with clear causal relationships established."
+        },
+        {
+          "key": "H",
+          "name": "Highly Explainable",
+          "definition": "Highly explainable, system uses inherently interpretable models or provides reliable and comprehensive explanations for all decisions."
+        },
+        {
+          "key": "L",
+          "name": "Limited Explainability",
+          "definition": "Limited explainability, some post-hoc explanations can be generated, but they may not be reliable or comprehensive."
+        },
+        {
+          "key": "B",
+          "name": "Black Box",
+          "definition": "Black-box system, no insight into decision-making process."
+        }
+      ]
+    },
+    "x_org.owasp#aivss:AC:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "AC",
+      "version": "0.1.0",
+      "name": "Accountability",
+      "definition": "Degree to which accountability is established for the system's actions, errors, and outcomes.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "F",
+          "name": "Full Accountability",
+          "definition": "Full accountability with mechanisms for redress, remediation, and independent oversight."
+        },
+        {
+          "key": "A",
+          "name": "Accountability Framework",
+          "definition": "Clear accountability framework in place, with defined roles, responsibilities, and processes for addressing errors and disputes."
+        },
+        {
+          "key": "S",
+          "name": "Some Responsibility",
+          "definition": "Some responsibility assigned to developers or operators, but no formal accountability framework."
+        },
+        {
+          "key": "N",
+          "name": "None",
+          "definition": "No clear lines of accountability for system's actions or errors."
+        }
+      ]
+    },
+    "x_org.owasp#aivss:SI:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "SI",
+      "version": "0.1.0",
+      "name": "Societal Impact",
+      "definition": "Degree to which the system's societal impact is assessed, monitored, and mitigated.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "M",
+          "name": "Maximized Positive Impact",
+          "definition": "System designed to maximize positive societal impact and minimize negative consequences, with ongoing monitoring and engagement with affected communities."
+        },
+        {
+          "key": "T",
+          "name": "Thorough Assessment",
+          "definition": "Thorough societal impact assessment conducted, considering a wide range of stakeholders and potential harms, with mitigation strategies in place."
+        },
+        {
+          "key": "S",
+          "name": "Some Consideration",
+          "definition": "Some consideration of potential societal impacts, but no comprehensive assessment or proactive mitigation."
+        },
+        {
+          "key": "H",
+          "name": "High Risk",
+          "definition": "High risk of negative societal impacts, no assessment or mitigation."
+        }
+      ]
+    },
+    "x_org.owasp#aivss:EI:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "EI",
+      "version": "0.1.0",
+      "name": "Ethical Implications",
+      "definition": "A decision point for evaluating the ethical implications of AI systems.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "N",
+          "name": "None",
+          "definition": "No known vulnerability or a formally proven resistance to the specific threat."
+        },
+        {
+          "key": "L",
+          "name": "Low",
+          "definition": "Low vulnerability with strong mitigation in place, but some minor weaknesses may still exist."
+        },
+        {
+          "key": "M",
+          "name": "Medium",
+          "definition": "Moderate vulnerability with some mitigation, but significant weaknesses remain."
+        },
+        {
+          "key": "H",
+          "name": "High",
+          "definition": "Severe vulnerability with little to no mitigation in place."
+        }
+      ]
+    }
+  },
+  "outcome": "x_org.owasp#aivss:EI:0.1.0",
+  "mapping": [
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "N"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "M",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "F",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "F",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "F",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "T",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "A",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "H",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "R",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "S",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "S",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "L",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "A",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:BD:0.1.0": "H",
+      "x_org.owasp#aivss:TE:0.1.0": "B",
+      "x_org.owasp#aivss:AC:0.1.0": "N",
+      "x_org.owasp#aivss:SI:0.1.0": "H",
+      "x_org.owasp#aivss:EI:0.1.0": "H"
+    }
+  ]
+}

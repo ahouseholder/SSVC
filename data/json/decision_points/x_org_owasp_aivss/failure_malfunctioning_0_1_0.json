@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "FM",
+  "version": "0.1.0",
+  "name": "Failure/Malfunctioning",
+  "definition": "Degree to which the system is designed to prevent, detect, and recover from failures or malfunctions.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Formally Verified",
+      "definition": "System designed for high availability and fault tolerance, with formal verification of its reliability."
+    },
+    {
+      "key": "R",
+      "name": "Robust",
+      "definition": "Robust error handling, monitoring, and redundancy mechanisms in place, significantly reducing the risk of failures or malfunctions."
+    },
+    {
+      "key": "B",
+      "name": "Basic Measures",
+      "definition": "Some measures to ensure reliability, but risks remain, and the system may experience downtime or produce incorrect outputs under certain conditions."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of failures or malfunctions, with no or minimal measures to ensure the system's reliability."
+    }
+  ]
+}

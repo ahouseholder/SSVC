@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "EF",
+  "version": "0.1.0",
+  "name": "Ethical Framework Alignment",
+  "definition": "Degree to which the system aligns with and promotes ethical AI principles and frameworks.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "P",
+      "name": "Promotes Ethics",
+      "definition": "System demonstrably adheres to and promotes ethical AI principles, with ongoing monitoring and auditing of ethical performance."
+    },
+    {
+      "key": "A",
+      "name": "Aligns with Frameworks",
+      "definition": "System design and operation align with established ethical frameworks, with mechanisms for addressing ethical concerns."
+    },
+    {
+      "key": "W",
+      "name": "Awareness",
+      "definition": "Basic awareness of ethical guidelines, limited implementation, no formal ethical review process."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No consideration of ethical frameworks or principles in the design, development, or deployment of the AI system."
+    }
+  ]
+}

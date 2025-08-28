@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "SCH",
+  "version": "0.1.0",
+  "name": "Insecure Supply Chain",
+  "definition": "Degree to which the system's supply chain is secure, auditable, and resistant to vulnerabilities in third-party components.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "S",
+      "name": "Secure and Auditable",
+      "definition": "Secure and auditable supply chain, with formal verification of all third-party components and dependencies."
+    },
+    {
+      "key": "P",
+      "name": "Strong Practices",
+      "definition": "Strong supply chain security practices in place, minimizing the risk of supply chain attacks."
+    },
+    {
+      "key": "M",
+      "name": "Some Measures",
+      "definition": "Some measures to mitigate supply chain risks, but vulnerabilities may still exist in third-party components."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of supply chain vulnerabilities, with no or minimal measures to ensure the security of third-party components and dependencies."
+    }
+  ]
+}

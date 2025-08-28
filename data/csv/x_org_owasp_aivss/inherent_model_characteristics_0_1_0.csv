@@ -1,0 +1,10 @@
+row,Non-Determinism v0.1.0 (x_org.owasp#aivss),Opacity and Reflexivity v0.1.0 (x_org.owasp#aivss),LowMediumHigh v1.0.0 (basic)
+0,none/not present,none/not present,low
+1,partial/limited,none/not present,low
+2,none/not present,partial/limited,low
+3,full/unconstrained,none/not present,medium
+4,partial/limited,partial/limited,medium
+5,none/not present,full/unconstrained,medium
+6,full/unconstrained,partial/limited,high
+7,partial/limited,full/unconstrained,high
+8,full/unconstrained,full/unconstrained,high

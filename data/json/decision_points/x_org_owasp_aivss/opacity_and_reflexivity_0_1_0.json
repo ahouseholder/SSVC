@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "OR",
+  "version": "0.1.0",
+  "name": "Opacity and Reflexivity",
+  "definition": "A decision point for assessing the Opacity and Reflexivity of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "Complete chain-of-thought logging, hard-coded decision trees with logged outcomes, usage baselines with anomaly alerting, explainable AI logging"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Agent-reported motivations and reasoning, non-granular usage statistics"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "No insights into agent motivations or goals, minimal event logging for agent or tool discovery, minimal tool execution logging"
+    }
+  ]
+}

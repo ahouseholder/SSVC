@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DI",
+  "version": "0.1.0",
+  "name": "Data Integrity",
+  "definition": "Measures taken to ensure the integrity of data used in training and inference.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Formally Verified",
+      "definition": "Data integrity formally verified using techniques like blockchain or Merkle trees."
+    },
+    {
+      "key": "S",
+      "name": "Strong Checks",
+      "definition": "Strong integrity checks and tamper detection mechanisms in place."
+    },
+    {
+      "key": "B",
+      "name": "Basic Checks",
+      "definition": "Basic integrity checks used, but no tamper-proof mechanisms."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No data integrity checks, data can be easily modified without detection."
+    }
+  ]
+}

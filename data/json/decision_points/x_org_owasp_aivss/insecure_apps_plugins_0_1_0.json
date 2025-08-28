@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "AP",
+  "version": "0.1.0",
+  "name": "Insecure Apps/Plugins",
+  "definition": "Degree to which the system is protected from vulnerabilities introduced by insecure apps/plugins and third-party integrations.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "F",
+      "name": "Formally Verified",
+      "definition": "Secure development and integration practices for apps/plugins enforced, with formal verification of their security."
+    },
+    {
+      "key": "S",
+      "name": "Strong Guidelines",
+      "definition": "Strong security guidelines and vetting process for apps/plugins, minimizing the risk of vulnerabilities introduced by third-party integrations."
+    },
+    {
+      "key": "M",
+      "name": "Some Measures",
+      "definition": "Some security measures for apps/plugins, but risks remain, and vulnerabilities may be introduced through insecure integrations."
+    },
+    {
+      "key": "H",
+      "name": "High Risk",
+      "definition": "High risk of vulnerabilities from insecure apps/plugins, with no or minimal measures to ensure the security of third-party integrations."
+    }
+  ]
+}

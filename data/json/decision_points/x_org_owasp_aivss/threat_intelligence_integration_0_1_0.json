@@ -1,0 +1,30 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "TI",
+  "version": "0.1.0",
+  "name": "Threat Intelligence Integration",
+  "definition": "Degree to which threat intelligence is integrated into security operations and risk mitigation.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "P",
+      "name": "Proactive Hunting",
+      "definition": "Proactive threat hunting based on threat intelligence, with automated analysis and correlation of threat data to identify and mitigate risks before impact."
+    },
+    {
+      "key": "I",
+      "name": "Integrated Feeds",
+      "definition": "Threat intelligence feeds integrated into security monitoring and response systems, providing automated alerts and updates on emerging threats."
+    },
+    {
+      "key": "B",
+      "name": "Basic Use",
+      "definition": "Basic threat intelligence used, but not systematically integrated into security operations."
+    },
+    {
+      "key": "N",
+      "name": "None",
+      "definition": "No integration with threat intelligence feeds or other sources of security information."
+    }
+  ]
+}

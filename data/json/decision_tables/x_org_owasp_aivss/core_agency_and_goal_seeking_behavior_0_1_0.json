@@ -1,0 +1,275 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "DT_CAGB",
+  "version": "0.1.0",
+  "name": "Core Agency and Goal-Seeking Behavior",
+  "definition": "A decision table for assessing the core agency and goal-seeking behavior of AI models in the context of Agentic AI Risk Score (AARS).",
+  "schemaVersion": "2.0.0",
+  "decision_points": {
+    "x_org.owasp#aivss:AUT:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "AUT",
+      "version": "0.1.0",
+      "name": "Autonomy",
+      "definition": "A decision point for assessing the Autonomy of Action of an agentic AI System.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "N",
+          "name": "None/Not Present",
+          "definition": "Full human-in-the-loop, human required for action (e.g. copilot style assistant)"
+        },
+        {
+          "key": "P",
+          "name": "Partial/Limited",
+          "definition": "Well-defined actions, hard coded decision trees, low risk dynamic actions"
+        },
+        {
+          "key": "F",
+          "name": "Full/Unconstrained",
+          "definition": "Open-ended actions, free communication with other agents, capable of higher risk action"
+        }
+      ]
+    },
+    "x_org.owasp#aivss:GDP:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "GDP",
+      "version": "0.1.0",
+      "name": "Goal-Driven Planning",
+      "definition": "A decision point for assessing the Goal-Driven Planning capabilities of an agentic AI System.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "N",
+          "name": "None/Not Present",
+          "definition": "No task decomposition, hard-coded goal lists, single-step tasks"
+        },
+        {
+          "key": "P",
+          "name": "Partial/Limited",
+          "definition": "Single-agent task decomposition, simple reasoning capabilities, multi-step tasks"
+        },
+        {
+          "key": "F",
+          "name": "Full/Unconstrained",
+          "definition": "Multi-agent task decomposition & coordination, extensive goal reflection or recursive reasoning"
+        }
+      ]
+    },
+    "x_org.owasp#aivss:SM:0.1.0": {
+      "namespace": "x_org.owasp#aivss",
+      "key": "SM",
+      "version": "0.1.0",
+      "name": "Self-Modification",
+      "definition": "A decision point for assessing the Self-Modification capabilities of an agentic AI System.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "N",
+          "name": "None/Not Present",
+          "definition": "No self-modification capabilities, out-of-band user prompt reinforcement training"
+        },
+        {
+          "key": "P",
+          "name": "Partial/Limited",
+          "definition": "Write access to memory/context data sources, dynamic and session-only goal modification, dynamic user prompt reinforcement training"
+        },
+        {
+          "key": "F",
+          "name": "Full/Unconstrained",
+          "definition": "Write access to deployment code, write access to model weights, no limitations on goal modifications, write access to persistent memory/context data sources"
+        }
+      ]
+    },
+    "basic:LMH:1.0.0": {
+      "namespace": "basic",
+      "key": "LMH",
+      "version": "1.0.0",
+      "name": "LowMediumHigh",
+      "definition": "A Low/Medium/High decision point / outcome group.",
+      "schemaVersion": "2.0.0",
+      "values": [
+        {
+          "key": "L",
+          "name": "Low",
+          "definition": "Low"
+        },
+        {
+          "key": "M",
+          "name": "Medium",
+          "definition": "Medium"
+        },
+        {
+          "key": "H",
+          "name": "High",
+          "definition": "High"
+        }
+      ]
+    }
+  },
+  "outcome": "basic:LMH:1.0.0",
+  "mapping": [
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "L"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "N",
+      "basic:LMH:1.0.0": "M"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "N",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "N",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "P",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "P",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "P",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "H"
+    },
+    {
+      "x_org.owasp#aivss:AUT:0.1.0": "F",
+      "x_org.owasp#aivss:GDP:0.1.0": "F",
+      "x_org.owasp#aivss:SM:0.1.0": "F",
+      "basic:LMH:1.0.0": "H"
+    }
+  ]
+}

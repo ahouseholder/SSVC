@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "TU",
+  "version": "0.1.0",
+  "name": "Tool Use",
+  "definition": "A decision point for assessing the Tool Use capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "No use of external tools, simple deterministic capabilities"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Limited suite of tools, limited (e.g. internal only) dynamic tool selection"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "No limitations on tool selection, high risk tool capabilities"
+    }
+  ]
+}

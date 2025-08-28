@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "ND",
+  "version": "0.1.0",
+  "name": "Non-Determinism",
+  "definition": "A decision point for assessing the Non-Determinism of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "Simple probabilistic agent with schema-validated inputs and outputs, well-defined decision trees based on known business logic, agentic calling of hard-coded deterministic tools with well-defined outputs and error-handling"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Hard-coded or schema-validated inputs with probabilistic agent outputs or vice versa, limited dynamic decision making with access limited tools or agents"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "Multi-agent communication in plain text without predefined schemata, dynamic discover and usage of tools and agents, no limits on input / output format or data"
+    }
+  ]
+}

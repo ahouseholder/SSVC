@@ -1,0 +1,257 @@
+row,Bias and Discrimination v0.1.0 (x_org.owasp#aivss),Transparency and Explainability v0.1.0 (x_org.owasp#aivss),Accountability v0.1.0 (x_org.owasp#aivss),Societal Impact v0.1.0 (x_org.owasp#aivss),Ethical Implications v0.1.0 (x_org.owasp#aivss)
+0,fair and unbiased,fully transparent,full accountability,maximized positive impact,none
+1,rigorous testing,fully transparent,full accountability,maximized positive impact,none
+2,fair and unbiased,highly explainable,full accountability,maximized positive impact,none
+3,fair and unbiased,fully transparent,accountability framework,maximized positive impact,none
+4,fair and unbiased,fully transparent,full accountability,thorough assessment,none
+5,awareness,fully transparent,full accountability,maximized positive impact,none
+6,rigorous testing,highly explainable,full accountability,maximized positive impact,none
+7,fair and unbiased,limited explainability,full accountability,maximized positive impact,none
+8,rigorous testing,fully transparent,accountability framework,maximized positive impact,none
+9,fair and unbiased,highly explainable,accountability framework,maximized positive impact,none
+10,fair and unbiased,fully transparent,some responsibility,maximized positive impact,none
+11,rigorous testing,fully transparent,full accountability,thorough assessment,none
+12,fair and unbiased,highly explainable,full accountability,thorough assessment,none
+13,fair and unbiased,fully transparent,accountability framework,thorough assessment,none
+14,fair and unbiased,fully transparent,full accountability,some consideration,none
+15,high risk,fully transparent,full accountability,maximized positive impact,none
+16,awareness,highly explainable,full accountability,maximized positive impact,none
+17,rigorous testing,limited explainability,full accountability,maximized positive impact,none
+18,fair and unbiased,black box,full accountability,maximized positive impact,none
+19,awareness,fully transparent,accountability framework,maximized positive impact,none
+20,rigorous testing,highly explainable,accountability framework,maximized positive impact,none
+21,fair and unbiased,limited explainability,accountability framework,maximized positive impact,none
+22,rigorous testing,fully transparent,some responsibility,maximized positive impact,none
+23,fair and unbiased,highly explainable,some responsibility,maximized positive impact,none
+24,fair and unbiased,fully transparent,none,maximized positive impact,none
+25,awareness,fully transparent,full accountability,thorough assessment,none
+26,rigorous testing,highly explainable,full accountability,thorough assessment,none
+27,fair and unbiased,limited explainability,full accountability,thorough assessment,none
+28,rigorous testing,fully transparent,accountability framework,thorough assessment,none
+29,fair and unbiased,highly explainable,accountability framework,thorough assessment,none
+30,fair and unbiased,fully transparent,some responsibility,thorough assessment,none
+31,rigorous testing,fully transparent,full accountability,some consideration,none
+32,fair and unbiased,highly explainable,full accountability,some consideration,none
+33,fair and unbiased,fully transparent,accountability framework,some consideration,none
+34,fair and unbiased,fully transparent,full accountability,high risk,none
+35,high risk,highly explainable,full accountability,maximized positive impact,none
+36,awareness,limited explainability,full accountability,maximized positive impact,none
+37,rigorous testing,black box,full accountability,maximized positive impact,none
+38,high risk,fully transparent,accountability framework,maximized positive impact,none
+39,awareness,highly explainable,accountability framework,maximized positive impact,none
+40,rigorous testing,limited explainability,accountability framework,maximized positive impact,none
+41,fair and unbiased,black box,accountability framework,maximized positive impact,none
+42,awareness,fully transparent,some responsibility,maximized positive impact,none
+43,rigorous testing,highly explainable,some responsibility,maximized positive impact,none
+44,fair and unbiased,limited explainability,some responsibility,maximized positive impact,none
+45,rigorous testing,fully transparent,none,maximized positive impact,none
+46,fair and unbiased,highly explainable,none,maximized positive impact,none
+47,high risk,fully transparent,full accountability,thorough assessment,none
+48,awareness,highly explainable,full accountability,thorough assessment,none
+49,rigorous testing,limited explainability,full accountability,thorough assessment,none
+50,fair and unbiased,black box,full accountability,thorough assessment,none
+51,awareness,fully transparent,accountability framework,thorough assessment,none
+52,rigorous testing,highly explainable,accountability framework,thorough assessment,none
+53,fair and unbiased,limited explainability,accountability framework,thorough assessment,none
+54,rigorous testing,fully transparent,some responsibility,thorough assessment,none
+55,fair and unbiased,highly explainable,some responsibility,thorough assessment,none
+56,fair and unbiased,fully transparent,none,thorough assessment,none
+57,awareness,fully transparent,full accountability,some consideration,none
+58,rigorous testing,highly explainable,full accountability,some consideration,none
+59,fair and unbiased,limited explainability,full accountability,some consideration,none
+60,rigorous testing,fully transparent,accountability framework,some consideration,none
+61,fair and unbiased,highly explainable,accountability framework,some consideration,none
+62,fair and unbiased,fully transparent,some responsibility,some consideration,none
+63,rigorous testing,fully transparent,full accountability,high risk,none
+64,fair and unbiased,highly explainable,full accountability,high risk,low
+65,fair and unbiased,fully transparent,accountability framework,high risk,low
+66,high risk,limited explainability,full accountability,maximized positive impact,low
+67,awareness,black box,full accountability,maximized positive impact,low
+68,high risk,highly explainable,accountability framework,maximized positive impact,low
+69,awareness,limited explainability,accountability framework,maximized positive impact,low
+70,rigorous testing,black box,accountability framework,maximized positive impact,low
+71,high risk,fully transparent,some responsibility,maximized positive impact,low
+72,awareness,highly explainable,some responsibility,maximized positive impact,low
+73,rigorous testing,limited explainability,some responsibility,maximized positive impact,low
+74,fair and unbiased,black box,some responsibility,maximized positive impact,low
+75,awareness,fully transparent,none,maximized positive impact,low
+76,rigorous testing,highly explainable,none,maximized positive impact,low
+77,fair and unbiased,limited explainability,none,maximized positive impact,low
+78,high risk,highly explainable,full accountability,thorough assessment,low
+79,awareness,limited explainability,full accountability,thorough assessment,low
+80,rigorous testing,black box,full accountability,thorough assessment,low
+81,high risk,fully transparent,accountability framework,thorough assessment,low
+82,awareness,highly explainable,accountability framework,thorough assessment,low
+83,rigorous testing,limited explainability,accountability framework,thorough assessment,low
+84,fair and unbiased,black box,accountability framework,thorough assessment,low
+85,awareness,fully transparent,some responsibility,thorough assessment,low
+86,rigorous testing,highly explainable,some responsibility,thorough assessment,low
+87,fair and unbiased,limited explainability,some responsibility,thorough assessment,low
+88,rigorous testing,fully transparent,none,thorough assessment,low
+89,fair and unbiased,highly explainable,none,thorough assessment,low
+90,high risk,fully transparent,full accountability,some consideration,low
+91,awareness,highly explainable,full accountability,some consideration,low
+92,rigorous testing,limited explainability,full accountability,some consideration,low
+93,fair and unbiased,black box,full accountability,some consideration,low
+94,awareness,fully transparent,accountability framework,some consideration,low
+95,rigorous testing,highly explainable,accountability framework,some consideration,low
+96,fair and unbiased,limited explainability,accountability framework,some consideration,low
+97,rigorous testing,fully transparent,some responsibility,some consideration,low
+98,fair and unbiased,highly explainable,some responsibility,some consideration,low
+99,fair and unbiased,fully transparent,none,some consideration,low
+100,awareness,fully transparent,full accountability,high risk,low
+101,rigorous testing,highly explainable,full accountability,high risk,low
+102,fair and unbiased,limited explainability,full accountability,high risk,low
+103,rigorous testing,fully transparent,accountability framework,high risk,low
+104,fair and unbiased,highly explainable,accountability framework,high risk,low
+105,fair and unbiased,fully transparent,some responsibility,high risk,low
+106,high risk,black box,full accountability,maximized positive impact,low
+107,high risk,limited explainability,accountability framework,maximized positive impact,low
+108,awareness,black box,accountability framework,maximized positive impact,low
+109,high risk,highly explainable,some responsibility,maximized positive impact,low
+110,awareness,limited explainability,some responsibility,maximized positive impact,low
+111,rigorous testing,black box,some responsibility,maximized positive impact,low
+112,high risk,fully transparent,none,maximized positive impact,low
+113,awareness,highly explainable,none,maximized positive impact,low
+114,rigorous testing,limited explainability,none,maximized positive impact,low
+115,fair and unbiased,black box,none,maximized positive impact,low
+116,high risk,limited explainability,full accountability,thorough assessment,low
+117,awareness,black box,full accountability,thorough assessment,low
+118,high risk,highly explainable,accountability framework,thorough assessment,low
+119,awareness,limited explainability,accountability framework,thorough assessment,low
+120,rigorous testing,black box,accountability framework,thorough assessment,low
+121,high risk,fully transparent,some responsibility,thorough assessment,low
+122,awareness,highly explainable,some responsibility,thorough assessment,low
+123,rigorous testing,limited explainability,some responsibility,thorough assessment,low
+124,fair and unbiased,black box,some responsibility,thorough assessment,low
+125,awareness,fully transparent,none,thorough assessment,low
+126,rigorous testing,highly explainable,none,thorough assessment,low
+127,fair and unbiased,limited explainability,none,thorough assessment,low
+128,high risk,highly explainable,full accountability,some consideration,medium
+129,awareness,limited explainability,full accountability,some consideration,medium
+130,rigorous testing,black box,full accountability,some consideration,medium
+131,high risk,fully transparent,accountability framework,some consideration,medium
+132,awareness,highly explainable,accountability framework,some consideration,medium
+133,rigorous testing,limited explainability,accountability framework,some consideration,medium
+134,fair and unbiased,black box,accountability framework,some consideration,medium
+135,awareness,fully transparent,some responsibility,some consideration,medium
+136,rigorous testing,highly explainable,some responsibility,some consideration,medium
+137,fair and unbiased,limited explainability,some responsibility,some consideration,medium
+138,rigorous testing,fully transparent,none,some consideration,medium
+139,fair and unbiased,highly explainable,none,some consideration,medium
+140,high risk,fully transparent,full accountability,high risk,medium
+141,awareness,highly explainable,full accountability,high risk,medium
+142,rigorous testing,limited explainability,full accountability,high risk,medium
+143,fair and unbiased,black box,full accountability,high risk,medium
+144,awareness,fully transparent,accountability framework,high risk,medium
+145,rigorous testing,highly explainable,accountability framework,high risk,medium
+146,fair and unbiased,limited explainability,accountability framework,high risk,medium
+147,rigorous testing,fully transparent,some responsibility,high risk,medium
+148,fair and unbiased,highly explainable,some responsibility,high risk,medium
+149,fair and unbiased,fully transparent,none,high risk,medium
+150,high risk,black box,accountability framework,maximized positive impact,medium
+151,high risk,limited explainability,some responsibility,maximized positive impact,medium
+152,awareness,black box,some responsibility,maximized positive impact,medium
+153,high risk,highly explainable,none,maximized positive impact,medium
+154,awareness,limited explainability,none,maximized positive impact,medium
+155,rigorous testing,black box,none,maximized positive impact,medium
+156,high risk,black box,full accountability,thorough assessment,medium
+157,high risk,limited explainability,accountability framework,thorough assessment,medium
+158,awareness,black box,accountability framework,thorough assessment,medium
+159,high risk,highly explainable,some responsibility,thorough assessment,medium
+160,awareness,limited explainability,some responsibility,thorough assessment,medium
+161,rigorous testing,black box,some responsibility,thorough assessment,medium
+162,high risk,fully transparent,none,thorough assessment,medium
+163,awareness,highly explainable,none,thorough assessment,medium
+164,rigorous testing,limited explainability,none,thorough assessment,medium
+165,fair and unbiased,black box,none,thorough assessment,medium
+166,high risk,limited explainability,full accountability,some consideration,medium
+167,awareness,black box,full accountability,some consideration,medium
+168,high risk,highly explainable,accountability framework,some consideration,medium
+169,awareness,limited explainability,accountability framework,some consideration,medium
+170,rigorous testing,black box,accountability framework,some consideration,medium
+171,high risk,fully transparent,some responsibility,some consideration,medium
+172,awareness,highly explainable,some responsibility,some consideration,medium
+173,rigorous testing,limited explainability,some responsibility,some consideration,medium
+174,fair and unbiased,black box,some responsibility,some consideration,medium
+175,awareness,fully transparent,none,some consideration,medium
+176,rigorous testing,highly explainable,none,some consideration,medium
+177,fair and unbiased,limited explainability,none,some consideration,medium
+178,high risk,highly explainable,full accountability,high risk,medium
+179,awareness,limited explainability,full accountability,high risk,medium
+180,rigorous testing,black box,full accountability,high risk,medium
+181,high risk,fully transparent,accountability framework,high risk,medium
+182,awareness,highly explainable,accountability framework,high risk,medium
+183,rigorous testing,limited explainability,accountability framework,high risk,medium
+184,fair and unbiased,black box,accountability framework,high risk,medium
+185,awareness,fully transparent,some responsibility,high risk,medium
+186,rigorous testing,highly explainable,some responsibility,high risk,medium
+187,fair and unbiased,limited explainability,some responsibility,high risk,medium
+188,rigorous testing,fully transparent,none,high risk,medium
+189,fair and unbiased,highly explainable,none,high risk,medium
+190,high risk,black box,some responsibility,maximized positive impact,medium
+191,high risk,limited explainability,none,maximized positive impact,medium
+192,awareness,black box,none,maximized positive impact,high
+193,high risk,black box,accountability framework,thorough assessment,high
+194,high risk,limited explainability,some responsibility,thorough assessment,high
+195,awareness,black box,some responsibility,thorough assessment,high
+196,high risk,highly explainable,none,thorough assessment,high
+197,awareness,limited explainability,none,thorough assessment,high
+198,rigorous testing,black box,none,thorough assessment,high
+199,high risk,black box,full accountability,some consideration,high
+200,high risk,limited explainability,accountability framework,some consideration,high
+201,awareness,black box,accountability framework,some consideration,high
+202,high risk,highly explainable,some responsibility,some consideration,high
+203,awareness,limited explainability,some responsibility,some consideration,high
+204,rigorous testing,black box,some responsibility,some consideration,high
+205,high risk,fully transparent,none,some consideration,high
+206,awareness,highly explainable,none,some consideration,high
+207,rigorous testing,limited explainability,none,some consideration,high
+208,fair and unbiased,black box,none,some consideration,high
+209,high risk,limited explainability,full accountability,high risk,high
+210,awareness,black box,full accountability,high risk,high
+211,high risk,highly explainable,accountability framework,high risk,high
+212,awareness,limited explainability,accountability framework,high risk,high
+213,rigorous testing,black box,accountability framework,high risk,high
+214,high risk,fully transparent,some responsibility,high risk,high
+215,awareness,highly explainable,some responsibility,high risk,high
+216,rigorous testing,limited explainability,some responsibility,high risk,high
+217,fair and unbiased,black box,some responsibility,high risk,high
+218,awareness,fully transparent,none,high risk,high
+219,rigorous testing,highly explainable,none,high risk,high
+220,fair and unbiased,limited explainability,none,high risk,high
+221,high risk,black box,none,maximized positive impact,high
+222,high risk,black box,some responsibility,thorough assessment,high
+223,high risk,limited explainability,none,thorough assessment,high
+224,awareness,black box,none,thorough assessment,high
+225,high risk,black box,accountability framework,some consideration,high
+226,high risk,limited explainability,some responsibility,some consideration,high
+227,awareness,black box,some responsibility,some consideration,high
+228,high risk,highly explainable,none,some consideration,high
+229,awareness,limited explainability,none,some consideration,high
+230,rigorous testing,black box,none,some consideration,high
+231,high risk,black box,full accountability,high risk,high
+232,high risk,limited explainability,accountability framework,high risk,high
+233,awareness,black box,accountability framework,high risk,high
+234,high risk,highly explainable,some responsibility,high risk,high
+235,awareness,limited explainability,some responsibility,high risk,high
+236,rigorous testing,black box,some responsibility,high risk,high
+237,high risk,fully transparent,none,high risk,high
+238,awareness,highly explainable,none,high risk,high
+239,rigorous testing,limited explainability,none,high risk,high
+240,fair and unbiased,black box,none,high risk,high
+241,high risk,black box,none,thorough assessment,high
+242,high risk,black box,some responsibility,some consideration,high
+243,high risk,limited explainability,none,some consideration,high
+244,awareness,black box,none,some consideration,high
+245,high risk,black box,accountability framework,high risk,high
+246,high risk,limited explainability,some responsibility,high risk,high
+247,awareness,black box,some responsibility,high risk,high
+248,high risk,highly explainable,none,high risk,high
+249,awareness,limited explainability,none,high risk,high
+250,rigorous testing,black box,none,high risk,high
+251,high risk,black box,none,some consideration,high
+252,high risk,black box,some responsibility,high risk,high
+253,high risk,limited explainability,none,high risk,high
+254,awareness,black box,none,high risk,high
+255,high risk,black box,none,high risk,high

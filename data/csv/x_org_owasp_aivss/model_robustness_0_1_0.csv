@@ -1,0 +1,65 @@
+row,Evasion Resistance v0.1.0 (x_org.owasp#aivss),Gradient Masking/Obfuscation v0.1.0 (x_org.owasp#aivss),Robustness Certification v0.1.0 (x_org.owasp#aivss),Model Robustness v0.1.0 (x_org.owasp#aivss)
+0,verified,hidden,formal,none
+1,robust,hidden,formal,none
+2,verified,strong,formal,none
+3,verified,hidden,rigorous,none
+4,susceptible,hidden,formal,none
+5,robust,strong,formal,none
+6,verified,basic,formal,none
+7,robust,hidden,rigorous,none
+8,verified,strong,rigorous,none
+9,verified,hidden,basic,none
+10,highly susceptible,hidden,formal,none
+11,susceptible,strong,formal,none
+12,robust,basic,formal,none
+13,verified,none,formal,none
+14,susceptible,hidden,rigorous,none
+15,robust,strong,rigorous,none
+16,verified,basic,rigorous,low
+17,robust,hidden,basic,low
+18,verified,strong,basic,low
+19,verified,hidden,none,low
+20,highly susceptible,strong,formal,low
+21,susceptible,basic,formal,low
+22,robust,none,formal,low
+23,highly susceptible,hidden,rigorous,low
+24,susceptible,strong,rigorous,low
+25,robust,basic,rigorous,low
+26,verified,none,rigorous,low
+27,susceptible,hidden,basic,low
+28,robust,strong,basic,low
+29,verified,basic,basic,low
+30,robust,hidden,none,low
+31,verified,strong,none,low
+32,highly susceptible,basic,formal,medium
+33,susceptible,none,formal,medium
+34,highly susceptible,strong,rigorous,medium
+35,susceptible,basic,rigorous,medium
+36,robust,none,rigorous,medium
+37,highly susceptible,hidden,basic,medium
+38,susceptible,strong,basic,medium
+39,robust,basic,basic,medium
+40,verified,none,basic,medium
+41,susceptible,hidden,none,medium
+42,robust,strong,none,medium
+43,verified,basic,none,medium
+44,highly susceptible,none,formal,medium
+45,highly susceptible,basic,rigorous,medium
+46,susceptible,none,rigorous,medium
+47,highly susceptible,strong,basic,medium
+48,susceptible,basic,basic,high
+49,robust,none,basic,high
+50,highly susceptible,hidden,none,high
+51,susceptible,strong,none,high
+52,robust,basic,none,high
+53,verified,none,none,high
+54,highly susceptible,none,rigorous,high
+55,highly susceptible,basic,basic,high
+56,susceptible,none,basic,high
+57,highly susceptible,strong,none,high
+58,susceptible,basic,none,high
+59,robust,none,none,high
+60,highly susceptible,none,basic,high
+61,highly susceptible,basic,none,high
+62,susceptible,none,none,high
+63,highly susceptible,none,none,high

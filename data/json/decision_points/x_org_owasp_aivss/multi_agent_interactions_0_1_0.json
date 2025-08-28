@@ -1,0 +1,25 @@
+{
+  "namespace": "x_org.owasp#aivss",
+  "key": "MAI",
+  "version": "0.1.0",
+  "name": "Multi-Agent Interactions",
+  "definition": "A decision point for assessing the Multi-Agent Interactions capabilities of an agentic AI System.",
+  "schemaVersion": "2.0.0",
+  "values": [
+    {
+      "key": "N",
+      "name": "None/Not Present",
+      "definition": "No multi-agent interactions"
+    },
+    {
+      "key": "P",
+      "name": "Partial/Limited",
+      "definition": "Limited selection of agent interactions, predefined multi-agent coordination"
+    },
+    {
+      "key": "F",
+      "name": "Full/Unconstrained",
+      "definition": "No limitations on agent interactions, dynamic, agent-guided multi-agent coordination"
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+row,Development v0.1.0 (x_org.owasp#aivss),Deployment v0.1.0 (x_org.owasp#aivss),Operations v0.1.0 (x_org.owasp#aivss),Training v0.1.0 (x_org.owasp#aivss),Lifecycle Vulnerabilities v0.1.0 (x_org.owasp#aivss)
+0,formal verification,formal verification,continuous monitoring,formal verification,none
+1,sdl practices,formal verification,continuous monitoring,formal verification,none
+2,formal verification,secure environment,continuous monitoring,formal verification,none
+3,formal verification,formal verification,comprehensive monitoring,formal verification,none
+4,formal verification,formal verification,continuous monitoring,secure environment,none
+5,basic security measures,formal verification,continuous monitoring,formal verification,none
+6,sdl practices,secure environment,continuous monitoring,formal verification,none
+7,formal verification,basic security measures,continuous monitoring,formal verification,none
+8,sdl practices,formal verification,comprehensive monitoring,formal verification,none
+9,formal verification,secure environment,comprehensive monitoring,formal verification,none
+10,formal verification,formal verification,basic monitoring,formal verification,none
+11,sdl practices,formal verification,continuous monitoring,secure environment,none
+12,formal verification,secure environment,continuous monitoring,secure environment,none
+13,formal verification,formal verification,comprehensive monitoring,secure environment,none
+14,formal verification,formal verification,continuous monitoring,basic security measures,none
+15,insecure environment,formal verification,continuous monitoring,formal verification,none
+16,basic security measures,secure environment,continuous monitoring,formal verification,none
+17,sdl practices,basic security measures,continuous monitoring,formal verification,none
+18,formal verification,insecure environment,continuous monitoring,formal verification,none
+19,basic security measures,formal verification,comprehensive monitoring,formal verification,none
+20,sdl practices,secure environment,comprehensive monitoring,formal verification,none
+21,formal verification,basic security measures,comprehensive monitoring,formal verification,none
+22,sdl practices,formal verification,basic monitoring,formal verification,none
+23,formal verification,secure environment,basic monitoring,formal verification,none
+24,formal verification,formal verification,none,formal verification,none
+25,basic security measures,formal verification,continuous monitoring,secure environment,none
+26,sdl practices,secure environment,continuous monitoring,secure environment,none
+27,formal verification,basic security measures,continuous monitoring,secure environment,none
+28,sdl practices,formal verification,comprehensive monitoring,secure environment,none
+29,formal verification,secure environment,comprehensive monitoring,secure environment,none
+30,formal verification,formal verification,basic monitoring,secure environment,none
+31,sdl practices,formal verification,continuous monitoring,basic security measures,none
+32,formal verification,secure environment,continuous monitoring,basic security measures,none
+33,formal verification,formal verification,comprehensive monitoring,basic security measures,none
+34,formal verification,formal verification,continuous monitoring,insecure environment,none
+35,insecure environment,secure environment,continuous monitoring,formal verification,none
+36,basic security measures,basic security measures,continuous monitoring,formal verification,none
+37,sdl practices,insecure environment,continuous monitoring,formal verification,none
+38,insecure environment,formal verification,comprehensive monitoring,formal verification,none
+39,basic security measures,secure environment,comprehensive monitoring,formal verification,none
+40,sdl practices,basic security measures,comprehensive monitoring,formal verification,none
+41,formal verification,insecure environment,comprehensive monitoring,formal verification,none
+42,basic security measures,formal verification,basic monitoring,formal verification,none
+43,sdl practices,secure environment,basic monitoring,formal verification,none
+44,formal verification,basic security measures,basic monitoring,formal verification,none
+45,sdl practices,formal verification,none,formal verification,none
+46,formal verification,secure environment,none,formal verification,none
+47,insecure environment,formal verification,continuous monitoring,secure environment,none
+48,basic security measures,secure environment,continuous monitoring,secure environment,none
+49,sdl practices,basic security measures,continuous monitoring,secure environment,none
+50,formal verification,insecure environment,continuous monitoring,secure environment,none
+51,basic security measures,formal verification,comprehensive monitoring,secure environment,none
+52,sdl practices,secure environment,comprehensive monitoring,secure environment,none
+53,formal verification,basic security measures,comprehensive monitoring,secure environment,none
+54,sdl practices,formal verification,basic monitoring,secure environment,none
+55,formal verification,secure environment,basic monitoring,secure environment,none
+56,formal verification,formal verification,none,secure environment,none
+57,basic security measures,formal verification,continuous monitoring,basic security measures,none
+58,sdl practices,secure environment,continuous monitoring,basic security measures,none
+59,formal verification,basic security measures,continuous monitoring,basic security measures,none
+60,sdl practices,formal verification,comprehensive monitoring,basic security measures,none
+61,formal verification,secure environment,comprehensive monitoring,basic security measures,none
+62,formal verification,formal verification,basic monitoring,basic security measures,none
+63,sdl practices,formal verification,continuous monitoring,insecure environment,none
+64,formal verification,secure environment,continuous monitoring,insecure environment,low
+65,formal verification,formal verification,comprehensive monitoring,insecure environment,low
+66,insecure environment,basic security measures,continuous monitoring,formal verification,low
+67,basic security measures,insecure environment,continuous monitoring,formal verification,low
+68,insecure environment,secure environment,comprehensive monitoring,formal verification,low
+69,basic security measures,basic security measures,comprehensive monitoring,formal verification,low
+70,sdl practices,insecure environment,comprehensive monitoring,formal verification,low
+71,insecure environment,formal verification,basic monitoring,formal verification,low
+72,basic security measures,secure environment,basic monitoring,formal verification,low
+73,sdl practices,basic security measures,basic monitoring,formal verification,low
+74,formal verification,insecure environment,basic monitoring,formal verification,low
+75,basic security measures,formal verification,none,formal verification,low
+76,sdl practices,secure environment,none,formal verification,low
+77,formal verification,basic security measures,none,formal verification,low
+78,insecure environment,secure environment,continuous monitoring,secure environment,low
+79,basic security measures,basic security measures,continuous monitoring,secure environment,low
+80,sdl practices,insecure environment,continuous monitoring,secure environment,low
+81,insecure environment,formal verification,comprehensive monitoring,secure environment,low
+82,basic security measures,secure environment,comprehensive monitoring,secure environment,low
+83,sdl practices,basic security measures,comprehensive monitoring,secure environment,low
+84,formal verification,insecure environment,comprehensive monitoring,secure environment,low
+85,basic security measures,formal verification,basic monitoring,secure environment,low
+86,sdl practices,secure environment,basic monitoring,secure environment,low
+87,formal verification,basic security measures,basic monitoring,secure environment,low
+88,sdl practices,formal verification,none,secure environment,low
+89,formal verification,secure environment,none,secure environment,low
+90,insecure environment,formal verification,continuous monitoring,basic security measures,low
+91,basic security measures,secure environment,continuous monitoring,basic security measures,low
+92,sdl practices,basic security measures,continuous monitoring,basic security measures,low
+93,formal verification,insecure environment,continuous monitoring,basic security measures,low
+94,basic security measures,formal verification,comprehensive monitoring,basic security measures,low
+95,sdl practices,secure environment,comprehensive monitoring,basic security measures,low
+96,formal verification,basic security measures,comprehensive monitoring,basic security measures,low
+97,sdl practices,formal verification,basic monitoring,basic security measures,low
+98,formal verification,secure environment,basic monitoring,basic security measures,low
+99,formal verification,formal verification,none,basic security measures,low
+100,basic security measures,formal verification,continuous monitoring,insecure environment,low
+101,sdl practices,secure environment,continuous monitoring,insecure environment,low
+102,formal verification,basic security measures,continuous monitoring,insecure environment,low
+103,sdl practices,formal verification,comprehensive monitoring,insecure environment,low
+104,formal verification,secure environment,comprehensive monitoring,insecure environment,low
+105,formal verification,formal verification,basic monitoring,insecure environment,low
+106,insecure environment,insecure environment,continuous monitoring,formal verification,low
+107,insecure environment,basic security measures,comprehensive monitoring,formal verification,low
+108,basic security measures,insecure environment,comprehensive monitoring,formal verification,low
+109,insecure environment,secure environment,basic monitoring,formal verification,low
+110,basic security measures,basic security measures,basic monitoring,formal verification,low
+111,sdl practices,insecure environment,basic monitoring,formal verification,low
+112,insecure environment,formal verification,none,formal verification,low
+113,basic security measures,secure environment,none,formal verification,low
+114,sdl practices,basic security measures,none,formal verification,low
+115,formal verification,insecure environment,none,formal verification,low
+116,insecure environment,basic security measures,continuous monitoring,secure environment,low
+117,basic security measures,insecure environment,continuous monitoring,secure environment,low
+118,insecure environment,secure environment,comprehensive monitoring,secure environment,low
+119,basic security measures,basic security measures,comprehensive monitoring,secure environment,low
+120,sdl practices,insecure environment,comprehensive monitoring,secure environment,low
+121,insecure environment,formal verification,basic monitoring,secure environment,low
+122,basic security measures,secure environment,basic monitoring,secure environment,low
+123,sdl practices,basic security measures,basic monitoring,secure environment,low
+124,formal verification,insecure environment,basic monitoring,secure environment,low
+125,basic security measures,formal verification,none,secure environment,low
+126,sdl practices,secure environment,none,secure environment,low
+127,formal verification,basic security measures,none,secure environment,low
+128,insecure environment,secure environment,continuous monitoring,basic security measures,medium
+129,basic security measures,basic security measures,continuous monitoring,basic security measures,medium
+130,sdl practices,insecure environment,continuous monitoring,basic security measures,medium
+131,insecure environment,formal verification,comprehensive monitoring,basic security measures,medium
+132,basic security measures,secure environment,comprehensive monitoring,basic security measures,medium
+133,sdl practices,basic security measures,comprehensive monitoring,basic security measures,medium
+134,formal verification,insecure environment,comprehensive monitoring,basic security measures,medium
+135,basic security measures,formal verification,basic monitoring,basic security measures,medium
+136,sdl practices,secure environment,basic monitoring,basic security measures,medium
+137,formal verification,basic security measures,basic monitoring,basic security measures,medium
+138,sdl practices,formal verification,none,basic security measures,medium
+139,formal verification,secure environment,none,basic security measures,medium
+140,insecure environment,formal verification,continuous monitoring,insecure environment,medium
+141,basic security measures,secure environment,continuous monitoring,insecure environment,medium
+142,sdl practices,basic security measures,continuous monitoring,insecure environment,medium
+143,formal verification,insecure environment,continuous monitoring,insecure environment,medium
+144,basic security measures,formal verification,comprehensive monitoring,insecure environment,medium
+145,sdl practices,secure environment,comprehensive monitoring,insecure environment,medium
+146,formal verification,basic security measures,comprehensive monitoring,insecure environment,medium
+147,sdl practices,formal verification,basic monitoring,insecure environment,medium
+148,formal verification,secure environment,basic monitoring,insecure environment,medium
+149,formal verification,formal verification,none,insecure environment,medium
+150,insecure environment,insecure environment,comprehensive monitoring,formal verification,medium
+151,insecure environment,basic security measures,basic monitoring,formal verification,medium
+152,basic security measures,insecure environment,basic monitoring,formal verification,medium
+153,insecure environment,secure environment,none,formal verification,medium
+154,basic security measures,basic security measures,none,formal verification,medium
+155,sdl practices,insecure environment,none,formal verification,medium
+156,insecure environment,insecure environment,continuous monitoring,secure environment,medium
+157,insecure environment,basic security measures,comprehensive monitoring,secure environment,medium
+158,basic security measures,insecure environment,comprehensive monitoring,secure environment,medium
+159,insecure environment,secure environment,basic monitoring,secure environment,medium
+160,basic security measures,basic security measures,basic monitoring,secure environment,medium
+161,sdl practices,insecure environment,basic monitoring,secure environment,medium
+162,insecure environment,formal verification,none,secure environment,medium
+163,basic security measures,secure environment,none,secure environment,medium
+164,sdl practices,basic security measures,none,secure environment,medium
+165,formal verification,insecure environment,none,secure environment,medium
+166,insecure environment,basic security measures,continuous monitoring,basic security measures,medium
+167,basic security measures,insecure environment,continuous monitoring,basic security measures,medium
+168,insecure environment,secure environment,comprehensive monitoring,basic security measures,medium
+169,basic security measures,basic security measures,comprehensive monitoring,basic security measures,medium
+170,sdl practices,insecure environment,comprehensive monitoring,basic security measures,medium
+171,insecure environment,formal verification,basic monitoring,basic security measures,medium
+172,basic security measures,secure environment,basic monitoring,basic security measures,medium
+173,sdl practices,basic security measures,basic monitoring,basic security measures,medium
+174,formal verification,insecure environment,basic monitoring,basic security measures,medium
+175,basic security measures,formal verification,none,basic security measures,medium
+176,sdl practices,secure environment,none,basic security measures,medium
+177,formal verification,basic security measures,none,basic security measures,medium
+178,insecure environment,secure environment,continuous monitoring,insecure environment,medium
+179,basic security measures,basic security measures,continuous monitoring,insecure environment,medium
+180,sdl practices,insecure environment,continuous monitoring,insecure environment,medium
+181,insecure environment,formal verification,comprehensive monitoring,insecure environment,medium
+182,basic security measures,secure environment,comprehensive monitoring,insecure environment,medium
+183,sdl practices,basic security measures,comprehensive monitoring,insecure environment,medium
+184,formal verification,insecure environment,comprehensive monitoring,insecure environment,medium
+185,basic security measures,formal verification,basic monitoring,insecure environment,medium
+186,sdl practices,secure environment,basic monitoring,insecure environment,medium
+187,formal verification,basic security measures,basic monitoring,insecure environment,medium
+188,sdl practices,formal verification,none,insecure environment,medium
+189,formal verification,secure environment,none,insecure environment,medium
+190,insecure environment,insecure environment,basic monitoring,formal verification,medium
+191,insecure environment,basic security measures,none,formal verification,medium
+192,basic security measures,insecure environment,none,formal verification,high
+193,insecure environment,insecure environment,comprehensive monitoring,secure environment,high
+194,insecure environment,basic security measures,basic monitoring,secure environment,high
+195,basic security measures,insecure environment,basic monitoring,secure environment,high
+196,insecure environment,secure environment,none,secure environment,high
+197,basic security measures,basic security measures,none,secure environment,high
+198,sdl practices,insecure environment,none,secure environment,high
+199,insecure environment,insecure environment,continuous monitoring,basic security measures,high
+200,insecure environment,basic security measures,comprehensive monitoring,basic security measures,high
+201,basic security measures,insecure environment,comprehensive monitoring,basic security measures,high
+202,insecure environment,secure environment,basic monitoring,basic security measures,high
+203,basic security measures,basic security measures,basic monitoring,basic security measures,high
+204,sdl practices,insecure environment,basic monitoring,basic security measures,high
+205,insecure environment,formal verification,none,basic security measures,high
+206,basic security measures,secure environment,none,basic security measures,high
+207,sdl practices,basic security measures,none,basic security measures,high
+208,formal verification,insecure environment,none,basic security measures,high
+209,insecure environment,basic security measures,continuous monitoring,insecure environment,high
+210,basic security measures,insecure environment,continuous monitoring,insecure environment,high
+211,insecure environment,secure environment,comprehensive monitoring,insecure environment,high
+212,basic security measures,basic security measures,comprehensive monitoring,insecure environment,high
+213,sdl practices,insecure environment,comprehensive monitoring,insecure environment,high
+214,insecure environment,formal verification,basic monitoring,insecure environment,high
+215,basic security measures,secure environment,basic monitoring,insecure environment,high
+216,sdl practices,basic security measures,basic monitoring,insecure environment,high
+217,formal verification,insecure environment,basic monitoring,insecure environment,high
+218,basic security measures,formal verification,none,insecure environment,high
+219,sdl practices,secure environment,none,insecure environment,high
+220,formal verification,basic security measures,none,insecure environment,high
+221,insecure environment,insecure environment,none,formal verification,high
+222,insecure environment,insecure environment,basic monitoring,secure environment,high
+223,insecure environment,basic security measures,none,secure environment,high
+224,basic security measures,insecure environment,none,secure environment,high
+225,insecure environment,insecure environment,comprehensive monitoring,basic security measures,high
+226,insecure environment,basic security measures,basic monitoring,basic security measures,high
+227,basic security measures,insecure environment,basic monitoring,basic security measures,high
+228,insecure environment,secure environment,none,basic security measures,high
+229,basic security measures,basic security measures,none,basic security measures,high
+230,sdl practices,insecure environment,none,basic security measures,high
+231,insecure environment,insecure environment,continuous monitoring,insecure environment,high
+232,insecure environment,basic security measures,comprehensive monitoring,insecure environment,high
+233,basic security measures,insecure environment,comprehensive monitoring,insecure environment,high
+234,insecure environment,secure environment,basic monitoring,insecure environment,high
+235,basic security measures,basic security measures,basic monitoring,insecure environment,high
+236,sdl practices,insecure environment,basic monitoring,insecure environment,high
+237,insecure environment,formal verification,none,insecure environment,high
+238,basic security measures,secure environment,none,insecure environment,high
+239,sdl practices,basic security measures,none,insecure environment,high
+240,formal verification,insecure environment,none,insecure environment,high
+241,insecure environment,insecure environment,none,secure environment,high
+242,insecure environment,insecure environment,basic monitoring,basic security measures,high
+243,insecure environment,basic security measures,none,basic security measures,high
+244,basic security measures,insecure environment,none,basic security measures,high
+245,insecure environment,insecure environment,comprehensive monitoring,insecure environment,high
+246,insecure environment,basic security measures,basic monitoring,insecure environment,high
+247,basic security measures,insecure environment,basic monitoring,insecure environment,high
+248,insecure environment,secure environment,none,insecure environment,high
+249,basic security measures,basic security measures,none,insecure environment,high
+250,sdl practices,insecure environment,none,insecure environment,high
+251,insecure environment,insecure environment,none,basic security measures,high
+252,insecure environment,insecure environment,basic monitoring,insecure environment,high
+253,insecure environment,basic security measures,none,insecure environment,high
+254,basic security measures,insecure environment,none,insecure environment,high
+255,insecure environment,insecure environment,none,insecure environment,high
